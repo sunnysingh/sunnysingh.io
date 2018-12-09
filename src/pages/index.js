@@ -61,12 +61,11 @@ export default function HomePage({ location }) {
           .
         </BioText>
         <BioText>
-          {/* TODO: Show map in a popover when clicking cities. */}
           <EarthIcon size={32} /> Born in{' '}
           <a href="https://en.wikipedia.org/wiki/Kharkiv">Kharkiv</a>, with
           parents from{' '}
           <a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a> and{' '}
-          <a href="">Kolkata</a>.
+          <a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a>.
         </BioText>
         <BioText>
           <ComputerIcon size={32} /> Coding using web technologies since the age
