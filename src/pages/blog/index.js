@@ -9,7 +9,7 @@ export default class BlogPage extends Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location}>
+      <Layout title="Articles" location={this.props.location}>
         <Container>
           {posts.map(({ node }) => (
             <div key={node.fields.slug}>

@@ -18,7 +18,7 @@ const Container = styled.div`
   min-height: 100vh;
 `;
 
-export default function Layout({ location, children }) {
+export default function Layout({ title, location, children }) {
   return (
     <StaticQuery
       query={graphql`
@@ -32,11 +32,13 @@ export default function Layout({ location, children }) {
       `}
       render={data => (
         <Fragment>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[{ name: 'description', content: 'Web Developer / Creator' }]}
-          >
+          <Helmet>
             <html lang="en" />
+            <title>
+              {title
+                ? `${title} | ${data.site.siteMetadata.title}`
+                : `${data.site.siteMetadata.title} - Web Developer / Creator`}
+            </title>
             <link
               rel="apple-touch-icon"
               sizes="180x180"
@@ -65,6 +67,7 @@ export default function Layout({ location, children }) {
             <meta name="application-name" content="sunnysingh.io" />
             <meta name="msapplication-TileColor" content="#1c1c22" />
             <meta name="theme-color" content="#1c1c22" />
+            <meta name="description=" content="Web Developer / Creator" />
           </Helmet>
           <GlobalStyle />
           <Container>

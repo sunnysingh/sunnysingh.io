@@ -4,7 +4,7 @@ import { Layout, Container } from '../../components';
 export default class ProjectsPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location}>
+      <Layout title="Projects" location={this.props.location}>
         <Container>Projects page.</Container>
       </Layout>
     );
