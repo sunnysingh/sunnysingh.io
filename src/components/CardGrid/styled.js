@@ -27,12 +27,16 @@ export const Item = styled.li`
 export const Link = styled.a`
   display: block;
   height: 100%;
-  padding: 4rem;
+  padding: 2rem;
   text-decoration: none;
   background-color: #15151c;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   transition: border-color 0.2s ease-in-out;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding: 4rem;
+  }
 
   &:hover,
   &:focus {

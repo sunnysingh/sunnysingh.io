@@ -8,17 +8,14 @@ export const HeaderLayout = styled.div`
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
-  @media (min-width: ${breakpoints.large}px) {
-    margin-bottom: 1rem;
-  }
 `;
 
 export const Logo = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 
   @media (min-width: ${breakpoints.large}px) {
@@ -68,7 +65,7 @@ export const NavLink = styled(Link)`
   margin-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 1.3125rem;
+  font-size: 1.315rem;
   text-decoration: none;
 
   &:hover,
