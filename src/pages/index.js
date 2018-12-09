@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Layout, Container, Masthead, AccessibleText } from '../components';
 import {
   HandWaveIcon,
@@ -73,7 +74,7 @@ export default function HomePage({ location }) {
         </BioText>
         <CurrentWork>
           <RocketIcon size={32} /> Currently, I'm recording{' '}
-          <a href="https://sunnycommutes.fm/">podcasts</a> and building{' '}
+          <Link to="/podcasts">podcasts</Link> and building{' '}
           <a href="https://ironmic.fm/">IronMic</a>.
         </CurrentWork>
       </Bio>
