@@ -1,20 +1,21 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../config';
 
-export const ProjectsList = styled.ul`
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
   flex-wrap: wrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
   }
 `;
 
-export const ProjectsItem = styled.li`
+export const Item = styled.li`
   margin-bottom: 2rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.medium}px) {
     flex-basis: 50%;
 
     &:nth-child(odd) {
@@ -23,7 +24,7 @@ export const ProjectsItem = styled.li`
   }
 `;
 
-export const ProjectsLink = styled.a`
+export const Link = styled.a`
   display: block;
   height: 100%;
   padding: 4rem;
@@ -36,19 +37,21 @@ export const ProjectsLink = styled.a`
   &:hover,
   &:focus {
     border-color: rgba(255, 255, 255, 0.5);
+    outline: none;
   }
 `;
 
-export const ProjectsHeading = styled.h2`
+export const Heading = styled.h2`
   margin-bottom: 1rem;
   font-size: 1.4rem;
+  line-height: 1.5;
 `;
 
-export const ProjectsDescription = styled.p`
+export const Description = styled.p`
   margin-bottom: 2rem;
-  line-height: 1.2em;
+  line-height: 1.5em;
 `;
 
-export const ProjectsAction = styled.span`
+export const Action = styled.span`
   color: rgba(255, 255, 255, 0.5);
 `;

@@ -1,6 +1,11 @@
 import React from 'react';
 import { Layout, Container, Masthead, AccessibleText } from '../components';
-import { HandWaveIcon, EarthIcon, ComputerIcon } from '../components/icons';
+import {
+  HandWaveIcon,
+  EarthIcon,
+  ComputerIcon,
+  RocketIcon,
+} from '../components/icons';
 import {
   Intro,
   IntroColumn,
@@ -10,6 +15,8 @@ import {
   Avatar,
   SocialGrid,
   Bio,
+  BioText,
+  CurrentWork,
   Contact,
   LinkButton,
 } from '../home/styled';
@@ -45,25 +52,30 @@ export default function HomePage({ location }) {
         </Container>
       </Masthead>
       <Bio>
-        <p>
+        <BioText>
           <HandWaveIcon size={32} /> Hello! I'm a developer based in{' '}
           <a href="https://en.wikipedia.org/wiki/Charlotte,_North_Carolina">
             Charlotte, North Carolina
           </a>
           .
-        </p>
-        <p>
+        </BioText>
+        <BioText>
           {/* TODO: Show map in a popover when clicking cities. */}
           <EarthIcon size={32} /> Born in{' '}
           <a href="https://en.wikipedia.org/wiki/Kharkiv">Kharkiv</a>, with
           parents from{' '}
           <a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a> and{' '}
           <a href="">Kolkata</a>.
-        </p>
-        <p>
+        </BioText>
+        <BioText>
           <ComputerIcon size={32} /> Coding using web technologies since the age
           of thirteen.
-        </p>
+        </BioText>
+        <CurrentWork>
+          <RocketIcon size={32} /> Currently, I'm recording{' '}
+          <a href="https://sunnycommutes.fm/">podcasts</a> and building{' '}
+          <a href="https://ironmic.fm/">IronMic</a>.
+        </CurrentWork>
       </Bio>
       <Contact>
         <p>Have an inquiry?</p>

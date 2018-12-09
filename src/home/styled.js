@@ -1,17 +1,33 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { breakpoints } from '../config';
 
 export const Intro = styled.div`
   margin-bottom: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: ${breakpoints.large}px) {
+    flex-direction: row;
+  }
 `;
 
 export const IntroColumn = styled.div`
-  width: 33%;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: ${breakpoints.large}px) {
+    width: 33%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const AvatarContainer = styled.div`
@@ -34,19 +50,39 @@ export const Heading = styled.h1`
   margin-bottom: 1rem;
   font-size: 2.8rem;
   color: #fff;
+  text-align: center;
+
+  @media (min-width: ${breakpoints.large}px) {
+    text-align: left;
+  }
 `;
 
 export const SubHeading = styled.h2`
   font-size: 1.4rem;
+
+  text-align: center;
+
+  @media (min-width: ${breakpoints.large}px) {
+    text-align: left;
+  }
 `;
 
 export const SocialGrid = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-top: 1.5rem;
+
+  @media (min-width: ${breakpoints.large}px) {
+    margin-top: 1.5rem;
+  }
 
   > a {
-    margin-left: 1.5rem;
+    &:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+
+    @media (min-width: ${breakpoints.large}px) {
+      margin-left: 1.5rem;
+    }
   }
 `;
 
@@ -56,9 +92,28 @@ export const Bio = styled.div`
   margin-right: auto;
   margin-bottom: 2rem;
   font-size: 1.4rem;
+`;
 
-  > p {
-    margin-bottom: 2rem;
+export const BioText = styled.p`
+  margin-bottom: 2rem;
+  margin-left: 36px;
+  padding-left: 1rem;
+  line-height: 1.5;
+  text-indent: -36px;
+`;
+
+export const CurrentWork = styled.p`
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #15151c;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    border-radius: 4px;
   }
 `;
 

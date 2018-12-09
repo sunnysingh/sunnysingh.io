@@ -105,12 +105,14 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: #d1d1e4;
     text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
     transition: color 200ms ease;
 
     &:hover,
     &:focus {
       color: #fff;
       text-decoration: none;
+      outline-width: 3px;
     }
   }
 `;

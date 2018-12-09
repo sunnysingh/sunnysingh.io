@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Container from '../Container';
 import { AccessibleText } from '../ScreenReader';
-import Logo from '../Logo';
-import { HeaderLayout, Nav, NavLink } from './styled';
+import LogoSvg from '../Logo';
+import { HeaderLayout, Logo, Nav, NavLink } from './styled';
 
 export default function Header({ currentPath }) {
   return (
@@ -19,22 +19,24 @@ export default function Header({ currentPath }) {
             </NavLink>
           </Nav>
           {currentPath === '/' ? (
-            <Fragment>
-              <Logo size={100} />
+            <Logo>
+              <LogoSvg />
               <AccessibleText>Sunny Singh logo</AccessibleText>
-            </Fragment>
+            </Logo>
           ) : (
-            <Link to="/" title="Go to home page">
-              <Logo size={100} />
-              <AccessibleText>Sunny Singh logo</AccessibleText>
-            </Link>
+            <Logo>
+              <Link to="/" title="Go to home page">
+                <LogoSvg />
+                <AccessibleText>Sunny Singh logo</AccessibleText>
+              </Link>
+            </Logo>
           )}
           <Nav secondary>
             <NavLink to="/blog">
               <span>Articles</span>
             </NavLink>
-            <NavLink as="a" href="https://sunnycommutes.fm/" last>
-              Podcast
+            <NavLink to="/podcasts" last>
+              <span>Podcasts</span>
             </NavLink>
           </Nav>
         </HeaderLayout>
