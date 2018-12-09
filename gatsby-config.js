@@ -48,7 +48,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'sunnysingh.io',
-        short_name: 'sunnysingh.io',
+        short_name: 'sunny',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#1c1c22',
