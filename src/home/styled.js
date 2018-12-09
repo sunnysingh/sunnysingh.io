@@ -31,14 +31,12 @@ export const Avatar = styled.img`
 `;
 
 export const Heading = styled.h1`
-  margin-left: 5rem;
   margin-bottom: 1rem;
   font-size: 2.8rem;
   color: #fff;
 `;
 
 export const SubHeading = styled.h2`
-  margin-left: 5rem;
   font-size: 1.4rem;
 `;
 
@@ -46,7 +44,6 @@ export const SocialGrid = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
-  margin-right: 5rem;
 
   > a {
     margin-left: 1.5rem;

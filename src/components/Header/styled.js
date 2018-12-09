@@ -9,8 +9,6 @@ export const HeaderLayout = styled.div`
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 `;
 
 export const Nav = styled.nav`
@@ -29,6 +27,18 @@ export const NavLink = styled(Link)`
   padding-right: 4rem;
   font-size: 1.5rem;
   text-decoration: none;
+
+  ${p =>
+    p.first &&
+    css`
+      padding-left: 0;
+    `}
+
+  ${p =>
+    p.last &&
+    css`
+      padding-right: 0;
+    `}
 
   /* Take advantage of ARIA attribute that is added automatically by Gatsby. */
   &[aria-current='page'] {
