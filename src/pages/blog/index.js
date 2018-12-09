@@ -1,30 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../../components/Layout';
-import Container from '../../components/Container';
+import { Layout, Container } from '../../components';
 
-export default class BlogPage extends Component {
-  render() {
-    const { data } = this.props;
-    const posts = data.allMarkdownRemark.edges;
-
-    return (
-      <Layout title="Articles" location={this.props.location}>
-        <Container>
-          {posts.map(({ node }) => (
-            <div key={node.fields.slug}>
-              <h2>
-                <Link to={`/${node.fields.slug}`}>
-                  {node.frontmatter.title}
-                </Link>
-              </h2>
-              <small>{node.frontmatter.date}</small>
-            </div>
-          ))}
-        </Container>
-      </Layout>
-    );
-  }
+export default function BlogPage({ data, location }) {
+  const posts = data.allMarkdownRemark.edges;
+  return (
+    <Layout title="Articles" location={location}>
+      <Container>
+        {posts.map(({ node }) => (
+          <div key={node.fields.slug}>
+            <h2>
+              <Link to={`/${node.fields.slug}`}>{node.frontmatter.title}</Link>
+            </h2>
+            <small>{node.frontmatter.date}</small>
+          </div>
+        ))}
+      </Container>
+    </Layout>
+  );
 }
 
 export const pageQuery = graphql`
