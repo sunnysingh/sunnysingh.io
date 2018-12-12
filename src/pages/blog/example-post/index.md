@@ -1,6 +1,6 @@
 ---
-title: New Beginnings
-tagline: I talk about some stuff here
+title: Naming functions for better debugging
+tagline: How to improve your code with named functions
 date: "2015-05-28T22:40:32.169Z"
 ---
 
@@ -26,6 +26,8 @@ view back on the skyline of her hometown _Bookmarksgrove_, the headline of
 [Alphabet Village](http://google.com) and the subline of her own road, the Line
 Lane. Pityful a rethoric question ran over her cheek, then she continued her
 way. On her way she met a copy.
+
+> Something really smart here
 
 ### Overlaid the jeepers uselessly much excluding
 

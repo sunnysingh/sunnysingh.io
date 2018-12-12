@@ -31,7 +31,7 @@ export const Link = styled.a`
   text-decoration: none;
   background-color: #15151c;
   border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  border-radius: 10px;
   transition: border-color 0.2s ease-in-out;
 
   @media (min-width: ${breakpoints.medium}px) {

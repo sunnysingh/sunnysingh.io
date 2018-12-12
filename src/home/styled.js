@@ -113,7 +113,7 @@ export const CurrentWork = styled.p`
   background-color: #15151c;
 
   @media (min-width: ${breakpoints.medium}px) {
-    border-radius: 4px;
+    border-radius: 10px;
   }
 `;
 

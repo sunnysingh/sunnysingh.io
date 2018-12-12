@@ -1,11 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Layout, Container, Masthead } from '../components';
+import { Calendar, Clock } from 'react-feather';
+import { Layout, Container } from '../components';
 import {
   ArticleHeader,
-  ArticleTitle,
-  ArticleTagline,
+  Title,
+  Tagline,
+  Metadata,
+  MetadataItem,
+  MetadataContent,
 } from './blog-post-styled';
 
 export default function BlogPostTemplate({ data, location }) {
@@ -17,17 +21,20 @@ export default function BlogPostTemplate({ data, location }) {
       <Helmet>
         <meta name="description" content={siteDescription} />
       </Helmet>
-      <Masthead>
-        <ArticleHeader>
-          <ArticleTitle>{post.frontmatter.title}</ArticleTitle>
-          <ArticleTagline>{post.frontmatter.tagline}</ArticleTagline>
-          <p style={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.5)' }}>
-            <small>
-              {post.frontmatter.date} | {post.fields.readingTime.text}
-            </small>
-          </p>
-        </ArticleHeader>
-      </Masthead>
+      <ArticleHeader>
+        <Title>{post.frontmatter.title}</Title>
+        <Tagline>{post.frontmatter.tagline}</Tagline>
+        <Metadata>
+          <MetadataItem>
+            <Calendar size={14} />
+            <MetadataContent>{post.frontmatter.date}</MetadataContent>
+          </MetadataItem>
+          <MetadataItem>
+            <Clock size={14} />
+            <MetadataContent>{post.fields.readingTime.text}</MetadataContent>
+          </MetadataItem>
+        </Metadata>
+      </ArticleHeader>
       <Container>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
