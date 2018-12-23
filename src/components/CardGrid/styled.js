@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../config';
+import { swingIn } from '../../utils/animation';
 
 export const List = styled.ul`
   display: flex;
@@ -13,6 +14,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  ${swingIn()}
   margin-bottom: 2rem;
 
   @media (min-width: ${breakpoints.medium}px) {

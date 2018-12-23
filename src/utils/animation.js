@@ -106,6 +106,27 @@ export function fadeIn() {
   `;
 }
 
+export function swingIn(options = {}) {
+  const config = { ...{ duration: 650 }, ...options };
+  const { duration } = config;
+  const animation = keyframes`
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  `;
+  return css`
+    animation-name: ${animation};
+    animation-duration: ${duration}ms;
+    animation-timing-function: cubic-bezier(0.36, -0.64, 0.34, 1.76);
+    animation-iteration-count: 1;
+  `;
+}
+
 export function fillInColor(color, options = {}) {
   if (typeof color !== 'string') {
     throw new Error('fillInColor expects a color string');

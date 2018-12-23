@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { breakpoints } from '../config';
-import { fadeIn, wave, fillInColor, fly } from '../utils/animation';
+import { swingIn, wave, fillInColor, fly } from '../utils/animation';
 
 export const Intro = styled.div`
   margin-bottom: 4rem;
@@ -48,7 +48,7 @@ export const Avatar = styled.img`
 `;
 
 export const Heading = styled.h1`
-  ${fadeIn()}
+  ${swingIn({ duration: 800 })}
   margin-bottom: 1rem;
   font-size: 2.8rem;
   color: #fff;
@@ -60,7 +60,7 @@ export const Heading = styled.h1`
 `;
 
 export const SubHeading = styled.h2`
-  ${fadeIn()}
+  ${swingIn({ duration: 800 })}
   font-size: 1.4rem;
   text-align: center;
 
@@ -70,7 +70,7 @@ export const SubHeading = styled.h2`
 `;
 
 export const SocialGrid = styled.div`
-  ${fadeIn()}
+  ${swingIn({ duration: 800 })}
   display: flex;
   justify-content: flex-end;
 
@@ -168,4 +168,12 @@ export const LinkButton = styled(Link)`
   border: 1px solid;
   border-radius: 1rem;
   text-decoration: none;
+  transition-property: transform, color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+  }
 `;
