@@ -8,7 +8,6 @@ export const HeaderLayout = styled.div`
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 `;
