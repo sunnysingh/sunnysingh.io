@@ -17,6 +17,10 @@ import {
   SocialGrid,
   Bio,
   BioText,
+  AnimatedWave,
+  Earth,
+  AnimatedComputer,
+  AnimatedRocket,
   CurrentWork,
   Contact,
   LinkButton,
@@ -54,27 +58,36 @@ export default function HomePage({ location }) {
       </Masthead>
       <Bio>
         <BioText>
-          <HandWaveIcon size={32} /> Hello! I'm a developer based in{' '}
+          <AnimatedWave>
+            <HandWaveIcon size={32} />
+          </AnimatedWave>{' '}
+          Hello! I'm a developer based in{' '}
           <a href="https://en.wikipedia.org/wiki/Charlotte,_North_Carolina">
             Charlotte, North Carolina
           </a>
           .
         </BioText>
         <BioText>
-          <EarthIcon size={32} /> Born in{' '}
-          <a href="https://en.wikipedia.org/wiki/Kharkiv">Kharkiv</a>, with
-          parents from{' '}
+          <Earth>
+            <EarthIcon size={32} />
+          </Earth>{' '}
+          Born in <a href="https://en.wikipedia.org/wiki/Kharkiv">Kharkiv</a>,
+          with parents from{' '}
           <a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a> and{' '}
           <a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a>.
         </BioText>
         <BioText>
-          <ComputerIcon size={32} /> Coding using web technologies since the age
-          of thirteen.
+          <AnimatedComputer>
+            <ComputerIcon size={32} />
+          </AnimatedComputer>{' '}
+          Coding using web technologies since the age of thirteen.
         </BioText>
         <CurrentWork>
-          <RocketIcon size={32} /> Currently, I'm recording{' '}
-          <Link to="/podcasts">podcasts</Link> and building{' '}
-          <a href="https://ironmic.fm/">IronMic</a>.
+          <AnimatedRocket>
+            <RocketIcon size={32} />
+          </AnimatedRocket>{' '}
+          Currently, I'm recording <Link to="/podcasts">podcasts</Link> and
+          building <a href="https://ironmic.fm/">IronMic</a>.
         </CurrentWork>
       </Bio>
       <Contact>

@@ -8,19 +8,18 @@ export const HeaderLayout = styled.div`
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 `;
 
 export const Logo = styled.div`
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 
   @media (min-width: ${breakpoints.large}px) {
     order: 2;
     width: auto;
-    margin-bottom: 1rem;
   }
 
   & svg {

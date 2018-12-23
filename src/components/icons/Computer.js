@@ -86,7 +86,11 @@ const Computer = ({ width, height, size, props }) => (
       fill="#424242"
       opacity="0.2"
     />
-    <path fill={SCREEN_COLOR} d="M24.02 27.23h79.66v49.9H24.02z" />
+    <path
+      className="computerScreen"
+      fill={SCREEN_COLOR}
+      d="M24.02 27.23h79.66v49.9H24.02z"
+    />
   </svg>
 );
 

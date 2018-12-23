@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { breakpoints } from '../config';
+import { fadeIn, wave, fillInColor, fly } from '../utils/animation';
 
 export const Intro = styled.div`
   margin-bottom: 4rem;
@@ -47,6 +48,7 @@ export const Avatar = styled.img`
 `;
 
 export const Heading = styled.h1`
+  ${fadeIn()}
   margin-bottom: 1rem;
   font-size: 2.8rem;
   color: #fff;
@@ -58,8 +60,8 @@ export const Heading = styled.h1`
 `;
 
 export const SubHeading = styled.h2`
+  ${fadeIn()}
   font-size: 1.4rem;
-
   text-align: center;
 
   @media (min-width: ${breakpoints.large}px) {
@@ -68,6 +70,7 @@ export const SubHeading = styled.h2`
 `;
 
 export const SocialGrid = styled.div`
+  ${fadeIn()}
   display: flex;
   justify-content: flex-end;
 
@@ -100,6 +103,38 @@ export const BioText = styled.p`
   padding-left: 1rem;
   line-height: 1.5;
   text-indent: -36px;
+`;
+
+export const AnimatedWave = styled.span`
+  ${wave({ delay: 2000 })};
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 8px;
+  padding-left: 24px;
+`;
+
+export const Earth = styled.span`
+  display: inline-block;
+  margin-left: 32px;
+  position: relative;
+`;
+
+export const AnimatedComputer = styled.span`
+  display: inline-block;
+  margin-left: 32px;
+  position: relative;
+
+  & svg .computerScreen {
+    ${fillInColor('#092663', { delay: 4000 })}
+  }
+`;
+
+export const AnimatedRocket = styled.span`
+  ${fly()}
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
 `;
 
 export const CurrentWork = styled.p`
