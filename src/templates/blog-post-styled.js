@@ -121,3 +121,65 @@ export const MetadataContent = styled.span`
   display: inline-block;
   margin-left: 0.5rem;
 `;
+
+export const ArticleContent = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 4rem;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  font-size: 1.3125rem;
+
+  & p:not(:last-child),
+  & ul:not(:last-child),
+  & ol:not(:last-child),
+  & blockquote:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  /* Dropcap */
+  & > p:first-child::first-letter {
+    float: left;
+    padding-right: 0.25rem;
+    margin-right: 0.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 5.2rem;
+    line-height: 0.9;
+  }
+
+  & blockquote {
+    position: relative;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    text-indent: 3rem;
+  }
+
+  & blockquote::before {
+    content: open-quote;
+    quotes: '\\201c' '\\201d';
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  & ul,
+  & ol {
+    margin-left: 1.7rem;
+    list-style: initial;
+  }
+
+  & li {
+    padding-left: 1rem;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+`;

@@ -1,7 +1,7 @@
 ---
-title: Naming functions for better debugging
-tagline: How to improve your code with named functions
-date: "2015-05-28T22:40:32.169Z"
+title: 2019 Personal Rebranding
+tagline: It's been a while but the site is fresh again
+date: "2019-01-01T00:00:00.169Z"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
@@ -15,11 +15,6 @@ The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
 made herself on the way.
-
-* This however showed weasel
-* Well uncritical so misled
-  * this is very interesting
-* Goodness much until that fluid owl
 
 When she reached the first hills of the **Italic Mountains**, she had a last
 view back on the skyline of her hometown _Bookmarksgrove_, the headline of

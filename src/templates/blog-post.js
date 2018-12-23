@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import { Calendar, Clock } from 'react-feather';
-import { Layout, Container } from '../components';
+import { Layout, Container, AccessibleText } from '../components';
 import {
   ArticleHeader,
   Title,
@@ -12,6 +12,7 @@ import {
   Metadata,
   MetadataItem,
   MetadataContent,
+  ArticleContent,
 } from './blog-post-styled';
 import avatar from '../assets/avatar.jpg';
 
@@ -30,12 +31,13 @@ export default function BlogPostTemplate({ data, location }) {
         <Metadata>
           <MetadataItem>
             <Author>
-              <Avatar src={avatar} alt="Written by " />
+              <Avatar src={avatar} alt="Written by: " />
               Sunny Singh
             </Author>
           </MetadataItem>
           <MetadataItem>
             <Calendar size={14} />
+            <AccessibleText>Published on: </AccessibleText>
             <MetadataContent>{post.frontmatter.date}</MetadataContent>
           </MetadataItem>
           <MetadataItem>
@@ -45,7 +47,7 @@ export default function BlogPostTemplate({ data, location }) {
         </Metadata>
       </ArticleHeader>
       <Container>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ArticleContent dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Layout>
   );
