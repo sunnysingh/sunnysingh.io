@@ -7,10 +7,13 @@ import {
   ArticleHeader,
   Title,
   Tagline,
+  Author,
+  Avatar,
   Metadata,
   MetadataItem,
   MetadataContent,
 } from './blog-post-styled';
+import avatar from '../assets/avatar.jpg';
 
 export default function BlogPostTemplate({ data, location }) {
   const post = data.markdownRemark;
@@ -25,6 +28,12 @@ export default function BlogPostTemplate({ data, location }) {
         <Title>{post.frontmatter.title}</Title>
         <Tagline>{post.frontmatter.tagline}</Tagline>
         <Metadata>
+          <MetadataItem>
+            <Author>
+              <Avatar src={avatar} alt="Written by " />
+              Sunny Singh
+            </Author>
+          </MetadataItem>
           <MetadataItem>
             <Calendar size={14} />
             <MetadataContent>{post.frontmatter.date}</MetadataContent>

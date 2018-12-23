@@ -27,9 +27,6 @@ export const ArticleHeader = styled.header`
   }
 
   @media (min-width: ${breakpoints.large}px) {
-    max-height: 400px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
     padding-left: 15rem;
     padding-right: 15rem;
   }
@@ -56,7 +53,7 @@ export const Title = styled.h1`
 `;
 
 export const Tagline = styled.h2`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 1.125rem;
   line-height: 1.3;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
@@ -69,21 +66,55 @@ export const Tagline = styled.h2`
   }
 
   @media (min-width: ${breakpoints.large}px) {
-    margin-bottom: 3rem;
     font-size: 2rem;
   }
 `;
 
+export const Author = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
+`;
+
+export const Avatar = styled.img`
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff; /* smoothen rounded border */
+  width: 42px;
+  height: 42px;
+`;
+
 export const Metadata = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: row;
+  }
 `;
 
 export const MetadataItem = styled.div`
   margin-left: 0.5rem;
-  padding: 1rem;
   font-size: 0.9rem;
   line-height: 1;
   color: rgba(255, 255, 255, 0.8);
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 2rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      padding-bottom: 0;
+    }
+  }
 `;
 
 export const MetadataContent = styled.span`
