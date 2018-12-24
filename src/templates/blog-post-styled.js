@@ -38,7 +38,7 @@ export const Title = styled.h1`
   letter-spacing: 0.05em;
   text-shadow: 0 0 5px rgba(24, 51, 150, 0.5);
   text-align: center;
-  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   line-height: 1.3;
 
@@ -54,6 +54,7 @@ export const Title = styled.h1`
 
 export const Tagline = styled.h2`
   margin-bottom: 3rem;
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.125rem;
   line-height: 1.3;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
@@ -73,9 +74,6 @@ export const Tagline = styled.h2`
 export const Author = styled.div`
   display: flex;
   align-items: center;
-  text-align: center;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.8);
 `;
 
 export const Avatar = styled.img`
@@ -99,9 +97,8 @@ export const Metadata = styled.div`
 
 export const MetadataItem = styled.div`
   margin-left: 0.5rem;
-  font-size: 0.9rem;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.65);
 
   @media (min-width: ${breakpoints.medium}px) {
     padding-left: 1rem;
@@ -125,54 +122,108 @@ export const MetadataContent = styled.span`
 export const ArticleContent = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
-  padding: 4rem;
-  line-height: 1.8;
-  letter-spacing: 0.02em;
-  font-size: 1.3125rem;
+  max-width: 990px; /* optimize for 75 character line length */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 
-  & p:not(:last-child),
-  & ul:not(:last-child),
-  & ol:not(:last-child),
-  & blockquote:not(:last-child) {
-    margin-bottom: 2rem;
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  & > div > p:not(:last-child),
+  & > div > ul:not(:last-child),
+  & > div > ol:not(:last-child),
+  & > div > blockquote:not(:last-child),
+  & > div > hr:not(:last-child),
+  & > div > pre:not(:last-child),
+  & .youtubeEmbed:not(:last-child) {
+    margin-bottom: 1rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  & > div > p,
+  & > div > ul,
+  & > div > ol {
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  & > div > blockquote p {
+    font-family: 'Georgia', serif;
+  }
+
+  & > div > blockquote cite {
+    display: block;
+  }
+
+  & > div > hr {
+    display: block;
+    text-align: center;
+    overflow: visible;
+    border: none;
+
+    &::before {
+      content: '...';
+      display: inline-block;
+      position: relative;
+      top: -0.375rem;
+      font-size: 1.5rem;
+      letter-spacing: 1rem;
+    }
+  }
+
+  & > div > h2,
+  & > div > h3,
+  & > div > h4,
+  & > div > h5,
+  & > div > h6 {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      margin-bottom: 2rem;
+      padding-top: 1rem;
+      line-height: 1.8;
+    }
   }
 
   /* Dropcap */
-  & > p:first-child::first-letter {
+  & > div > p:first-child::first-letter {
     float: left;
     padding-right: 0.25rem;
     margin-right: 0.25rem;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 5.2rem;
-    line-height: 0.9;
-  }
+    font-family: monospace;
+    font-size: 5.5rem;
+    line-height: 0.85;
 
-  & blockquote {
-    position: relative;
-    display: inline-block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    text-indent: 3rem;
-  }
-
-  & blockquote::before {
-    content: open-quote;
-    quotes: '\\201c' '\\201d';
-    position: absolute;
-    top: 0;
-    left: -3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.25);
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 6.7rem;
+    }
   }
 
   & ul,
   & ol {
-    margin-left: 1.7rem;
+    margin-left: 1rem;
     list-style: initial;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      margin-left: 1.5rem;
+    }
   }
 
   & li {
@@ -182,4 +233,79 @@ export const ArticleContent = styled.div`
   & li:not(:last-child) {
     margin-bottom: 1rem;
   }
+
+  /* Media extends past width of text on large screens */
+  & figure,
+  & pre,
+  & .youtubeEmbed {
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (min-width: ${breakpoints.large}px) {
+      width: 110% !important; /* Override inline style */
+      margin-left: -5%;
+    }
+  }
+
+  & figure {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  & figcaption {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  & pre {
+    border-radius: 10px;
+  }
+
+  & h2 {
+    font-size: 1.5rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 2rem;
+    }
+  }
+
+  & h3 {
+    font-size: 1.4rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  & h4 {
+    font-size: 1.2rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  & h5 {
+    font-size: 1.2rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  & h6 {
+    font-size: 1.2rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: 1.4rem;
+    }
+  }
+`;
+
+export const Comments = styled.div`
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;

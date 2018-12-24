@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import prismjsTheme from './prismjsTheme';
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
   :root {
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -115,6 +118,8 @@ const GlobalStyle = createGlobalStyle`
       outline-width: 3px;
     }
   }
+
+  ${prismjsTheme}
 `;
 
 export default GlobalStyle;

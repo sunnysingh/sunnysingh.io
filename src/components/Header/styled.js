@@ -1,6 +1,10 @@
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { Link } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 import { breakpoints } from '../../config';
+
+// Prevent invalid HTML attributes getting set from props.
+const Link = ({ isFirst, isLast, ...props }) => <GatsbyLink {...props} />;
 
 export const HeaderLayout = styled.div`
   display: flex;
@@ -45,7 +49,7 @@ export const Nav = styled.nav`
 
   /* Second nav */
   ${p =>
-    p.secondary &&
+    p.isSecondary &&
     css`
       @media (min-width: ${breakpoints.large}px) {
         margin-left: auto;
@@ -84,7 +88,7 @@ export const NavLink = styled(Link)`
   }
 
   ${p =>
-    p.first &&
+    p.isFirst &&
     css`
       @media (min-width: ${breakpoints.large}px) {
         padding-left: 0;
@@ -92,7 +96,7 @@ export const NavLink = styled(Link)`
     `}
 
   ${p =>
-    p.last &&
+    p.isLast &&
     css`
       @media (min-width: ${breakpoints.large}px) {
         padding-right: 0;

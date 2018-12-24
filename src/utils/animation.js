@@ -14,7 +14,7 @@ export function wave(options = {}) {
   return css`
     animation-name: ${animation};
     animation-delay: ${delay}ms;
-    animation-duration: 800ms;
+    animation-duration: 400ms;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: ${typeof count === 'number' ? count * 2 : count};
@@ -134,6 +134,12 @@ export function fillInColor(color, options = {}) {
   const config = { ...{ delay: 0 }, ...options };
   const { delay } = config;
   const animation = keyframes`
+    25% {
+      fill: ${color};
+    }
+    50% {
+      fill: #111;
+    }
     100% {
       fill: ${color};
     }
@@ -141,7 +147,7 @@ export function fillInColor(color, options = {}) {
   return css`
     animation-name: ${animation};
     animation-delay: ${delay}ms;
-    animation-duration: 3s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

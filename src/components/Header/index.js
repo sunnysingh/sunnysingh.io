@@ -11,7 +11,7 @@ export default function Header({ currentPath }) {
       <Container>
         <HeaderLayout>
           <Nav>
-            <NavLink to="/" first>
+            <NavLink to="/" isFirst>
               <span>About</span>
             </NavLink>
             <NavLink to="/projects">
@@ -31,12 +31,12 @@ export default function Header({ currentPath }) {
               </Link>
             </Logo>
           )}
-          <Nav secondary>
-            <NavLink to="/blog">
-              <span>Articles</span>
-            </NavLink>
-            <NavLink to="/podcasts" last>
+          <Nav isSecondary>
+            <NavLink to="/podcasts">
               <span>Podcasts</span>
+            </NavLink>
+            <NavLink to="/blog" isLast>
+              <span>Articles</span>
             </NavLink>
           </Nav>
         </HeaderLayout>

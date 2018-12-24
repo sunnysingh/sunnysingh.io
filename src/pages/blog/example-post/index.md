@@ -4,10 +4,14 @@ tagline: It's been a while but the site is fresh again
 date: "2019-01-01T00:00:00.169Z"
 ---
 
+import YouTubeEmbed from '../../../components/YouTubeEmbed';
+
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
+
+![CES](./ces.jpg "My start to the year by going to Vegas")
 
 ## On deer horse aboard tritely yikes and much
 
@@ -16,13 +20,30 @@ Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
 made herself on the way.
 
+```jsx
+<TweetButton
+  href={`https://twitter.com/intent/tweet?text=${shareText}&related=${TWITTER_USERNAME}`}
+  target="_blank"
+  rel="noopener"
+  onClick={handleTweetButtonClick}
+>
+  <Twitter size={18} />
+  <TweetButtonText>Share</TweetButtonText>
+</TweetButton>
+```
+
+Some example code.
+
+---
+
 When she reached the first hills of the **Italic Mountains**, she had a last
 view back on the skyline of her hometown _Bookmarksgrove_, the headline of
 [Alphabet Village](http://google.com) and the subline of her own road, the Line
 Lane. Pityful a rethoric question ran over her cheek, then she continued her
 way. On her way she met a copy.
 
-> Something really smart here
+> Redux sucks.
+> <cite>― Dan Abramov</cite>
 
 ### Overlaid the jeepers uselessly much excluding
 
@@ -40,6 +61,10 @@ It is a paradisematic country, in which roasted parts of sentences fly into your
 mouth. Even the all-powerful Pointing has no control about the blind texts it is
 an almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar.
+
+My cool video:
+
+<YouTubeEmbed id="yqFEXMLllo8" />
 
 ### According a funnily until pre-set or arrogant well cheerful
 

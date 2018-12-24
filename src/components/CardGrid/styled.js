@@ -49,6 +49,7 @@ export const Link = styled.a`
 
 export const Heading = styled.h2`
   margin-bottom: 1rem;
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
 `;
