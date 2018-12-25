@@ -20,7 +20,7 @@ export default function CodePenEmbed({ id, height, caption }) {
           height={height || 400}
           src={embedLink}
           frameBorder="0"
-          allowTransparency
+          allowtransparency="true"
           allowFullScreen
           style={{
             position: 'absolute',

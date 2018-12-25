@@ -3,7 +3,7 @@ import React from 'react';
 export default function TweetEmbed({ children, username, id }) {
   return (
     <blockquote
-      class="twitter-tweet"
+      className="twitter-tweet"
       data-theme="dark"
       data-conversation="none"
     >
