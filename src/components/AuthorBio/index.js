@@ -12,7 +12,11 @@ export default function AuthorBio() {
           <span aria-role="img" aria-label="wave emoji">
             👋
           </span>{' '}
-          Hello, I'm Sunny. Thanks for reading!
+          Hello,{' '}
+          <Link to="/" title="Learn about me">
+            I'm Sunny
+          </Link>
+          . Thanks for reading!
         </Text>
         <Text>
           <span aria-role="img" aria-label="thinking face emoji">
