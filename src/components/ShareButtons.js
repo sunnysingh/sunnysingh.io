@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import socialshares from 'socialshares/dist/socialshares.noicons';
 import twitter from 'socialshares/dist/icons/twitter';
 import facebook from 'socialshares/dist/icons/facebook';
 import linkedin from 'socialshares/dist/icons/linkedin';
@@ -15,8 +14,11 @@ const Container = styled.div`
 
 export default class ShareButtons extends Component {
   componentDidMount() {
-    socialshares.configure({ icons: { twitter, facebook, linkedin } });
-    socialshares.mount();
+    import('socialshares/dist/socialshares.noicons').then(module => {
+      const socialshares = module.default;
+      socialshares.configure({ icons: { twitter, facebook, linkedin } });
+      socialshares.mount();
+    });
   }
 
   componentWillUnmount() {
