@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;

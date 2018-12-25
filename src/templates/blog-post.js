@@ -10,6 +10,7 @@ import {
   AuthorBio,
   ShareButtons,
   CommentBox,
+  CodeFund,
 } from '../components';
 import { parseChildrenStrings } from '../utils/component';
 import {
@@ -71,11 +72,7 @@ export default class BlogPostTemplate extends Component {
         <Container>
           <ArticleContent>{children}</ArticleContent>
           <ArticleFooter>
-            <div id="codefund" />
-            <script
-              src="https://codefund.app/properties/153/funder.js"
-              async="async"
-            />
+            <CodeFund />
             <AuthorBio />
             <ShareButtons
               title={post.title}

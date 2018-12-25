@@ -8,4 +8,5 @@ export { default as Logo } from './Logo';
 export { default as Masthead } from './Masthead';
 export { default as ShareButtons } from './ShareButtons';
 export { AccessibleText } from './ScreenReader';
+export { default as CodeFund } from './CodeFund';
 export { default as CommentBox } from './CommentBox';
