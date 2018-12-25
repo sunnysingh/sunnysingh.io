@@ -1,3 +1,4 @@
+export { default as AuthorBio } from './AuthorBio';
 export { default as CardGrid } from './CardGrid';
 export { default as Container } from './Container';
 export { default as Footer } from './Footer';

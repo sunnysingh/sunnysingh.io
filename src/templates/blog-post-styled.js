@@ -321,7 +321,8 @@ export const ArticleContent = styled.div`
 
 export const ArticleFooter = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 4rem;
 `;
 

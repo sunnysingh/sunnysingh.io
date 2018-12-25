@@ -7,6 +7,7 @@ import {
   Layout,
   Container,
   AccessibleText,
+  AuthorBio,
   ShareButtons,
   CommentBox,
 } from '../components';
@@ -70,6 +71,7 @@ export default class BlogPostTemplate extends Component {
         <Container>
           <ArticleContent>{children}</ArticleContent>
           <ArticleFooter>
+            <AuthorBio />
             <ShareButtons
               title={post.title}
               text={`${post.title} - ${post.tagline}`}
