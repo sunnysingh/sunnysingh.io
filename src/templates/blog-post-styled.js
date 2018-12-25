@@ -271,6 +271,7 @@ export const ArticleContent = styled.div`
     padding-top: 0.5rem;
     text-align: center;
     font-size: 1.125rem;
+    line-height: 1.375;
     color: rgba(255, 255, 255, 0.75);
   }
 

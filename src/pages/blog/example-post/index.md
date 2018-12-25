@@ -64,7 +64,7 @@ mouth. Even the all-powerful Pointing has no control about the blind texts it is
 an almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar.
 
-<CodePenEmbed id="JwEqwQ" />
+<CodePenEmbed id="JwEqwQ" caption="CodePen embed demo" />
 
 <TweetEmbed id="1074862305119256576" username="sunnysinghio">
   I personally like to tie in what I've done in the year, especially towards the end, to my resolutions. I'm currently redoing [sunnysingh.io](https://t.co/76GEcKAawq), recording [@sunnycommutes](https://twitter.com/sunnycommutes) episodes again, and figuring out exactly what I enjoy doing and how I want to do that. 🌟
@@ -72,7 +72,7 @@ name of Lorem Ipsum decided to leave for the far World of Grammar.
 
 My cool video:
 
-<YouTubeEmbed id="yqFEXMLllo8" />
+<YouTubeEmbed id="yqFEXMLllo8" caption="Live stream of me coding my personal site" />
 
 ### According a funnily until pre-set or arrogant well cheerful
 
