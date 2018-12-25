@@ -10,8 +10,8 @@
     "@mdx-js/mdx": "0.15.x",
     "@mdx-js/tag": "0.15.x",
     "babel-plugin-styled-components": "^1.9.2",
+    "commentbox.io": "^2.0.0",
     "date-fns": "^1.30.1",
-    "disqus-react": "^1.0.5",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.23",
     "gatsby-mdx": "^0.2.0",
@@ -22,6 +22,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-plugin-twitter": "^2.0.8",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
     "gatsby-remark-images": "^2.0.4",
@@ -37,6 +38,7 @@
     "react-feather": "^1.1.4",
     "react-helmet": "^5.2.0",
     "reading-time": "^1.1.3",
+    "socialshares": "^2.0.5",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {

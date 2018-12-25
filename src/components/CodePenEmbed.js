@@ -1,10 +1,11 @@
 import React from 'react';
 
-export default function YouTubeEmbed({ id, width }) {
-  const embedLink = `https://www.youtube.com/embed/${id}`;
+export default function CodePenEmbed({ id, height }) {
+  const embedLink = `//codepen.io/Craaftx/embed/preview/${id}/?height=${height ||
+    400}&theme-id=dark&default-tab=css,result`;
   return (
     <div
-      className="youtubeEmbed mediaEmbed"
+      className="codepenEmbed mediaEmbed"
       style={{
         position: 'relative',
         paddingBottom: '56.25%',
@@ -13,11 +14,11 @@ export default function YouTubeEmbed({ id, width }) {
       }}
     >
       <iframe
-        width={width || 800}
-        height={width || 800}
+        width={height || 400}
+        height={height || 400}
         src={embedLink}
         frameBorder="0"
-        allow="autoplay; encrypted-media"
+        allowTransparency
         allowFullScreen
         style={{
           position: 'absolute',

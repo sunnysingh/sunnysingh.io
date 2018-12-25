@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Layout, Container } from '../../components';
 
 export default function BlogPage({ data, location }) {

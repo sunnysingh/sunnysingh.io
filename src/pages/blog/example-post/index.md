@@ -5,6 +5,8 @@ date: "2019-01-01T00:00:00.169Z"
 ---
 
 import YouTubeEmbed from '../../../components/YouTubeEmbed';
+import TweetEmbed from '../../../components/TweetEmbed';
+import CodePenEmbed from '../../../components/CodePenEmbed';
 
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
@@ -61,6 +63,12 @@ It is a paradisematic country, in which roasted parts of sentences fly into your
 mouth. Even the all-powerful Pointing has no control about the blind texts it is
 an almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar.
+
+<CodePenEmbed id="JwEqwQ" />
+
+<TweetEmbed id="1074862305119256576" username="sunnysinghio">
+  I personally like to tie in what I've done in the year, especially towards the end, to my resolutions. I'm currently redoing [sunnysingh.io](https://t.co/76GEcKAawq), recording [@sunnycommutes](https://twitter.com/sunnycommutes) episodes again, and figuring out exactly what I enjoy doing and how I want to do that. 🌟
+</TweetEmbed>
 
 My cool video:
 

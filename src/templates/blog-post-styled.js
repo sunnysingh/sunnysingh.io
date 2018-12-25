@@ -146,12 +146,24 @@ export const ArticleContent = styled.div`
   & > div > blockquote:not(:last-child),
   & > div > hr:not(:last-child),
   & > div > pre:not(:last-child),
-  & .youtubeEmbed:not(:last-child) {
+  & .mediaEmbed:not(:last-child) {
     margin-bottom: 1rem;
 
     @media (min-width: ${breakpoints.medium}px) {
       margin-bottom: 2rem;
     }
+  }
+
+  & twitter-widget:not(:last-child) {
+    margin-bottom: 1rem !important; /* override twitter styles */
+
+    @media (min-width: ${breakpoints.medium}px) {
+      margin-bottom: 2rem !important; /* override twitter styles */
+    }
+  }
+
+  & twitter-widget {
+    margin-top: 0 !important; /* override twitter styles */
   }
 
   & > div > p,
@@ -237,14 +249,16 @@ export const ArticleContent = styled.div`
   /* Media extends past width of text on large screens */
   & figure,
   & pre,
-  & .youtubeEmbed {
-    border-radius: 10px;
-    overflow: hidden;
-
+  & .mediaEmbed {
     @media (min-width: ${breakpoints.large}px) {
       width: 110% !important; /* Override inline style */
       margin-left: -5%;
     }
+  }
+
+  & .youtubeEmbed {
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   & figure {
@@ -305,7 +319,34 @@ export const ArticleContent = styled.div`
   }
 `;
 
+export const ArticleFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+`;
+
 export const Comments = styled.div`
+  margin-bottom: 8rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  text-align: center;
+`;
+
+export const ShowCommentsButton = styled.button`
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #d1d1e4;
+  transition-property: transform, color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+  }
 `;

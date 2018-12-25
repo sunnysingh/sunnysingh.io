@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { Calendar, Clock } from 'react-feather';
-import { DiscussionEmbed } from 'disqus-react';
 import readingTime from 'reading-time';
 import formatDate from 'date-fns/format';
-import { Layout, Container, AccessibleText } from '../components';
+import {
+  Layout,
+  Container,
+  AccessibleText,
+  ShareButtons,
+  CommentBox,
+} from '../components';
 import { parseChildrenStrings } from '../utils/component';
 import {
   ArticleHeader,
@@ -16,7 +21,9 @@ import {
   MetadataItem,
   MetadataContent,
   ArticleContent,
+  ArticleFooter,
   Comments,
+  ShowCommentsButton,
 } from './blog-post-styled';
 import avatar from '../assets/avatar.jpg';
 
@@ -62,18 +69,21 @@ export default class BlogPostTemplate extends Component {
         </ArticleHeader>
         <Container>
           <ArticleContent>{children}</ArticleContent>
+          <ArticleFooter>
+            <ShareButtons
+              title={post.title}
+              text={`${post.title} - ${post.tagline}`}
+            />
+          </ArticleFooter>
           <Comments>
             {isCommentsVisible ? (
-              <DiscussionEmbed
-                shortname={process.env.GATSBY_DISQUS_SHORTNAME}
-                config={{ identifier: location.href, title: post.title }}
-              />
+              <CommentBox />
             ) : (
-              <button
+              <ShowCommentsButton
                 onClick={() => this.setState({ isCommentsVisible: true })}
               >
                 Show comments
-              </button>
+              </ShowCommentsButton>
             )}
           </Comments>
         </Container>
