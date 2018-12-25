@@ -14,15 +14,16 @@ const Container = styled.div`
 
 export default class ShareButtons extends Component {
   componentDidMount() {
+    // Load socialshares on client side only to prevent SSR issues.
     import('socialshares/dist/socialshares.noicons').then(module => {
-      const socialshares = module.default;
-      socialshares.configure({ icons: { twitter, facebook, linkedin } });
-      socialshares.mount();
+      this.socialshares = module.default;
+      this.socialshares.configure({ icons: { twitter, facebook, linkedin } });
+      this.socialshares.mount();
     });
   }
 
   componentWillUnmount() {
-    socialshares.unmount();
+    if (this.socialshares) this.socialshares.unmount();
   }
 
   render() {
