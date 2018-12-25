@@ -34,18 +34,15 @@ export const ArticleHeader = styled.header`
 
 export const Title = styled.h1`
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
   letter-spacing: 0.05em;
   text-shadow: 0 0 5px rgba(24, 51, 150, 0.5);
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  line-height: 1.3;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
 
   @media (min-width: ${breakpoints.large}px) {
     font-size: 3rem;
@@ -54,17 +51,14 @@ export const Title = styled.h1`
 
 export const Tagline = styled.h2`
   margin-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.3;
+  font-size: 1.5rem;
+  line-height: 1.5;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   text-align: center;
   font-weight: 400;
-
-  @media (min-width: ${breakpoints.large}px) {
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
 
   @media (min-width: ${breakpoints.large}px) {
     font-size: 2rem;
@@ -81,31 +75,36 @@ export const Avatar = styled.img`
   border-radius: 50%;
   border: 2px solid #fff;
   background-color: #fff; /* smoothen rounded border */
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 42px;
+    height: 42px;
+  }
 `;
 
 export const Metadata = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  margin-bottom: -2rem;
 
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
+    margin-bottom: 0;
   }
 `;
 
 export const MetadataItem = styled.div`
   margin-left: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   line-height: 1;
   color: rgba(255, 255, 255, 0.65);
 
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  &:not(:last-child) {
+  & {
     padding-bottom: 2rem;
 
     @media (min-width: ${breakpoints.medium}px) {
