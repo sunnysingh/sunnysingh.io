@@ -7,9 +7,11 @@ export const List = styled.ul`
   flex-direction: column;
   list-style: none;
   flex-wrap: wrap;
+  padding-top: 1rem; /* lazy way of adding spacing between nav and grid on sm */
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
+    padding-top: 0;
   }
 `;
 

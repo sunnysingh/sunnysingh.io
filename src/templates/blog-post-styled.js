@@ -50,7 +50,7 @@ export const Title = styled.h1`
 `;
 
 export const Tagline = styled.h2`
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: 'PT Sans', sans-serif;
@@ -61,6 +61,7 @@ export const Tagline = styled.h2`
   font-weight: 400;
 
   @media (min-width: ${breakpoints.large}px) {
+    margin-bottom: 3rem;
     font-size: 2rem;
   }
 `;

@@ -10,18 +10,28 @@ export const HeaderLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-left: 0;
+    margin-right: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Logo = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
   text-align: center;
 
-  @media (min-width: ${breakpoints.large}px) {
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-top: 0;
+    margin-bottom: 1rem;
     order: 2;
     width: auto;
   }
@@ -40,23 +50,20 @@ export const Logo = styled.div`
 export const Nav = styled.nav`
   margin-left: auto;
   margin-right: auto;
-  order: 2;
 
-  @media (min-width: ${breakpoints.large}px) {
+  @media (min-width: ${breakpoints.medium}px) {
     margin-left: 0;
-    order: 1;
   }
 
   /* Second nav */
   ${p =>
     p.isSecondary &&
     css`
-      @media (min-width: ${breakpoints.large}px) {
+      text-align: right;
+
+      @media (min-width: ${breakpoints.medium}px) {
         margin-left: auto;
         margin-right: 0;
-      }
-
-      @media (min-width: ${breakpoints.large}px) {
         order: 3;
       }
     `};
@@ -64,7 +71,8 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1.315rem;
@@ -80,8 +88,15 @@ export const NavLink = styled(Link)`
     }
   }
 
-  @media (min-width: ${breakpoints.large}px) {
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-top: 0;
     margin-bottom: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 1.3125rem;
+  }
+
+  @media (min-width: ${breakpoints.large}px) {
     padding-left: 4rem;
     padding-right: 4rem;
     font-size: 1.5rem;
