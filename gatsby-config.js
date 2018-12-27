@@ -14,6 +14,17 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: `${__dirname}/src`,
+        assets: `${__dirname}/src/assets`,
+        components: `${__dirname}/src/components`,
+        config: `${__dirname}/src/config`,
+        pages: `${__dirname}/src/pages`,
+        utils: `${__dirname}/src/utils`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -59,7 +70,7 @@ module.exports = {
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
-          default: require.resolve('./src/templates/blog-post.js'),
+          default: require.resolve('./src/templates/BlogPostTemplate.js'),
         },
         gatsbyRemarkPlugins: [
           {

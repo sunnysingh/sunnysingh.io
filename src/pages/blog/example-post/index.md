@@ -6,9 +6,7 @@ tags: announcement
 background: "linear-gradient(to right, #ad5389, #3c1053)"
 ---
 
-import YouTubeEmbed from '../../../components/YouTubeEmbed';
-import TweetEmbed from '../../../components/TweetEmbed';
-import CodePenEmbed from '../../../components/CodePenEmbed';
+import { YouTubeEmbed, TweetEmbed, CodePenEmbed } from 'components';
 
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove

@@ -5,7 +5,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js');
+    const blogPost = path.resolve('./src/templates/BlogPostTemplate.js');
     resolve(
       graphql(
         `
@@ -59,10 +59,10 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value,
     });

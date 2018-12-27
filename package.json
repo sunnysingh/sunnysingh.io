@@ -4,7 +4,17 @@
   "version": "1.0.0",
   "author": "Sunny Singh <me@sunnysingh.io>",
   "bugs": {
-    "url": "https://github.com/sunnysingh/web/issues"
+    "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 -single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "0.15.x",
@@ -20,6 +30,7 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-root-import": "^2.0.4",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-twitter": "^2.0.8",
@@ -57,15 +68,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sunnysingh/web.git"
-  },
-  "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 -single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
