@@ -6,7 +6,7 @@ export default function BlogPage({ data, location }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
     name: node.frontmatter.title,
     description: node.frontmatter.tagline,
-    url: `/blog/${node.fields.slug}`,
+    url: `${node.fields.slug}`,
     action: 'Read article',
   }));
   return (
