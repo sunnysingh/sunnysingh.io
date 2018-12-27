@@ -249,7 +249,7 @@ export const ArticleContent = styled.div`
     margin-bottom: 1rem;
   }
 
-  /* Media extends past width of text on large screens */
+  /* Media extends past width of text */
   & figure,
   & pre,
   & .mediaEmbed {
