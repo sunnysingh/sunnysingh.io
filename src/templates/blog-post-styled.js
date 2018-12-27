@@ -148,7 +148,7 @@ export const ArticleContent = styled.div`
   & > div > ol:not(:last-child),
   & > div > blockquote:not(:last-child),
   & > div > hr:not(:last-child),
-  & > div > pre:not(:last-child),
+  & > div .gatsby-highlight:not(:last-child) pre,
   & .mediaEmbed:not(:last-child) {
     margin-bottom: 1rem;
 

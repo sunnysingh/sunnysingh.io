@@ -68,6 +68,7 @@ module.exports = {
               maxWidth: 1000,
               sizeByPixelDensity: true,
               showCaptions: true,
+              backgroundColor: 'transparent',
             },
           },
           {
