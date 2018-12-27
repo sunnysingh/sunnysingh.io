@@ -1,20 +1,18 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { Layout, Container } from '../../components';
+import { graphql } from 'gatsby';
+import { Layout, Container, CardGrid } from '../../components';
 
 export default function BlogPage({ data, location }) {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+    name: node.frontmatter.title,
+    description: node.frontmatter.tagline,
+    url: `/blog/${node.fields.slug}`,
+    action: 'Read article',
+  }));
   return (
     <Layout title="Articles" location={location}>
       <Container>
-        {posts.map(({ node }) => (
-          <div key={node.fields.slug}>
-            <h2>
-              <Link to={`/${node.fields.slug}`}>{node.frontmatter.title}</Link>
-            </h2>
-            <small>{node.frontmatter.date}</small>
-          </div>
-        ))}
+        <CardGrid items={posts} />
       </Container>
     </Layout>
   );
@@ -32,6 +30,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tagline
           }
         }
       }
