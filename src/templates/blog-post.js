@@ -46,7 +46,7 @@ export default class BlogPostTemplate extends Component {
         <Helmet>
           <meta name="description" content={post.tagline} />
         </Helmet>
-        <ArticleHeader>
+        <ArticleHeader background={post.background}>
           <Title>{post.title}</Title>
           <Tagline>{post.tagline}</Tagline>
           <Metadata>

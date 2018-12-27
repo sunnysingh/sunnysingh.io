@@ -2,6 +2,7 @@
 title: 2019 Personal Rebranding
 tagline: It's been a while but the site is fresh again
 date: "2019-01-01T00:00:00.169Z"
+background: "linear-gradient(to right, #ad5389, #3c1053)"
 ---
 
 import YouTubeEmbed from '../../../components/YouTubeEmbed';

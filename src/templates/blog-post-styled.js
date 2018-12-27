@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { breakpoints } from '../config';
 
 export const ArticleHeader = styled.header`
@@ -10,14 +10,17 @@ export const ArticleHeader = styled.header`
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 47, 75, 0.5),
-    rgba(27, 9, 93, 0.5)
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 102, 161, 1) 0%,
+    rgba(0, 68, 108, 1) 90.1%
   );
-  background-size: cover;
+
+  ${props =>
+    props.background &&
+    css`
+      background: ${props.background};
+    `}
 
   @media (min-width: ${breakpoints.medium}px) {
     padding-top: 3rem;
@@ -39,7 +42,7 @@ export const Title = styled.h1`
   font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  text-shadow: 0 0 5px rgba(24, 51, 150, 0.5);
+  text-shadow: 0 0 2px rgba(24, 51, 150, 0.5);
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
@@ -54,9 +57,9 @@ export const Tagline = styled.h2`
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 2px rgba(24, 51, 150, 0.5);
   text-align: center;
   font-weight: 400;
 
@@ -74,8 +77,7 @@ export const Author = styled.div`
 export const Avatar = styled.img`
   margin-right: 1rem;
   border-radius: 50%;
-  border: 2px solid #fff;
-  background-color: #fff; /* smoothen rounded border */
+  border: 2px solid rgba(255, 255, 255, 0.65);
   width: 32px;
   height: 32px;
 
@@ -103,6 +105,7 @@ export const MetadataItem = styled.div`
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 1;
+  text-shadow: 0 0 1px rgba(24, 51, 150, 0.5);
   color: rgba(255, 255, 255, 0.65);
 
   & {

@@ -48,16 +48,19 @@ export const Logo = styled.div`
 `;
 
 export const Nav = styled.nav`
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: row;
     margin-left: 0;
   }
 
   /* Second nav */
-  ${p =>
-    p.isSecondary &&
+  ${props =>
+    props.isSecondary &&
     css`
       text-align: right;
 
@@ -75,8 +78,14 @@ export const NavLink = styled(Link)`
   margin-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 1.315rem;
+  font-size: 1.125rem;
   text-decoration: none;
+
+  ${props =>
+    props.swapToSecondPositionOnSmall &&
+    css`
+      order: 2;
+    `}
 
   &:hover,
   &:focus {
@@ -89,6 +98,7 @@ export const NavLink = styled(Link)`
   }
 
   @media (min-width: ${breakpoints.medium}px) {
+    order: 1;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 2.5rem;
