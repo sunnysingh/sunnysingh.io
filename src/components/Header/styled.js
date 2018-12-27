@@ -4,7 +4,9 @@ import { Link as GatsbyLink } from 'gatsby';
 import { breakpoints } from '../../config';
 
 // Prevent invalid HTML attributes getting set from props.
-const Link = ({ isFirst, isLast, ...props }) => <GatsbyLink {...props} />;
+const Link = ({ isFirst, isLast, swapToSecondPositionOnSmall, ...props }) => (
+  <GatsbyLink {...props} />
+);
 
 export const HeaderLayout = styled.div`
   display: flex;

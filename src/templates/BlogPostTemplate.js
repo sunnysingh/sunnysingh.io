@@ -7,6 +7,7 @@ import {
   Layout,
   Container,
   AccessibleText,
+  Button,
   AuthorBio,
   ShareButtons,
   CommentBox,
@@ -25,7 +26,6 @@ import {
   ArticleContent,
   ArticleFooter,
   Comments,
-  ShowCommentsButton,
 } from './blog-post-styled';
 import avatar from '../assets/avatar.jpg';
 
@@ -83,11 +83,12 @@ export default class BlogPostTemplate extends Component {
             {isCommentsVisible ? (
               <CommentBox />
             ) : (
-              <ShowCommentsButton
+              <Button
+                size="large"
                 onClick={() => this.setState({ isCommentsVisible: true })}
               >
                 Show comments
-              </ShowCommentsButton>
+              </Button>
             )}
           </Comments>
         </Container>

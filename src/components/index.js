@@ -1,4 +1,5 @@
 export { default as AuthorBio } from './AuthorBio';
+export { default as Button } from './Button';
 export { default as CardGrid } from './CardGrid';
 export { default as Container } from './Container';
 export { default as CodePenEmbed } from './CodePenEmbed';

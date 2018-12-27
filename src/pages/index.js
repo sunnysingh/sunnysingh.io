@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Layout, Container, Masthead, AccessibleText } from '../components';
+import {
+  Layout,
+  Container,
+  Masthead,
+  AccessibleText,
+  Button,
+} from '../components';
 import {
   HandWaveIcon,
   EarthIcon,
@@ -23,7 +29,6 @@ import {
   AnimatedRocket,
   CurrentWork,
   Contact,
-  LinkButton,
 } from '../home/styled';
 import { SOCIAL_LINKS } from '../home/constants';
 import avatar from '../assets/avatar.jpg';
@@ -61,20 +66,13 @@ export default function HomePage({ location }) {
           <AnimatedWave>
             <HandWaveIcon size={32} />
           </AnimatedWave>{' '}
-          Hello! I'm a developer based in{' '}
-          <a href="https://en.wikipedia.org/wiki/Charlotte,_North_Carolina">
-            Charlotte, North Carolina
-          </a>
-          .
+          Hello! I'm a developer based in Charlotte, North Carolina.
         </BioText>
         <BioText>
           <Earth>
             <EarthIcon size={32} />
           </Earth>{' '}
-          Born in <a href="https://en.wikipedia.org/wiki/Kharkiv">Kharkiv</a>,
-          with parents from{' '}
-          <a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a> and{' '}
-          <a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a>.
+          Born in Kharkiv, with parents from Tanzania and Kolkata.
         </BioText>
         <BioText>
           <AnimatedComputer>
@@ -92,7 +90,9 @@ export default function HomePage({ location }) {
       </Bio>
       <Contact>
         <p>Have an inquiry?</p>
-        <LinkButton to="/contact">Send me a message</LinkButton>
+        <Button as={Link} to="/contact">
+          Send me a message
+        </Button>
       </Contact>
     </Layout>
   );

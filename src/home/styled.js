@@ -161,19 +161,3 @@ export const Contact = styled.div`
     margin-right: 1rem;
   }
 `;
-
-export const LinkButton = styled(Link)`
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1px solid;
-  border-radius: 1rem;
-  text-decoration: none;
-  transition-property: transform, color, border-color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.01);
-  }
-`;

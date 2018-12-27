@@ -80,7 +80,7 @@ export default function Layout({ title, location, children }) {
             </Helmet>
             <GlobalStyle />
             <Container>
-              <Header currentPath={location.pathname} />
+              <Header currentPath={location && location.pathname} />
               <Content role="main">{children}</Content>
               <Footer />
             </Container>

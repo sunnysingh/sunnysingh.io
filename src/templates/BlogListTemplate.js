@@ -1,0 +1,69 @@
+import React, { Component } from 'react';
+import { Link, graphql } from 'gatsby';
+import { ArrowLeft, ArrowRight } from 'react-feather';
+import { Layout, Container, CardGrid, Button } from '../components';
+import { Pagination, PaginationItem } from './blog-list-styled';
+
+export default class BlogListTemplate extends Component {
+  render() {
+    const { data, pageContext } = this.props;
+    const { currentPage, pagesCount } = pageContext;
+    const isFirst = currentPage === 1;
+    const isLast = currentPage === pagesCount;
+    const prevPage =
+      currentPage - 1 === 1 ? '/blog' : `/blog/${currentPage - 1}`;
+    const nextPage = `/blog/${currentPage + 1}`;
+
+    const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+      name: node.frontmatter.title,
+      description: node.frontmatter.tagline,
+      url: `${node.fields.slug}`,
+      action: 'Read article',
+    }));
+    return (
+      <Layout title="Articles">
+        <Container>
+          <CardGrid items={posts} />
+          <Pagination>
+            {!isFirst && (
+              <PaginationItem type="prev" isShowingOneItem={isFirst || isLast}>
+                <Button as={Link} size="large" to={prevPage}>
+                  <ArrowLeft size={18} /> Newer {isLast && ' articles'}
+                </Button>
+              </PaginationItem>
+            )}
+            {!isLast && (
+              <PaginationItem type="next" isShowingOneItem={isFirst || isLast}>
+                <Button as={Link} size="large" to={nextPage}>
+                  Older {isFirst && ' articles'} <ArrowRight size={18} />
+                </Button>
+              </PaginationItem>
+            )}
+          </Pagination>
+        </Container>
+      </Layout>
+    );
+  }
+}
+
+export const blogListQuery = graphql`
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            tagline
+          }
+        }
+      }
+    }
+  }
+`;

@@ -345,22 +345,3 @@ export const Comments = styled.div`
   margin-right: 1rem;
   text-align: center;
 `;
-
-export const ShowCommentsButton = styled.button`
-  padding: 0.5rem 1rem;
-  border: 1px solid;
-  border-radius: 1rem;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 1.125rem;
-  color: #d1d1e4;
-  transition-property: transform, color, border-color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.01);
-  }
-`;
