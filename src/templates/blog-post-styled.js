@@ -253,6 +253,9 @@ export const ArticleContent = styled.div`
   & figure,
   & pre,
   & .mediaEmbed {
+    width: calc(100% + 6rem) !important; /* Override inline style */
+    margin-left: -3rem;
+
     @media (min-width: ${breakpoints.large}px) {
       width: 110% !important; /* Override inline style */
       margin-left: -5%;
@@ -260,13 +263,17 @@ export const ArticleContent = styled.div`
   }
 
   & .youtubeEmbed {
-    border-radius: 10px;
-    overflow: hidden;
+    @media (min-width: ${breakpoints.medium}px) {
+      border-radius: 10px;
+      overflow: hidden;
+    }
   }
 
   & figure {
     img {
-      border-radius: 10px;
+      @media (min-width: ${breakpoints.medium}px) {
+        border-radius: 10px;
+      }
     }
   }
 
@@ -279,7 +286,9 @@ export const ArticleContent = styled.div`
   }
 
   & pre {
-    border-radius: 10px;
+    @media (min-width: ${breakpoints.medium}px) {
+      border-radius: 10px;
+    }
   }
 
   & h2 {
