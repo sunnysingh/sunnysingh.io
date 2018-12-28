@@ -1,18 +1,7 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Sunny Singh',
-    description: 'Web Developer / Creator',
-    siteUrl: 'https://sunnysingh.io/',
-  },
+  siteMetadata: {},
   pathPrefix: '/',
   plugins: [
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
@@ -85,7 +74,24 @@ module.exports = {
           {
             resolve: 'gatsby-remark-prismjs',
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+          },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts',
       },
     },
   ],

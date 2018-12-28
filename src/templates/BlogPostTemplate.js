@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { Calendar, Clock } from 'react-feather';
-import readingTime from 'reading-time';
 import formatDate from 'date-fns/format';
 import {
   Layout,
@@ -13,7 +13,6 @@ import {
   CommentBox,
   CodeFund,
 } from '../components';
-import { parseChildrenStrings } from '../utils/component';
 import {
   ArticleHeader,
   Title,
@@ -30,25 +29,32 @@ import {
 import avatar from '../assets/avatar.jpg';
 
 export default class BlogPostTemplate extends Component {
-  state = {
-    isCommentsVisible: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isCommentsVisible: false,
+    };
+  }
 
   render() {
-    const { pageContext, location, children } = this.props;
-    const post = pageContext.frontmatter;
-    const approximateReadTime = readingTime(parseChildrenStrings(children))
-      .text;
+    const { data, location } = this.props;
+    const {
+      timeToRead,
+      frontmatter,
+      code: { body },
+    } = data.mdx;
     const { isCommentsVisible } = this.state;
 
     return (
-      <Layout location={location} title={post.title}>
-        <Helmet>
-          <meta name="description" content={post.tagline} />
-        </Helmet>
-        <ArticleHeader background={post.background}>
-          <Title>{post.title}</Title>
-          <Tagline>{post.tagline}</Tagline>
+      <Layout
+        location={location}
+        title={frontmatter.title}
+        description={frontmatter.tagline}
+        image={frontmatter.metaImage && frontmatter.metaImage.publicURL}
+      >
+        <ArticleHeader background={frontmatter.background}>
+          <Title>{frontmatter.title}</Title>
+          <Tagline>{frontmatter.tagline}</Tagline>
           <Metadata>
             <MetadataItem>
               <Author>
@@ -60,23 +66,27 @@ export default class BlogPostTemplate extends Component {
               <Calendar size={14} />
               <AccessibleText>Published on: </AccessibleText>
               <MetadataContent>
-                {formatDate(new Date(post.date), 'MMM Do, YYYY')}
+                {formatDate(new Date(frontmatter.date), 'MMM Do, YYYY')}
               </MetadataContent>
             </MetadataItem>
-            <MetadataItem>
-              <Clock size={14} />
-              <MetadataContent>{approximateReadTime}</MetadataContent>
-            </MetadataItem>
+            {timeToRead && (
+              <MetadataItem>
+                <Clock size={14} />
+                <MetadataContent>{timeToRead} min read</MetadataContent>
+              </MetadataItem>
+            )}
           </Metadata>
         </ArticleHeader>
         <Container>
-          <ArticleContent>{children}</ArticleContent>
+          <ArticleContent>
+            <MDXRenderer>{body}</MDXRenderer>
+          </ArticleContent>
           <ArticleFooter>
             <CodeFund />
             <AuthorBio />
             <ShareButtons
-              title={post.title}
-              text={`${post.title} - ${post.tagline}`}
+              title={frontmatter.title}
+              text={`${frontmatter.title} - ${frontmatter.tagline}`}
             />
           </ArticleFooter>
           <Comments>
@@ -96,3 +106,26 @@ export default class BlogPostTemplate extends Component {
     );
   }
 }
+
+export const pageQuery = graphql`
+  query($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      id
+      timeToRead
+      code {
+        scope
+        body
+      }
+      frontmatter {
+        title
+        tagline
+        date
+        tags
+        background
+        metaImage {
+          publicURL
+        }
+      }
+    }
+  }
+`;

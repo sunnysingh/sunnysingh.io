@@ -6,6 +6,7 @@ export { default as CodePenEmbed } from './CodePenEmbed';
 export { default as CodeFund } from './CodeFund';
 export { default as CommentBox } from './CommentBox';
 export { default as Footer } from './Footer';
+export { default as GlobalStyle } from './GlobalStyle';
 export { default as Header } from './Header';
 export { default as Layout } from './Layout';
 export { default as Logo } from './Logo';

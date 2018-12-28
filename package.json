@@ -49,7 +49,6 @@
     "react-feather": "^1.1.4",
     "react-helmet": "^5.2.0",
     "react-load-script": "^0.0.6",
-    "reading-time": "^1.1.3",
     "socialshares": "^2.0.5",
     "styled-components": "^4.1.2"
   },

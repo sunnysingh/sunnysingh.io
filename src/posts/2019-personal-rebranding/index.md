@@ -4,6 +4,7 @@ tagline: It's been a while but the site is fresh again
 date: 2019-01-01 0:00
 tags: announcement
 background: "linear-gradient(to right, #ad5389, #3c1053)"
+metaImage: "meta.png"
 ---
 
 import { YouTubeEmbed, TweetEmbed, CodePenEmbed } from 'components';
@@ -13,7 +14,7 @@ Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
-![CES](./ces.jpg "My start to the year by going to Vegas")
+![CES](ces.jpg "My start to the year by going to Vegas")
 
 ## On deer horse aboard tritely yikes and much
 

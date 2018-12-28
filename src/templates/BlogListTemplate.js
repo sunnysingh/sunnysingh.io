@@ -14,10 +14,10 @@ export default class BlogListTemplate extends Component {
       currentPage - 1 === 1 ? '/blog' : `/blog/${currentPage - 1}`;
     const nextPage = `/blog/${currentPage + 1}`;
 
-    const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+    const posts = data.allMdx.edges.map(({ node }) => ({
       name: node.frontmatter.title,
       description: node.frontmatter.tagline,
-      url: `${node.fields.slug}`,
+      url: `/blog/${node.fields.slug}`,
       action: 'Read article',
     }));
     return (
@@ -46,15 +46,18 @@ export default class BlogListTemplate extends Component {
   }
 }
 
-export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
+export const pageQuery = graphql`
+  query($skip: Int!, $limit: Int!) {
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
+          code {
+            scope
+          }
           fields {
             slug
           }
