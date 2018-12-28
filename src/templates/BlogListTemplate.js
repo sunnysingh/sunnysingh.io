@@ -18,7 +18,7 @@ export default class BlogListTemplate extends Component {
       name: node.frontmatter.title,
       description: node.frontmatter.tagline,
       url: `/blog/${node.fields.slug}`,
-      action: 'Read article',
+      action: `Read article (~${node.timeToRead} min)`,
     }));
     return (
       <Layout title="Articles">
@@ -55,6 +55,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          timeToRead
           code {
             scope
           }
