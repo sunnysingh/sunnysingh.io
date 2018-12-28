@@ -9,7 +9,7 @@ import {
 } from './constants';
 
 export default function Meta({ title, description, image, baseUrl }) {
-  const defaultImage = `${baseUrl}/meta-image.jpg?v=${CACHE_BUSTER}`;
+  const defaultImage = `${baseUrl}/meta.jpg?v=${CACHE_BUSTER}`;
   return (
     <Helmet>
       <html lang="en" />

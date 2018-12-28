@@ -4,7 +4,7 @@ tagline: It's been a while but the site is fresh again
 date: 2019-01-01 0:00
 tags: announcement
 background: "linear-gradient(to right, #ad5389, #3c1053)"
-metaImage: "meta.png"
+metaImage: "meta.jpg"
 ---
 
 import { YouTubeEmbed, TweetEmbed, CodePenEmbed } from 'components';
