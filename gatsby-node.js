@@ -88,4 +88,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
+
+  // `MarkdownRemark` required by `gatsby-plugin-feed`
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({
+      node,
+      getNode,
+      trailingSlash: false,
+    });
+    createNodeField({
+      name: 'slug',
+      node,
+      value,
+    });
+  }
 };
