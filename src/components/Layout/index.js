@@ -10,6 +10,8 @@ export default function Layout({
   title,
   description,
   image,
+  imageWidth,
+  imageHeight,
   location,
   children,
 }) {
@@ -28,6 +30,8 @@ export default function Layout({
           title={title}
           description={description}
           image={image}
+          imageWidth={imageWidth}
+          imageHeight={imageHeight}
           baseUrl={baseUrl}
         />
         <GlobalStyle />

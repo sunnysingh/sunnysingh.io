@@ -47,7 +47,18 @@ class BlogPostTemplate extends Component {
         location={location}
         title={frontmatter.title}
         description={frontmatter.tagline}
-        image={frontmatter.metaImage && frontmatter.metaImage.publicURL}
+        image={
+          frontmatter.metaImage &&
+          frontmatter.metaImage.childImageSharp.fixed.src
+        }
+        imageWidth={
+          frontmatter.metaImage &&
+          frontmatter.metaImage.childImageSharp.fixed.width
+        }
+        imageHeight={
+          frontmatter.metaImage &&
+          frontmatter.metaImage.childImageSharp.fixed.height
+        }
       >
         <ArticleHeader background={frontmatter.background}>
           <Title>{frontmatter.title}</Title>
@@ -115,7 +126,11 @@ export const pageQuery = graphql`
         tags
         background
         metaImage {
-          publicURL
+          childImageSharp {
+            fixed(width: 1024) {
+              ...GatsbyImageSharpFixed
+            }
+          }
         }
       }
     }

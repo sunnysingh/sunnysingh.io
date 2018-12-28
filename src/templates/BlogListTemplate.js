@@ -17,11 +17,15 @@ export default class BlogListTemplate extends Component {
     const posts = data.allMdx.edges.map(({ node }) => ({
       name: node.frontmatter.title,
       description: node.frontmatter.tagline,
-      url: `/blog/${node.fields.slug}`,
+      url: `/blog${node.fields.slug}`,
       action: `Read article (~${node.timeToRead} min)`,
     }));
+
     return (
-      <Layout title="Articles">
+      <Layout
+        title="Articles by Sunny Singh"
+        description="Articles related to web development and business. Written by Sunny Singh."
+      >
         <Container>
           <CardGrid items={posts} />
           <Pagination>
