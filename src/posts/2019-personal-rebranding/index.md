@@ -2,12 +2,10 @@
 title: 2019 Personal Rebranding
 tagline: It's been a while but the site is fresh again
 date: 2019-01-01 0:00
-tags: announcement
+tags: general
 background: "linear-gradient(to right, #ad5389, #3c1053)"
 metaImage: "meta.jpg"
 ---
-
-import { YouTubeEmbed, TweetEmbed, CodePenEmbed } from 'components';
 
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove

@@ -339,7 +339,7 @@ export const ArticleFooter = styled.div`
   margin-bottom: 4rem;
 `;
 
-export const Comments = styled.div`
+export const CommentsContainer = styled.div`
   margin-bottom: 8rem;
   margin-left: 1rem;
   margin-right: 1rem;

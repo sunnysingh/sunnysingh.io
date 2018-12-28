@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
+import { withMDXScope } from 'gatsby-mdx/context';
 import { Calendar, Clock } from 'react-feather';
 import formatDate from 'date-fns/format';
 import {
   Layout,
   Container,
+  Comments,
   AccessibleText,
-  Button,
   AuthorBio,
   ShareButtons,
-  CommentBox,
   CodeFund,
+  YouTubeEmbed,
+  CodePenEmbed,
+  TweetEmbed,
 } from '../components';
 import {
   ArticleHeader,
@@ -24,26 +27,20 @@ import {
   MetadataContent,
   ArticleContent,
   ArticleFooter,
-  Comments,
+  CommentsContainer,
 } from './blog-post-styled';
 import avatar from '../assets/avatar.jpg';
 
-export default class BlogPostTemplate extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isCommentsVisible: false,
-    };
-  }
+const mdxComponents = { YouTubeEmbed, TweetEmbed, CodePenEmbed };
 
+class BlogPostTemplate extends Component {
   render() {
-    const { data, location } = this.props;
+    const { data, location, scope } = this.props;
     const {
       timeToRead,
       frontmatter,
       code: { body },
     } = data.mdx;
-    const { isCommentsVisible } = this.state;
 
     return (
       <Layout
@@ -79,7 +76,9 @@ export default class BlogPostTemplate extends Component {
         </ArticleHeader>
         <Container>
           <ArticleContent>
-            <MDXRenderer>{body}</MDXRenderer>
+            <MDXRenderer scope={{ ...mdxComponents, ...scope }}>
+              {body}
+            </MDXRenderer>
           </ArticleContent>
           <ArticleFooter>
             <CodeFund />
@@ -89,23 +88,16 @@ export default class BlogPostTemplate extends Component {
               text={`${frontmatter.title} - ${frontmatter.tagline}`}
             />
           </ArticleFooter>
-          <Comments>
-            {isCommentsVisible ? (
-              <CommentBox />
-            ) : (
-              <Button
-                size="large"
-                onClick={() => this.setState({ isCommentsVisible: true })}
-              >
-                Show comments
-              </Button>
-            )}
-          </Comments>
+          <CommentsContainer>
+            <Comments />
+          </CommentsContainer>
         </Container>
       </Layout>
     );
   }
 }
+
+export default withMDXScope(BlogPostTemplate);
 
 export const pageQuery = graphql`
   query($slug: String!) {

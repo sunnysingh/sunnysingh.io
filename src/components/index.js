@@ -5,6 +5,7 @@ export { default as Container } from './Container';
 export { default as CodePenEmbed } from './CodePenEmbed';
 export { default as CodeFund } from './CodeFund';
 export { default as CommentBox } from './CommentBox';
+export { default as Comments } from './Comments';
 export { default as Footer } from './Footer';
 export { default as GlobalStyle } from './GlobalStyle';
 export { default as Header } from './Header';
