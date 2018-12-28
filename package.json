@@ -48,6 +48,7 @@
     "react-dom": "^16.5.1",
     "react-feather": "^1.1.4",
     "react-helmet": "^5.2.0",
+    "react-kawaii": "^0.8.0",
     "react-load-script": "^0.0.6",
     "socialshares": "^2.0.5",
     "styled-components": "^4.1.2"

@@ -10592,6 +10592,13 @@ react-is@^16.6.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.6.3.tgz#d2d7462fcfcbe6ec0da56ad69047e47e56e7eac0"
   integrity sha512-u7FDWtthB4rWibG/+mFbVd5FvdI20yde86qKGx4lVUTWmPlSWQ4QxbBIrrs+HnXGbxOUlUzTAP/VDmvCwaP2yA==
 
+react-kawaii@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-kawaii/-/react-kawaii-0.8.0.tgz#0d8410ffee1ec2b727ea1fb8dcc4322fb23f1818"
+  integrity sha512-JcOnmWRz2gTJwjrOSUbVq/tMHi5I0ddvd3tfUxI4cjt/UFfMnpCZo+hDEy5C+eIU+6gyWwtyD/CNdBompY1zlA==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
