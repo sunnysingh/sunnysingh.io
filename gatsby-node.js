@@ -38,7 +38,6 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create blog posts pages.
         posts.forEach(({ node }) => {
-          console.log('\n\n\nCREATING PAGE', node);
           createPage({
             path: `/blog${node.fields.slug}`,
             component: componentWithMDXScope(
