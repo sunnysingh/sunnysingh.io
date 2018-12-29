@@ -11,7 +11,7 @@ export default function ContactPage({ location }) {
       <Form
         name="contact"
         method="POST"
-        action="/contact-sent"
+        action="/contact-sent/"
         data-netlify="true"
       >
         <Field id="name" label="Your name" type="text" required />
