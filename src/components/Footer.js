@@ -36,6 +36,7 @@ export default function Footer() {
         <NavLink href="https://www.notion.so/sunnysingh/Web-Development-Resources-ea153ce48f7c4557862a6b8fb88d72a9">
           Resources
         </NavLink>
+        <NavLink href="https://ideascratch.com/sunnysinghio">Ideas</NavLink>
       </Nav>
       <Copyright>&copy; 2019 Sunny Singh</Copyright>
     </Container>
