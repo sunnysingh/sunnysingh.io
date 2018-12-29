@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.p`
-  margin-left: 24px;
+  margin-left: 25px;
   text-indent: -32px;
   font-size: 1.5rem;
 
