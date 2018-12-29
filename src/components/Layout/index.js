@@ -33,6 +33,7 @@ export default function Layout({
           imageWidth={imageWidth}
           imageHeight={imageHeight}
           baseUrl={baseUrl}
+          currentPath={location && location.pathname}
         />
         <GlobalStyle />
         <Container>

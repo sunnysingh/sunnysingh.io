@@ -1,10 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { trimTrailingSlash } from '../../utils/url';
 import {
   DEFAULT_TITLE,
   DEFAULT_DESCRIPTION,
   THEME_COLOR,
   DOMAIN,
+  FACEBOOK_APP_ID,
   CACHE_BUSTER,
 } from './constants';
 
@@ -15,14 +17,21 @@ export default function Meta({
   imageWidth,
   imageHeight,
   baseUrl,
+  currentPath,
 }) {
+  const canonicalUrl =
+    currentPath === '/'
+      ? `${baseUrl}/`
+      : trimTrailingSlash(`${baseUrl}${currentPath}`);
+
   const defaultImage = `${baseUrl}/meta.jpg?v=${CACHE_BUSTER}`;
   const defaultWidth = 1200;
   const defaultHeight = 1200;
+
   return (
     <Helmet>
       {/* Language for screen readers */}
-      <html lang="en" />
+      <html lang="en" prefix="og: http://ogp.me/ns#" />
 
       {/* Title for browser and search engines */}
       <title>{title ? `${title} | ${DOMAIN}` : DEFAULT_TITLE}</title>
@@ -77,6 +86,7 @@ export default function Meta({
 
       {/* Social Media */}
       <meta property="og:type" content="website" />
+      <meta property="og:app_id" content={FACEBOOK_APP_ID} />
       <meta property="twitter:card" content="summary_large_image " />
 
       {/* Title for social media */}
@@ -97,6 +107,10 @@ export default function Meta({
         property="twitter:description"
         content={description || DEFAULT_DESCRIPTION}
       />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:url" content={canonicalUrl} />
 
       {/* Images */}
       <meta

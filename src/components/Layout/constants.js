@@ -7,4 +7,6 @@ export const THEME_COLOR = '#1c1c22';
 
 export const DOMAIN = 'sunnysingh.io';
 
+export const FACEBOOK_APP_ID = '248127195206155';
+
 export const CACHE_BUSTER = 'zXb4gzXN7G';

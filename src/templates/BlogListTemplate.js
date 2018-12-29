@@ -6,7 +6,7 @@ import { Pagination, PaginationItem } from './blog-list-styled';
 
 export default class BlogListTemplate extends Component {
   render() {
-    const { data, pageContext } = this.props;
+    const { data, pageContext, location } = this.props;
     const { currentPage, pagesCount } = pageContext;
     const isFirst = currentPage === 1;
     const isLast = currentPage === pagesCount;
@@ -25,6 +25,7 @@ export default class BlogListTemplate extends Component {
       <Layout
         title="Articles by Sunny Singh"
         description="Articles related to web development and business. Written by Sunny Singh."
+        location={location}
       >
         <Container>
           <CardGrid items={posts} />
