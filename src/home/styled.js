@@ -100,9 +100,15 @@ export const Bio = styled.div`
 export const BioText = styled.p`
   margin-bottom: 2rem;
   margin-left: 36px;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   line-height: 1.5;
-  text-indent: -36px;
+  text-indent: -38px;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const AnimatedWave = styled.span`
@@ -157,6 +163,7 @@ export const Contact = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
