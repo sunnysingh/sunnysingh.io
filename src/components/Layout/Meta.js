@@ -18,6 +18,7 @@ export default function Meta({
   imageHeight,
   baseUrl,
   currentPath,
+  noSearchIndex,
 }) {
   const canonicalUrl =
     currentPath === '/'
@@ -83,6 +84,9 @@ export default function Meta({
       {/* App Name for pinning to home screen */}
       <meta name="apple-mobile-web-app-title" content={DOMAIN} />
       <meta name="application-name" content={DOMAIN} />
+
+      {/* Disable crawling for search engines if specified */}
+      {noSearchIndex && <meta name="robots" content="noindex" />}
 
       {/* Social Media */}
       <meta property="og:type" content="website" />

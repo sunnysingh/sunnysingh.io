@@ -15,6 +15,7 @@ export { default as Layout } from './Layout';
 export { default as Logo } from './Logo';
 export { default as Masthead } from './Masthead';
 export { default as ShareButtons } from './ShareButtons';
+export { default as SuccessfulLanding } from './SuccessfulLanding';
 export { AccessibleText } from './ScreenReader';
 export { default as TweetEmbed } from './TweetEmbed';
 export { default as YouTubeEmbed } from './YouTubeEmbed';

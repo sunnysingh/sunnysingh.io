@@ -13,6 +13,7 @@ export default function Layout({
   imageWidth,
   imageHeight,
   location,
+  noSearchIndex,
   children,
 }) {
   const baseUrl = location
@@ -34,6 +35,7 @@ export default function Layout({
           imageHeight={imageHeight}
           baseUrl={baseUrl}
           currentPath={location && location.pathname}
+          noSearchIndex={noSearchIndex}
         />
         <GlobalStyle />
         <Container>
