@@ -5,7 +5,7 @@ date: 2011-08-23 20:00
 topics: coding, security, php, mysql
 ---
 
-**Notice**: I wrote this article 3 years ago and thus may contain outdated information. While I can not guarantee updates on this framework, it does wrap around MySQLi and thus should still be secure.
+<Alert>The framework mentioned in this article is no longer maintained.</Alert>
 
 I published my first project on GitHub called [Database](http://github.com/sunnysingh/database) (super clever name, I know) which is a PHP framework for MySQL that makes interacting with databases easier. The purpose of this article is to introduce you to the MySQLi extension that it uses, and to explain why I built this framework.
 

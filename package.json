@@ -11,6 +11,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 -single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "clean": "rm -rf .cache & rm -rf public",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",

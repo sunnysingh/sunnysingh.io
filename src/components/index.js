@@ -1,3 +1,4 @@
+export { default as Alert, AlertLink } from './Alert';
 export { default as AuthorBio } from './AuthorBio';
 export { default as Button } from './Button';
 export { default as CardGrid } from './CardGrid';

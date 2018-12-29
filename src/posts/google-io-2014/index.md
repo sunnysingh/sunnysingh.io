@@ -5,9 +5,9 @@ date: 2014-06-25 21:33
 tags: technology
 ---
 
-![Image of Android L Developer Preview shown on devices](l-dev-prev-1024x574.png)
-
 It's only been day one of Google's yearly developer conference, but typically a lot of the major products and updates are announced at the keynote. As both a tech geek and a developer, I was excited about all the things that were shown today, so here's a recap and my thoughts.
+
+![Image of Android L Developer Preview shown on devices](l-dev-prev-1024x574.png "Android L Developer Preview shown on devices")
 
 ## Android L and Material Design
 

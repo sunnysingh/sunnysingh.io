@@ -7,6 +7,8 @@ import formatDate from 'date-fns/format';
 import {
   Layout,
   Container,
+  Alert,
+  AlertLink,
   Comments,
   AccessibleText,
   AuthorBio,
@@ -31,7 +33,13 @@ import {
 } from './blog-post-styled';
 import avatar from '../assets/avatar.jpg';
 
-const mdxComponents = { YouTubeEmbed, TweetEmbed, CodePenEmbed };
+const mdxComponents = {
+  Alert,
+  AlertLink,
+  YouTubeEmbed,
+  TweetEmbed,
+  CodePenEmbed,
+};
 
 class BlogPostTemplate extends Component {
   render() {

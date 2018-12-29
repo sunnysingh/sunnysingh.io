@@ -5,7 +5,7 @@ date: 2015-03-01 14:06
 tags: coding
 ---
 
-import { CodePenEmbed } from 'components';
+<Alert>The project mentioned in this article is now called <AlertLink href="https://socialshar.es/">socialshares</AlertLink>.</Alert>
 
 Sharing has become a ubiquitous function of the web. While it is arguable that we really don't need them (since browser extensions, mobile apps, and copy-and-paste exist), developers love them for the marketing aspect and as an incentive for users to share their content. This would be all be great if only sharing buttons did not slow down pages, track users, and/or inhibit a consistent design.<!--more-->
 
