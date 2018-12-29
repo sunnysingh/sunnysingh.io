@@ -1,6 +1,8 @@
 import React from 'react';
 import { Layout, Form, Field, Button } from '../components';
 
+const NETLIFY_FORM_NAME = 'contact';
+
 export default function ContactPage({ location }) {
   return (
     <Layout
@@ -8,7 +10,14 @@ export default function ContactPage({ location }) {
       description="Send a message to Sunny Singh."
       location={location}
     >
-      <Form name="contact" method="POST" data-netlify="true">
+      <Form
+        name={NETLIFY_FORM_NAME}
+        method="POST"
+        action="/contact-sent"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
+
         <Field id="name" label="Your name" type="text" required />
 
         <Field id="email" label="Your email" type="email" required />
