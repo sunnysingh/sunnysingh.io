@@ -154,10 +154,20 @@ export const CurrentWork = styled.p`
 
 export const Contact = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: row;
+  }
+
   > p {
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: ${breakpoints.medium}px) {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
   }
 `;
