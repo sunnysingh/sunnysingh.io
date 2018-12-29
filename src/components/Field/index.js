@@ -6,7 +6,7 @@ export default function Field({ id, label, ...otherProps }) {
   return (
     <Container>
       {label && (
-        <AccessibleText as="label" for={id}>
+        <AccessibleText as="label" htmlFor={id}>
           {label}
         </AccessibleText>
       )}
