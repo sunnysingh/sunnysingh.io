@@ -8,12 +8,7 @@ export default function ContactPage({ location }) {
       description="Send a message to Sunny Singh."
       location={location}
     >
-      <Form
-        name="contact"
-        method="POST"
-        action="/contact-sent/"
-        data-netlify="true"
-      >
+      <Form name="contact" method="POST" data-netlify="true">
         <Field id="name" label="Your name" type="text" required />
 
         <Field id="email" label="Your email" type="email" required />
