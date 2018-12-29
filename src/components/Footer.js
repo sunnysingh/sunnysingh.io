@@ -24,7 +24,6 @@ const NavLink = styled.a`
 `;
 
 const Copyright = styled.p`
-  font-size: 0.875rem;
   color: #5c5c69;
 `;
 
