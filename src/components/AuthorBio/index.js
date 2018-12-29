@@ -9,26 +9,22 @@ export default function AuthorBio() {
       <Avatar src={avatar} alt="Photo of Sunny Singh" />
       <div>
         <Text>
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>{' '}
-          Hello,{' '}
+          <span aria-hidden="true">&#x1F44B;</span> Hello,{' '}
           <Link to="/" title="Learn about me">
             I'm Sunny
           </Link>
           . Thanks for reading!
         </Text>
         <Text>
-          <span role="img" aria-label="thinking face emoji">
-            🤔
-          </span>{' '}
-          On the go? <Link to="/podcasts">Listen to my podcasts</Link>.
+          <span aria-hidden="true">&#x1F399;</span> If you also like audio,{' '}
+          <Link to="/podcasts">listen to my podcasts</Link>.
         </Text>
         <Text>
-          <span role="img" aria-label="hand with finger pointing down emoji">
-            👇
-          </span>{' '}
-          Share, and join the discussion.
+          <span aria-hidden="true">&#x1F628;</span> Fear missing out?{' '}
+          <a href="https://buttondown.email/sunnysingh">
+            Subscribe to my newsletter
+          </a>
+          .
         </Text>
       </div>
     </Container>
