@@ -27,7 +27,7 @@ const Icon = styled.div`
 const Text = styled.p`
   flex-grow: 1;
   margin-top: 0.5rem;
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   text-align: center;
 
@@ -35,6 +35,7 @@ const Text = styled.p`
     margin-top: 0;
     margin-left: 1rem;
     margin-right: 1rem;
+    font-size: 1.3125rem;
   }
 `;
 
