@@ -13,7 +13,7 @@ metaImage: "meta.jpg"
 
 ## What have I been up to?
 
-Trips, product launches, content creation, and **a lot of burn out**. I didn't really think that I would be calling this my most successful year. However, the fact that I was able to launch [IronMic](https://ironmic.fm/) *and* get paid customers for it was a huge milestone. I also continued to grow my personal brand through my podcast and connections that I've made on social media and online communities.
+Trips, product launches, content creation, and **a lot of burn out**. I didn't really think that I would be calling this my most successful year. However, the fact that I was able to launch [IronMic](https://ironmic.fm/) *and* get paying customers for it was a huge milestone. I also continued to grow my personal brand through my podcast and connections that I've made on social media and online communities.
 
 I'm not afraid to talk about burn out, I even did it on my [first podcast episode](https://sunnycommutes.fm/episodes/burn-out-j8DQzq). In case you're unfamiliar, it's when you exhaust yourself into a lacking state of productivity. To help understand this better from my own experience, let's look through my accomplishments month by month, and see where things went downhill.
 
@@ -135,7 +135,7 @@ However, I did pull through. I started a project, and I launched it. Not only di
 
 ## Finishing off strong 💪
 
-Things changed for me in November when I was invited to a Slack community known as [The Maker's Kitchen](https://makerskitchen.xyz/), and it gave me exactly what I needed. My biggest lesson from my burn out was to build in the open to gain validation and motivation, and this community revolved around that exact principle. Logging my tasks publically on [Makerlog](https://getmakerlog.com/) definitely helped as well, with both communities overlapping.
+Things changed for me in November when I was invited to a Slack community known as [The Maker's Kitchen](https://makerskitchen.xyz/), and it gave me exactly what I needed. My biggest lesson from my burn out was to build in the open to gain validation and motivation, and this community revolved around that exact principle. Logging my tasks publicly on [Makerlog](https://getmakerlog.com/) definitely helped as well, with both communities overlapping.
 
 I was able to launch multiple things during this time: [IdeaScratch](https://ideascratch.com/), a new personal site, and a [newsletter](https://sunnysingh.io/news). I also was consistent with a weekly podcasting schedule, and created more content in a single month than I ever have before.
 
