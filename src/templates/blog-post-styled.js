@@ -46,6 +46,7 @@ export const Title = styled.h1`
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
+  color: white;
 
   @media (min-width: ${breakpoints.large}px) {
     font-size: 3rem;
