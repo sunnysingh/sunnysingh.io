@@ -50,3 +50,6 @@
 /resources         https://www.notion.so/sunnysingh/ea153ce48f7c4557862a6b8fb88d72a9
 /podcast           https://sunnycommutes.fm/
 /sunnycommutes     https://sunnycommutes.fm/
+
+# Redirect default Netlify subdomain to primary domain
+https://sunnysinghio.netlify.com/* https://sunnysingh.io/:splat 301!
