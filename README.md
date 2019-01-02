@@ -14,11 +14,9 @@
 - [Feather](https://feathericons.com/)
 - [React Kawaii](https://react-kawaii.now.sh/)
 
-[![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://www.netlify.com/)
-
 ## Development
 
-Use [https://yarnpkg.com/en/](https://yarnpkg.com/en/) to install dependencies and start the local server.
+Use [Yarn](https://yarnpkg.com/en/) to install dependencies and start the local server.
 
 1. `yarn install`
 2. `yarn dev`
