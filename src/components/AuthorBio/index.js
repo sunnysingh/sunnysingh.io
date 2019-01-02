@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Text, Avatar } from './styled';
-import avatar from '../../assets/avatar.jpg';
+import avatarBase64 from '../../assets/avatar-base64';
 
 export default function AuthorBio() {
   return (
     <Container>
-      <Avatar src={avatar} alt="Photo of Sunny Singh" />
+      <Avatar src={avatarBase64} alt="Photo of Sunny Singh" />
       <div>
         <Text>
           <span aria-hidden="true">&#x1F44B;</span> Hello,{' '}

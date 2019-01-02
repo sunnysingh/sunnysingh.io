@@ -31,7 +31,7 @@ import {
   Contact,
 } from '../home/styled';
 import { SOCIAL_LINKS } from '../home/constants';
-import avatar from '../assets/avatar.jpg';
+import avatarBase64 from '../assets/avatar-base64';
 
 export default function HomePage({ location }) {
   return (
@@ -45,7 +45,7 @@ export default function HomePage({ location }) {
             </IntroColumn>
             <IntroColumn>
               <AvatarContainer>
-                <Avatar src={avatar} alt="" />
+                <Avatar src={avatarBase64} alt="" />
               </AvatarContainer>
             </IntroColumn>
             <IntroColumn>

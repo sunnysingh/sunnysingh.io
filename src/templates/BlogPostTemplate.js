@@ -31,7 +31,7 @@ import {
   ArticleFooter,
   CommentsContainer,
 } from './blog-post-styled';
-import avatar from '../assets/avatar.jpg';
+import avatarBase64 from '../assets/avatar-base64';
 
 const mdxComponents = {
   Alert,
@@ -74,7 +74,7 @@ class BlogPostTemplate extends Component {
           <Metadata>
             <MetadataItem>
               <Author>
-                <Avatar src={avatar} alt="Written by: " />
+                <Avatar src={avatarBase64} alt="Written by: " />
                 Sunny Singh
               </Author>
             </MetadataItem>
