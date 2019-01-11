@@ -9,7 +9,7 @@ When we create an account on a website, we are essentially trusting the service 
 
 A while back I decided that I wanted to learn more about proper password encryption, and so I came across [Phpass](http://www.openwall.com/phpass/ "Portable PHP password hashing framework"): a framework aimed at simplifying the process for encrypting or "hashing" passwords. Phpass has been integrated into many well-known CMS's such as WordPress, Vanilla, phpBB, and Drupal, and is a huge reason for why I trust this framework. The only downside was that I could not find an easy-to-follow tutorial on using it, so I decided to write my own.
 
-# Current Insecure Techniques
+## Current Insecure Techniques
 
 Before we jump into Phpass, let's take a look at some of the wrong techniques of storing passwords. First would be pretty obvious: storing the raw password. Not only does this open up your website to hackers, but legal authorities will probably come after you as well. The next and probably most popular way that developers secure passwords is by the use of the `md5()` function. It's better than storing raw passwords, but is not well suited for password encryption as it can easily be broken.
 
