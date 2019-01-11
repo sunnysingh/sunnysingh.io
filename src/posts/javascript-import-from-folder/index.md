@@ -3,6 +3,7 @@ title: "JavaScript Quick Tip: Import from folder"
 tagline: Organize projects with the index re-export pattern
 date: 2019-01-11 12:00
 tags: coding, javascript
+background: "linear-gradient(171.8deg, rgba(255,159,0,1) -6.3%, rgba(208,23,23,1) 86.7%)"
 metaImage: "meta.png"
 ---
 
