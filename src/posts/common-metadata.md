@@ -1,6 +1,6 @@
 ---
 title: Common Metadata
-tagline: A list of common meta and link tags and their usage.
+tagline: A list of common meta and link tags and their usage
 date: 2015-04-10 12:15
 tags: coding, html
 ---
@@ -113,7 +113,7 @@ Make sure that you edit as necessary the `image.png` path depending on where you
 <meta name="theme-color" content="black" />
 ```
 
-To my knowledge, Chrome for Android Lollipop is the only browser to support this tag. It changes the toolbar color considering that you set the `content` attribute to a valid CSS color. Subtle but neat effect if you want a good experience for your Android users.
+Supporting browsers (e.g. Chrome for Android) can match their toolbars to a valid CSS color that you set.
 
 ## Extras
 
