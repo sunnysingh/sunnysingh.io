@@ -7,7 +7,7 @@ background: "linear-gradient(171.8deg, rgba(255,159,0,1) -6.3%, rgba(208,23,23,1
 metaImage: "meta.png"
 ---
 
-Maintaining medium to large projects is a pain. Even if you try to split things up into multiple files, you start to realize that managing imports starts getting ugly. I'd be lying if said my files never looked like this:
+Maintaining medium to large projects is a pain. Even if you try to split things up into multiple files, you start to realize that managing imports starts getting ugly. I'd be lying if I said my files never looked like this:
 
 ```js
 // Holy imports Batman! 😲
