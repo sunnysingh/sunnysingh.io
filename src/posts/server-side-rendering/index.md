@@ -9,7 +9,7 @@ metaImage: "meta.png"
 
 Server side rendering, abbreviated to SSR, is a commonly misunderstood concept. What is it, and why should you bother learning it? I hope to answer those questions with a story on the origins of server side rendering.
 
-## The Benefits
+## The benefits
 
 Before I get into the story and explanation of SSR, it's worth understanding the benefits first. Why should you care?
 
