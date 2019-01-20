@@ -19,7 +19,7 @@ Before I get into the story and explanation of SSR, it's worth understanding the
 
 🏎 Performance: Server side rendered pages will load faster because the content is available to the browser sooner.
 
-😊 User Experience: Similar to performance, content is available sooner so user is not waiting around looking at blank pages or loading spinners.
+😊 User Experience: Similar to performance, content is available sooner so the user is not waiting around looking at blank pages or loading spinners.
 
 I also did a [podcast episode explaining these benefits of SSR](https://sunnycommutes.fm/episodes/58-benefits-of-server-side-rendering-8WXjwz):
 
@@ -111,7 +111,7 @@ Thankfully, there are frameworks for this:
 - For React projects, I highly recommend [Next.js](https://nextjs.org/).
 - For Vue.js projects, take a look at [Nuxt.js](https://nuxtjs.org/).
 
-Another option for achieving the benefits of server side rendering without the hassle of a Node.js server is using a static site generator. There are of course limitations, such as not being able to have dynamic on-demand routes (e.g. user profiles), but otherwise I definitely recommend taking a look at [GatsbyJS](https://www.gatsbyjs.org/). My personal site is powered by Gatsby, which I also [wrote about](https://sunnysingh.io/blog/revamping-personal-site-gatsby).
+Another option for achieving the benefits of server side rendering without the hassle of a Node.js server is using a static site generator. There are of course limitations, such as not being able to have dynamic on-demand routes (e.g. user profiles), but otherwise I definitely recommend taking a look at [GatsbyJS](https://www.gatsbyjs.org/). My personal site is powered by Gatsby, which [I also wrote about](https://sunnysingh.io/blog/revamping-personal-site-gatsby).
 
 I should also mention prerendering which is basically having your own web crawler that can parse JavaScript. The result of that markup is then served to appropriate user agents such as search engines, and the benefit here is that you don't have to change the way your app is written. [Prerender.io](https://prerender.io/) is a popular service that provides this functionality. Keep in mind though that you're still either maintaing a server or paying for a service, and you don't receive any performance benefits out of it.
 
