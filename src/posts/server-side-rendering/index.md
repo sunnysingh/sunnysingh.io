@@ -100,6 +100,12 @@ Now, instead of passing back an empty div, we can have a Node.js server return t
 
 I did leave data fetching out of this example, but note that it is definitely possible to fetch data in our components on the server side.
 
+### Note: You're not losing out on the benefits of an SPA
+
+A single page application (SPA) is popular not only for providing quick development time, but also for its client side routing. This provides a quick navigation experience for the end user, and is definitely something we do not want to lose when we begin server side rendering. Thankfully, you can still choose to use these frameworks on the client side to provide that experience. This means that the **initial render uses SSR**, but then **subsequent navigations are like an SPA**.
+
+---
+
 ## Using it in the real world
 
 I hope this story helps explain what server side rendering is and why you would want to use it. You're probably wondering *how* to actually use it though.
