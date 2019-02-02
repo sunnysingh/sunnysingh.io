@@ -1,7 +1,7 @@
 ---
 title: "Writing code for your future self"
 tagline: Things I learned from writing unreadable code
-date: 2019-02-19 12:00
+date: 2019-02-02 12:00
 tags: coding
 background: "radial-gradient(circle farthest-corner at 10% 20%, rgba(176,65,65,1) 0%, rgba(59,0,0,1) 100.2%)"
 metaImage: "meta.png"
