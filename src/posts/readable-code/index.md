@@ -4,6 +4,7 @@ tagline: Things I learned from writing unreadable code
 date: 2019-02-19 12:00
 tags: coding
 background: "radial-gradient(circle farthest-corner at 10% 20%, rgba(176,65,65,1) 0%, rgba(59,0,0,1) 100.2%)"
+metaImage: "meta.png"
 ---
 
 We've all been there. You write a piece of code, read through it, and think it's perfect because it makes sense to you at the time. Return to that same code a year later and it's **unrecognizable** 🙈
