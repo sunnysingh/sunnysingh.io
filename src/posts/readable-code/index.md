@@ -136,7 +136,7 @@ function validateUsername(username) {
   const isLengthValid = validateUsernameLength(username);
   const isAlphanumeric = validateAlphanumeric(username);
   const isUsernameTaken = checkUsernameExists(username);
-  return isLengthValid && isAlphanumeric && isUsernameTaken;
+  return isLengthValid && isAlphanumeric && !isUsernameTaken;
 }
 ```
 
