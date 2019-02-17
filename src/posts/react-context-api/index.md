@@ -1,8 +1,10 @@
 ---
-title: 'Sharing state in React using built-in Context API'
+title: "Sharing state using React's Context API"
 tagline: A simple way of adding global state to a React app
 date: 2019-02-05 8:00
 tags: coding
+background: 'radial-gradient(circle farthest-corner at 10% 20%, rgba(48,49,142,1) 0%, rgba(94,93,223,1) 90%)'
+metaImage: 'meta.png'
 ---
 
 Global state in React is synonymous with libraries like [Redux](https://redux.js.org/). If you ever needed to share state like the current route or data from an API with multiple components, then you may have reached for Redux yourself.
