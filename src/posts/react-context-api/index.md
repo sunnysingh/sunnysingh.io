@@ -115,7 +115,7 @@ export const UserConsumer = UserContext.Consumer;
 
 Let's break this file down.
 
-First, the user context is created using `createContext()`. The values here will be overriden by the `UserProvider`.
+First, the user context is created using `createContext()`. The values here will be overridden by the `UserProvider`.
 
 Next, we create a `UserProvider` component that will serve as the parent component to hold and manage the shared state. Think of this as an equivalent to the `<Dashboard>` component in our earliest example.
 
@@ -168,7 +168,7 @@ In this file, we've created a `UserMessage` component which displays a "Welcome 
 
 Inside of `<UserConsumer>`, we pass what is called a [render prop](https://reactjs.org/docs/render-props.html). In this case, it's a function where we can grab parts our state and render something with it.
 
-## Using the consumer to update state
+### Using the consumer to update state
 
 Another use case for shared state is to update it. In this case, we'll provide a form for the user to update their username. Create a file called `UserSettings.js` and add the following to it:
 
@@ -211,4 +211,4 @@ Also, here's a quick overview of the main concepts:
 - The `<UserMessage>` and `<SettingsForm>` components read and update shared state by simply importing and using the `<UserConsumer>` component.
 - You can read and share state from anywhere in your app assuming that `<UserProvider>` is wrapping your entire app.
 
-That's it. Feel free to use this feature to share state for navigation, modals, or even data. The power is in your hands 💪
+That's it. Feel free to use this feature to share state for navigation, modals, or even data. The power is in your hands ??
