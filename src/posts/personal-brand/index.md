@@ -1,6 +1,6 @@
 ---
 title: 'What does a personal brand even mean?'
-tagline: It also took me a long time to learn why a personal brand was important
+tagline: It took me a long time to learn why a personal brand was important
 date: 2019-02-26 8:00
 tags: general
 metaImage: 'meta.png'
