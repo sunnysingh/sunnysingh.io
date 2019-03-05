@@ -1,10 +1,10 @@
 ---
-title: "JavaScript Quick Tip: Import from folder"
+title: 'JavaScript Quick Tip: Import from folder'
 tagline: Organize projects with the index re-export pattern
 date: 2019-01-11 12:00
 tags: coding, javascript
-background: "linear-gradient(171.8deg, rgba(255,159,0,1) -6.3%, rgba(208,23,23,1) 86.7%)"
-metaImage: "meta.png"
+background: 'linear-gradient(177.7deg, rgba(127,7,7,1) 3.3%, rgba(216,35,35,1) 93.8%)'
+metaImage: 'meta.png'
 ---
 
 Maintaining medium to large projects is a pain. Even if you try to split things up into multiple files, you start to realize that managing imports starts getting ugly. I'd be lying if I said my files never looked like this:
