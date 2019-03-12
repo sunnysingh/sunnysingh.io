@@ -7,7 +7,7 @@ background: 'linear-gradient( 177.7deg,  rgba(127,7,7,1) 3.3%, rgba(216,35,35,1)
 metaImage: 'meta.png'
 ---
 
-Debugging is not something that you think about at the time of writing your code, but doing so can drammatically save you from frustration later.
+Debugging is not something that you think about at the time of writing your code, but doing so can dramatically save you from frustration later.
 
 One simple way of doing this is to use named functions over anonymous functions. If you're unfamiliar, take a look at the following code block:
 
