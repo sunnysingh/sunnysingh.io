@@ -31,7 +31,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-root-import": "^2.0.4",
-    "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-plugin-sharp": "^2.0.31",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-twitter": "^2.0.8",
     "gatsby-plugin-typography": "^2.2.0",
