@@ -44,4 +44,4 @@ Ah, I'm glad you asked. I did an entire podcast episode about this topic! While 
 - 🎧 [Listen to the podcast](http://sunny.link/pod62)
 - 📺 [Watch the video](https://youtu.be/J1FO-2pRGDE)
 
-In general, a large community size means more resources available to you for debugging issues and finding accompanying libraries. Even in the case of Angular, there are still tons of resources out there to continue maintaing those projects.
+In general, a large community size means more resources available to you for debugging issues and finding accompanying libraries. Even in the case of Angular, there are still tons of resources out there to continue maintaining those projects.
