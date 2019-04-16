@@ -8,6 +8,8 @@ export function parseChildrenStrings(children) {
       ? children.props.children
         ? Array.isArray(children.props.children)
           ? children.props.children.map(parseChildrenStrings).join(' ')
+          : typeof children.props.children === 'object'
+          ? parseChildrenStrings(children.props.children)
           : children.props.children
         : ''
       : ''
