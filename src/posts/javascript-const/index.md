@@ -107,3 +107,5 @@ isSuccess = true;
 ```
 
 It's definitely a paradigm shift to declare variables with `const` instead of `var` and `let`, but it can add more confidence to your code. Try it out and let me know what you think.
+
+Want to learn how to improve your code even further? You might like my [Writing code for your future self](/blog/readable-code) article.
