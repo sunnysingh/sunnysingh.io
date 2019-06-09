@@ -106,8 +106,7 @@ export const MetadataItem = styled.div`
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 1;
-  text-shadow: 0 0 1px rgba(24, 51, 150, 0.5);
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.8);
 
   & {
     padding-bottom: 2rem;

@@ -3,7 +3,7 @@ title: 'JavaScript Quick Tip: Named functions for sane debugging'
 tagline: Name your functions for a sane debugging experience
 date: 2019-03-05 9:00
 tags: coding, javascript
-background: 'linear-gradient( 177.7deg,  rgba(127,7,7,1) 3.3%, rgba(216,35,35,1) 93.8% )'
+background: 'linear-gradient(45deg, #874da2 0%, #c43a30 100%)'
 metaImage: 'meta.png'
 ---
 
