@@ -14,7 +14,9 @@
     "clean": "rm -rf .cache & rm -rf public",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@mdx-js/mdx": "0.15.x",
@@ -51,7 +53,8 @@
     "react-kawaii": "^0.8.0",
     "react-load-script": "^0.0.6",
     "socialshares": "^2.0.5",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -67,5 +70,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sunnysingh/web.git"
-  }
+  },
+  "snyk": true
 }
