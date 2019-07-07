@@ -37,7 +37,7 @@ I'd like to go over a few aspects of modern web development and explain the bene
 
 **The modern way**: Using `import` statements and a bundler like [Parcel](https://parceljs.org/).
 
-**Benefits**: While this was a huge painpoint initially, bundling tools have gotten much easier to work with now. You can start writing JS and CSS using the latest features including `import` statements, and the code will automatically get transformed and bundled. This is important not only for cross-browser compatibility but also performance, so even in situations where you can depend on users having the latest browsers you probably still want to use a bundler.
+**Benefits**: While this was a huge pain point initially, bundling tools have gotten much easier to work with now. You can start writing JS and CSS using the latest features including `import` statements, and the code will automatically get transformed and bundled. This is important not only for cross-browser compatibility but also performance, so even in situations where you can depend on users having the latest browsers you probably still want to use a bundler.
 
 **Extras**: CLI tools for frameworks abstract away bundling for you, so that you don't have to worry about it. See [Create React App](https://facebook.github.io/create-react-app/), [Next.js](https://nextjs.org/), [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html), and [Nuxt.js](https://nuxtjs.org/).
 
