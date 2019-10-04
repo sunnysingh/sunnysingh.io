@@ -54,7 +54,7 @@
     "react-load-script": "^0.0.6",
     "socialshares": "^2.0.5",
     "styled-components": "^4.1.2",
-    "snyk": "^1.189.0"
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
