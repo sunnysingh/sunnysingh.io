@@ -16,7 +16,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "dependencies": {
     "@mdx-js/mdx": "0.15.x",
@@ -54,7 +54,7 @@
     "react-load-script": "^0.0.6",
     "socialshares": "^2.0.5",
     "styled-components": "^4.1.2",
-    "snyk": "^1.189.0"
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
