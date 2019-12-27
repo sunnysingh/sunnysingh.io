@@ -22,7 +22,7 @@ const Blockquote = styled.blockquote`
 
   &::before {
     content: open-quote;
-    quotes: '\\201c' '\\201d';
+    quotes: '\\201c''\\201d';
     position: absolute;
     top: 0;
     left: 0;
@@ -60,38 +60,39 @@ const TweetButtonText = styled.span`
   padding-left: 0.5rem;
 `;
 
-function handleTweetButtonClick(event) {
-  const windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes,';
-  const width = 550;
-  const height = 420;
-  const top =
-    screen.height > height ? Math.round(screen.height / 2 - height / 2) : 0;
-  const left = Math.round(screen.width / 2 - width / 2);
+export default function MdxBlockquote({ children }) {
+  const handleTweetButtonClick = event => {
+    const windowOptions =
+      'scrollbars=yes,resizable=yes,toolbar=no,location=yes,';
+    const width = 550;
+    const height = 420;
+    const top =
+      screen.height > height ? Math.round(screen.height / 2 - height / 2) : 0;
+    const left = Math.round(screen.width / 2 - width / 2);
 
-  window.open(
-    event.currentTarget.href,
-    'twitterIntent',
-    `${windowOptions},width=${width},height=${height},top=${top},left=${left}`
-  );
-}
+    const rawQuote = parseChildrenStrings(children);
+    const quote = truncate(rawQuote.replace(NEWLINES_REGEXP, ' '), {
+      length: 217,
+    });
+    const shareText = encodeURIComponent(
+      `"${quote}"\n\n${window.location.href}\n\ncc @${TWITTER_USERNAME}`
+    );
 
-export default function MdxBlockquote({ children, location }) {
-  const rawQuote = parseChildrenStrings(children);
-  const quote = truncate(rawQuote.replace(NEWLINES_REGEXP, ' '), {
-    length: 217,
-  });
-  const shareText = encodeURIComponent(
-    `"${quote}"\n\n${location.href}\n\ncc @${TWITTER_USERNAME}`
-  );
+    const url = `https://twitter.com/intent/tweet?text=${shareText}&related=${TWITTER_USERNAME}`;
+
+    event.preventDefault();
+
+    window.open(
+      url,
+      'twitterIntent',
+      `${windowOptions},width=${width},height=${height},top=${top},left=${left}`
+    );
+  };
+
   return (
     <Blockquote>
       {children}
-      <TweetButton
-        href={`https://twitter.com/intent/tweet?text=${shareText}&related=${TWITTER_USERNAME}`}
-        target="_blank"
-        rel="noopener"
-        onClick={handleTweetButtonClick}
-      >
+      <TweetButton href="#0" onClick={handleTweetButtonClick}>
         <Twitter size={18} />
         <TweetButtonText>Share</TweetButtonText>
       </TweetButton>
