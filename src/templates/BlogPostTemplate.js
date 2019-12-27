@@ -92,6 +92,7 @@ class BlogPostTemplate extends Component {
               </MetadataItem>
             )}
           </Metadata>
+          <CodeFund />
         </ArticleHeader>
         <Container>
           <ArticleContent>
@@ -100,7 +101,6 @@ class BlogPostTemplate extends Component {
             </MDXRenderer>
           </ArticleContent>
           <ArticleFooter>
-            <CodeFund />
             <AuthorBio />
             <ShareButtons
               title={frontmatter.title}
