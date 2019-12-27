@@ -1,18 +1,17 @@
 ---
-title: 'A simpler way to deal with JavaScript Promises'
-tagline: A few ways that I found to write cleaner syntax for promises
+title: 'Simplify JavaScript Promises'
+tagline: Techniques to simplify writing promises in JavaScript
 date: 2019-11-09 12:00
 tags: coding, javascript
 background: 'linear-gradient(45deg, #874da2 0%, #c43a30 100%)'
 metaImage: 'meta.png'
 ---
 
-> I'll give you a callback. I promise.
-> ‒ JavaScript
+> I love promises. Not from people, but from JavaScript.
 
 I love promises. Not from people, but from JavaScript. [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) make your code concise and simple, resulting in easier to understand codebases.
 
-Unfortunately, using the [async/await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await) syntax with promises causes a few headaches sometimes. I'll walk through some scenarios you might have experienced, and techniques to solve them.
+You may also be familiar with the [async/await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await) syntax, but unfortunately it causes some headaches. I'll walk through some techniques that solve common scenarios.
 
 ## Combining `async/await` with `Promise.then`
 
@@ -84,4 +83,4 @@ We're again taking advantage of two syntaxes for a Promise: `async/await` and `P
 
 ## Refactor wisely
 
-It's usually a pattern that when a new language feature comes out, developers rush to make their codebase follow that new syntax. As you saw in this article though, this is not always the wise thing to do. Combining older syntax with the new can be a powerful way to keep your codebase simple and easy to understand for anyone new to it.
+When a new language feature comes out, developers rush to make their codebase follow that new syntax. As you saw in this article, this is not always wise. Combining older syntax with the new can be a powerful way to keep your codebase simple and easy to understand for anyone new to it.
