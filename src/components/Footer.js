@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <Container>
       <Nav>
-        <NavLink href="https://buttondown.email/sunnysingh">
-          Subscribe to the newsletter
+        <NavLink href="https://sunny.link/news">
+          Subscribe to my newsletter
         </NavLink>
         <NavLink href="https://www.notion.so/sunnysingh/Web-Development-Resources-ea153ce48f7c4557862a6b8fb88d72a9">
           Browse useful resources

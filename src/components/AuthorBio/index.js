@@ -13,18 +13,15 @@ export default function AuthorBio() {
           <Link to="/" title="Learn about me">
             I'm Sunny
           </Link>
-          . Thanks for reading!
+          . A software engineer at <a href="https://nomadhealth.com/">Nomad</a>
         </Text>
         <Text>
-          <span aria-hidden="true">&#x1F399;</span> If you also like audio,{' '}
-          <Link to="/podcasts">listen to my podcasts</Link>.
+          <span aria-hidden="true">🎙</span> Prefer video or audio?{' '}
+          <a href="https://sunnycommutes.fm/">Listen to my podcast</a>
         </Text>
         <Text>
-          <span aria-hidden="true">&#x1F628;</span> Fear missing out?{' '}
-          <a href="https://buttondown.email/sunnysingh">
-            Subscribe to my newsletter
-          </a>
-          .
+          <span aria-hidden="true">📨</span> Want early access?{' '}
+          <a href="https://sunny.link/news">Subscribe to my newsletter</a>
         </Text>
       </div>
     </Container>
