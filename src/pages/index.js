@@ -41,7 +41,7 @@ export default function HomePage({ location }) {
           <Intro>
             <IntroColumn>
               <Heading>Sunny Singh</Heading>
-              <SubHeading>Web Developer / Creator</SubHeading>
+              <SubHeading>Creating Content & Code</SubHeading>
             </IntroColumn>
             <IntroColumn>
               <AvatarContainer>
@@ -85,7 +85,7 @@ export default function HomePage({ location }) {
             <RocketIcon size={32} />
           </AnimatedRocket>{' '}
           Currently, I'm recording <Link to="/podcasts">podcasts</Link> and
-          building <a href="https://ironmic.fm/">IronMic</a>.
+          curating <a href="https://resrc.dev/">resources</a>.
         </CurrentWork>
       </Bio>
       <Contact>

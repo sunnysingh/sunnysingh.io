@@ -1,15 +1,15 @@
 export const PROJECTS = [
   {
+    name: '⬛️ Resrc',
+    description: 'Software development resources',
+    url: 'https://resrc.dev/',
+    action: 'Visit resrc.dev',
+  },
+  {
     name: '🎙 IronMic',
     description: 'Automated websites for podcasts',
     url: 'https://ironmic.fm/',
     action: 'Visit ironmic.fm',
-  },
-  {
-    name: '📰 DevNews',
-    description: 'Developer news aggregator',
-    url: 'https://devne.ws/',
-    action: 'Visit devne.ws',
   },
   {
     name: '📣 SocialShares',
@@ -18,9 +18,9 @@ export const PROJECTS = [
     action: 'Visit socialshar.es',
   },
   {
-    name: '💡 IdeaScratch',
-    description: 'Ask your audience what to build next',
-    url: 'https://ideascratch.com/',
-    action: 'Visit ideascratch.com',
+    name: '📰 DevNews',
+    description: 'Developer news aggregator',
+    url: 'https://devne.ws/',
+    action: 'Visit devne.ws',
   },
 ];
