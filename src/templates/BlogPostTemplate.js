@@ -9,7 +9,6 @@ import {
   Container,
   Alert,
   AlertLink,
-  Comments,
   AccessibleText,
   AuthorBio,
   ShareButtons,
@@ -28,7 +27,6 @@ import {
   MetadataContent,
   ArticleContent,
   ArticleFooter,
-  CommentsContainer,
 } from './blog-post-styled';
 import avatarBase64 from '../assets/avatar-base64';
 
@@ -105,9 +103,6 @@ class BlogPostTemplate extends Component {
               text={`${frontmatter.title} - ${frontmatter.tagline}`}
             />
           </ArticleFooter>
-          <CommentsContainer>
-            <Comments />
-          </CommentsContainer>
         </Container>
       </Layout>
     );

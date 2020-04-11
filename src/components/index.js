@@ -4,8 +4,6 @@ export { default as Button } from './Button';
 export { default as CardGrid } from './CardGrid';
 export { default as Container } from './Container';
 export { default as CodePenEmbed } from './CodePenEmbed';
-export { default as CommentBox } from './CommentBox';
-export { default as Comments } from './Comments';
 export { default as Field } from './Field';
 export { default as Footer } from './Footer';
 export { default as Form } from './Form';
