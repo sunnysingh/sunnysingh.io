@@ -13,7 +13,6 @@ import {
   AccessibleText,
   AuthorBio,
   ShareButtons,
-  CodeFund,
   YouTubeEmbed,
   CodePenEmbed,
   TweetEmbed,
@@ -92,7 +91,6 @@ class BlogPostTemplate extends Component {
               </MetadataItem>
             )}
           </Metadata>
-          <CodeFund />
         </ArticleHeader>
         <Container>
           <ArticleContent>

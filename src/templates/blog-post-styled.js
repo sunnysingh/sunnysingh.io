@@ -94,11 +94,6 @@ export const Metadata = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: 2rem;
-  }
 `;
 
 export const MetadataItem = styled.div`
