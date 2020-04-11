@@ -4,7 +4,7 @@ module.exports = {
   // Metadata required by `gatsby-plugin-feed`
   siteMetadata: {
     title: 'Sunny Singh',
-    description: 'Web Developer / Creator',
+    description: 'Creating Content & Code',
     siteUrl: `https://sunnysingh.io`,
   },
   pathPrefix: '/',
