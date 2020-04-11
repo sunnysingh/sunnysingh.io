@@ -6,6 +6,12 @@ export const PROJECTS = [
     action: 'Visit resrc.dev',
   },
   {
+    name: '✉️ Newsletter',
+    description: 'Early access to articles & content',
+    url: 'https://sunny.link/news',
+    action: 'Visit sunny.link/news',
+  },
+  {
     name: '🎙 IronMic',
     description: 'Automated websites for podcasts',
     url: 'https://ironmic.fm/',
