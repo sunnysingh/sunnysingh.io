@@ -26,6 +26,6 @@ Make sure to have [ESLint](https://eslint.org/) and [Prettier](https://prettier.
 
 ## Deployment
 
-The [master branch](https://github.com/sunnysingh/sunnysingh.io/tree/master) is automatically deployed to [sunnysingh.io](https://sunnysingh.io/) by [Netlify](https://www.neltify.com/).
+The [master branch](https://github.com/sunnysingh/sunnysingh.io/tree/master) is automatically deployed to [sunnysingh.io](https://sunnysingh.io/) by [Netlify](https://www.netlify.com/).
 
 When a pull request is created, a preview branch is deployed at a unique Netlify URL.
