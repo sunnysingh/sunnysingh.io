@@ -61,7 +61,7 @@ export const Nav = styled.nav`
   }
 
   /* Second nav */
-  ${props =>
+  ${(props) =>
     props.isSecondary &&
     css`
       text-align: right;
@@ -83,7 +83,7 @@ export const NavLink = styled(Link)`
   font-size: 1.125rem;
   text-decoration: none;
 
-  ${props =>
+  ${(props) =>
     props.swapToSecondPositionOnSmall &&
     css`
       order: 2;
@@ -114,7 +114,7 @@ export const NavLink = styled(Link)`
     font-size: 1.5rem;
   }
 
-  ${p =>
+  ${(p) =>
     p.isFirst &&
     css`
       @media (min-width: ${breakpoints.large}px) {
@@ -122,7 +122,7 @@ export const NavLink = styled(Link)`
       }
     `}
 
-  ${p =>
+  ${(p) =>
     p.isLast &&
     css`
       @media (min-width: ${breakpoints.large}px) {

@@ -1,10 +1,10 @@
 ---
-title: "Writing code for your future self"
+title: 'Writing code for your future self'
 tagline: Things I learned from writing unreadable code
 date: 2019-02-02 12:00
 tags: coding
-background: "radial-gradient(circle farthest-corner at 10% 20%, rgba(176,65,65,1) 0%, rgba(59,0,0,1) 100.2%)"
-metaImage: "meta.png"
+background: 'radial-gradient(circle farthest-corner at 10% 20%, rgba(176,65,65,1) 0%, rgba(59,0,0,1) 100.2%)'
+metaImage: 'meta.png'
 ---
 
 We've all been there. You write a piece of code, read through it, and think it's perfect because it makes sense to you at the time. Return to that same code a year later and it's **unrecognizable** 🙈
@@ -52,10 +52,10 @@ Most important of all: **reduce as much potential confusion as possible**.
 
 The core of many applications is the logic, which really just translates down to your `if` statements. The conditions for those statements can get pretty complex.
 
-In this example, *how long* does it take you to understand the logic?
+In this example, _how long_ does it take you to understand the logic?
 
 ```js
-if (users[0] && posts.find(post => post.userId === users[0].id)) {
+if (users[0] && posts.find((post) => post.userId === users[0].id)) {
   showUserPost();
 }
 ```
@@ -65,7 +65,8 @@ Time is an important aspect here. Sure, I may be able to figure out this code sn
 You may be rushing to create a comment here, but instead let's just improve the code itself by moving the condition out to a meaningful variable.
 
 ```js
-const isUserPostCreated = users[0] && posts.find(post => post.userId === users[0].id);
+const isUserPostCreated =
+  users[0] && posts.find((post) => post.userId === users[0].id);
 
 if (isUserPostCreated) {
   showUserPost();
@@ -75,7 +76,8 @@ if (isUserPostCreated) {
 And if we added another condition? Create another variable.
 
 ```js
-const isUserPostCreated = users[0] && posts.find(post => post.userId === users[0].id)
+const isUserPostCreated =
+  users[0] && posts.find((post) => post.userId === users[0].id);
 const isReaderLoggedIn = getReaderFromDatabase().isLoggedIn();
 
 if (isUserPostCreated && isReaderLoggedIn) {

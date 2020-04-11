@@ -20,7 +20,7 @@ export const Input = styled.input`
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 
-  ${props =>
+  ${(props) =>
     props.as === 'textarea' &&
     css`
       min-height: 100px;

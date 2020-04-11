@@ -61,7 +61,7 @@ const TweetButtonText = styled.span`
 `;
 
 export default function MdxBlockquote({ children }) {
-  const handleTweetButtonClick = event => {
+  const handleTweetButtonClick = (event) => {
     const windowOptions =
       'scrollbars=yes,resizable=yes,toolbar=no,location=yes,';
     const width = 550;

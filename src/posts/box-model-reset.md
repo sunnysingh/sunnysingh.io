@@ -39,7 +39,7 @@ This might not sound like a big deal, after all this is simple math. But the rea
 }
 ```
 
-It would make sense for each column to be half a page, but the padding makes the width be `50% + 20px`. This means each column will be more than half a page, and thus unable to be floated next to each other. You *could* use pixels and then factor in padding into the column width, but then it becomes a lot harder to make responsive layouts. Plus, imagine changing the padding on an element in another CSS file and potentially screwing something up without knowing it. This results in hours of bug hunting, and we've all been there.
+It would make sense for each column to be half a page, but the padding makes the width be `50% + 20px`. This means each column will be more than half a page, and thus unable to be floated next to each other. You _could_ use pixels and then factor in padding into the column width, but then it becomes a lot harder to make responsive layouts. Plus, imagine changing the padding on an element in another CSS file and potentially screwing something up without knowing it. This results in hours of bug hunting, and we've all been there.
 
 ## border-box, and why it's awesome
 

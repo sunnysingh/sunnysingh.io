@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function YouTubeEmbed({ id, width, caption }) {
-  const Container = props =>
+  const Container = (props) =>
     caption ? <figure {...props} /> : <div {...props} />;
   const embedLink = `https://www.youtube.com/embed/${id}`;
   return (

@@ -16,7 +16,7 @@ export const ArticleHeader = styled.header`
     rgba(0, 68, 108, 1) 90.1%
   );
 
-  ${props =>
+  ${(props) =>
     props.background &&
     css`
       background: ${props.background};

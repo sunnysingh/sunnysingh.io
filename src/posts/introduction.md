@@ -5,7 +5,7 @@ date: 2011-08-12 00:50
 tags: general
 ---
 
-Hey all, and welcome to my personal site and blog. The site itself is pretty self-explanatory: it's a place for people to go to whenever they want to know more about me and where they can easily find out how to contact me. It's also where I will be able to publish content, such as coding experiments and interesting posts on various topics. I plan to write mostly about web development, but since this is my *personal* site I might also do reviews, rants, and anything else I find worth talking about.
+Hey all, and welcome to my personal site and blog. The site itself is pretty self-explanatory: it's a place for people to go to whenever they want to know more about me and where they can easily find out how to contact me. It's also where I will be able to publish content, such as coding experiments and interesting posts on various topics. I plan to write mostly about web development, but since this is my _personal_ site I might also do reviews, rants, and anything else I find worth talking about.
 
 ## Walk-through
 
@@ -13,7 +13,7 @@ I put a decent amount of work into the site, and so I'd like to take a second an
 
 ### Design
 
-The overall design is very simple, and in fact a bit too simple for my liking. I decided to go down this route because this will mostly be a content site, and so all I really needed to do was make the site visually appealing with focus set on the content itself. This is also the first time I tried to make typography look as pleasant and readable as possible. CSS' [@font-face](http://developer.mozilla.org/en/css/@font-face "Learn about using @font-face") is utilized for custom fonts with the help of [Google Web Fonts](http://www.google.com/webfonts); I'm currently using [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans) for headings, and [Muli](http://www.google.com/webfonts/specimen/Muli) for regular text. I also bumped up the font size a bit so no one has to squint while reading my posts. If any typography purists are reading this, let me know if I'm doing anything wrong here.
+The overall design is very simple, and in fact a bit too simple for my liking. I decided to go down this route because this will mostly be a content site, and so all I really needed to do was make the site visually appealing with focus set on the content itself. This is also the first time I tried to make typography look as pleasant and readable as possible. CSS' [@font-face](http://developer.mozilla.org/en/css/@font-face 'Learn about using @font-face') is utilized for custom fonts with the help of [Google Web Fonts](http://www.google.com/webfonts); I'm currently using [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans) for headings, and [Muli](http://www.google.com/webfonts/specimen/Muli) for regular text. I also bumped up the font size a bit so no one has to squint while reading my posts. If any typography purists are reading this, let me know if I'm doing anything wrong here.
 
 As far as the color scheme goes, I went with dark blue and shades of gray. I tend to use gray on almost all my projects as it's an easy way to add contrast, and I chose dark blue because it's my favorite color (I mean that in the most serious way possible).
 

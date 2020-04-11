@@ -63,7 +63,7 @@ Style guides are very useful when working with teams, so why not improve yours? 
 
 ### Stuff You Should Know
 
-Just a fun little podcast that answers many questions, typically in the format of "How ____ works." I listen to this podcast whenever I want a general podcast, and I was quite surprised at how much I enjoy listening.
+Just a fun little podcast that answers many questions, typically in the format of "How \_\_\_\_ works." I listen to this podcast whenever I want a general podcast, and I was quite surprised at how much I enjoy listening.
 
 [Listen to Stuff You Should Know](http://www.stuffyoushouldknow.com/podcasts/)
 

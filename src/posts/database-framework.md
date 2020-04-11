@@ -11,7 +11,7 @@ I published my first project on GitHub called [Database](http://github.com/sunny
 
 ## The Problem
 
-For years I've been using the [MySQL database extension](http://www.php.net/manual/book.mysql.php "Documentation on the MySQL database extension") which you might typically know as the `mysql_*` functions in PHP. I never found a problem with it until recently when I realized that it is an outdated and insecure way to interact with MySQL databases. I am probably really late to realize that, but I still see a ton of people using these functions.
+For years I've been using the [MySQL database extension](http://www.php.net/manual/book.mysql.php 'Documentation on the MySQL database extension') which you might typically know as the `mysql_*` functions in PHP. I never found a problem with it until recently when I realized that it is an outdated and insecure way to interact with MySQL databases. I am probably really late to realize that, but I still see a ton of people using these functions.
 
 For those of you that still use the MySQL extension functions such as `mysql_connect()`, don't be alarmed. It's fairly secure and gets the job done, and is probably the simplest way to use MySQL in PHP. However, these functions are extremely old now and don't support many of MySQL's latest features. Not only that but there are better options out there that will help secure your queries and prevent vulnerabilities such as SQL injection. If you're starting a new website, doing a redesign, or simply want to add something new to your skill set, please read on.
 

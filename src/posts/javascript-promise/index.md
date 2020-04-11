@@ -27,7 +27,7 @@ If you're relying solely on just using `await`, then you will end up using multi
 Instead, we can take advantage of the "traditional" `Promise.then` syntax:
 
 ```js
-const data = await fetch('/api').then(res => res.json());
+const data = await fetch('/api').then((res) => res.json());
 ```
 
 A one-liner that is still readable and functions the same way.
@@ -69,11 +69,10 @@ But... we are no longer within the safe bounds of using `const` variables. Anywh
 Why yes, there is:
 
 ```js
-const data = await fetchData()
-  .catch(error => {
-    console.error(error);
-    return null;
-  });
+const data = await fetchData().catch((error) => {
+  console.error(error);
+  return null;
+});
 
 // We can still use `data` 👍
 console.log(data);

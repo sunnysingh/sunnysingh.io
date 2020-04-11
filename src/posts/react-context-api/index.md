@@ -29,7 +29,7 @@ class Dashboard extends React.Component {
         <WelcomeMessage username={this.state.username} />
         <SettingsForm
           username={this.state.username}
-          updateUsername={newUsername => {
+          updateUsername={(newUsername) => {
             this.setState({ username: newUsername });
           }}
         />
@@ -92,7 +92,7 @@ const UserContext = createContext({
 });
 
 export class UserProvider extends React.Component {
-  updateUsername = newUsername => {
+  updateUsername = (newUsername) => {
     this.setState({ username: newUsername });
   };
 
@@ -186,7 +186,7 @@ export default function UserSettings() {
           <input
             id="username"
             type="text"
-            onChange={event => {
+            onChange={(event) => {
               updateUsername(event.target.value);
             }}
           />

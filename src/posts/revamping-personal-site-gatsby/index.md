@@ -3,15 +3,15 @@ title: Revamping my personal site with Gatsby
 tagline: A minimal design with a powerful JavaScript stack
 date: 2019-01-02 12:00
 tags: general, design, coding
-background: "radial-gradient( circle farthest-corner at 10% 20%,  rgba(48,49,142,1) 0%, rgba(94,93,223,1) 90% )"
-metaImage: "meta.png"
+background: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(48,49,142,1) 0%, rgba(94,93,223,1) 90% )'
+metaImage: 'meta.png'
 ---
 
 It has been a while. My last redesign was [three years ago](https://sunnysingh.io/blog/redesign-2016), which has in part caused this site to be outdated in terms of both style and content.
 
 ## The previous design
 
-![Screenshot of homepage from 2016 design](2016-homepage.png "Previous 2016 Design")
+![Screenshot of homepage from 2016 design](2016-homepage.png 'Previous 2016 Design')
 
 To stroke my ego a bit, I still like what I crafted back in 2016. It's far from perfect, but it does present my content and projects fairly well.
 
@@ -19,7 +19,7 @@ You may notice a few similaries between my old and new designs, and that is actu
 
 ## The new design
 
-![Screenshot of homepage from 2019 design](2019-homepage.png "New 2019 Design")
+![Screenshot of homepage from 2019 design](2019-homepage.png 'New 2019 Design')
 
 First thing that you probably notice is the dark theme. I decided to switch because:
 
@@ -29,7 +29,7 @@ First thing that you probably notice is the dark theme. I decided to switch beca
 
 🤷‍♂️ Ugh, I just really prefer dark themes.
 
-Second thing is *yes, I finally have a logo* 🎉! I actually made it back in January of 2018, and it's insane that it took me a full year to finally use it. I lack proper  graphic design skills, so I'm quite happy with how simple and clever it turned out. Having a logo should really help me in creating a more identifiable brand.
+Second thing is _yes, I finally have a logo_ 🎉! I actually made it back in January of 2018, and it's insane that it took me a full year to finally use it. I lack proper graphic design skills, so I'm quite happy with how simple and clever it turned out. Having a logo should really help me in creating a more identifiable brand.
 
 Alright, so the main issue with my old design was that someone visiting my homepage would have no idea what to do due to the overflow of information and actions. Here is what I mean:
 
@@ -58,7 +58,7 @@ Lastly, I put in a lot of effort into the article design. I simply wanted to mak
 
 ## The tech stack
 
-As much as I love talking about design, I *am* a developer. So, let's get to the fun stuff by taking a look at the tech stack. Note that the entire site is [open sourced on GitHub](https://github.com/sunnysingh/sunnysingh.io) if you ever want to peruse the code.
+As much as I love talking about design, I _am_ a developer. So, let's get to the fun stuff by taking a look at the tech stack. Note that the entire site is [open sourced on GitHub](https://github.com/sunnysingh/sunnysingh.io) if you ever want to peruse the code.
 
 ### ⚛️ Gatsby & React
 

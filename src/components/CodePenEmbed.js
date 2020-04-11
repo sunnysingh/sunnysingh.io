@@ -1,10 +1,11 @@
 import React from 'react';
 
 export default function CodePenEmbed({ id, height, caption }) {
-  const Container = props =>
+  const Container = (props) =>
     caption ? <figure {...props} /> : <div {...props} />;
-  const embedLink = `//codepen.io/Craaftx/embed/preview/${id}/?height=${height ||
-    400}&theme-id=dark&default-tab=css,result`;
+  const embedLink = `//codepen.io/Craaftx/embed/preview/${id}/?height=${
+    height || 400
+  }&theme-id=dark&default-tab=css,result`;
   return (
     <Container className="codepenEmbed mediaEmbed">
       <div

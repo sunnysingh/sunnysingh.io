@@ -77,7 +77,7 @@ npx hygen component new ProfileBox
 ✨ A new component was generated! Check out `src/components/ProfileBox.js`:
 
 ```jsx
-import React from "react";
+import React from 'react';
 
 export function ProfileBox({ children }) {
   return <div>{children}</div>;

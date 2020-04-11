@@ -7,9 +7,9 @@ tags: performance, tools
 
 <Alert type="sponsor">This article is a <strong>sponsored review</strong>. All thoughts are my own.</Alert>
 
-![Screenshot of LoadView tool](loadview-load-testing.png "LoadView testing tool by Dotcom-Monitor")
+![Screenshot of LoadView tool](loadview-load-testing.png 'LoadView testing tool by Dotcom-Monitor')
 
-It is a fulfilling experience to build and release a website for many people to see. What happens though when *too many* people see your website? Your servers become stressed under the increase of concurrent users and eventually crash, making that experience no longer so joyous. The solution is to prepare yourself for that overload by doing load testing which can easily be done with the [LoadView tool](https://www.loadview-testing.com/). It is from a company called Dotcom-Monitor which specializes in offering services for testing your website. They've been around for two decades, so they know a thing or two about performance testing. In this review, I take a look at LoadView to show you how you can use it, and what I think about it in terms of usability and features.
+It is a fulfilling experience to build and release a website for many people to see. What happens though when _too many_ people see your website? Your servers become stressed under the increase of concurrent users and eventually crash, making that experience no longer so joyous. The solution is to prepare yourself for that overload by doing load testing which can easily be done with the [LoadView tool](https://www.loadview-testing.com/). It is from a company called Dotcom-Monitor which specializes in offering services for testing your website. They've been around for two decades, so they know a thing or two about performance testing. In this review, I take a look at LoadView to show you how you can use it, and what I think about it in terms of usability and features.
 
 ## Onboarding
 
@@ -19,23 +19,23 @@ To get started, you first need to [create an account](https://userauth.dotcom-mo
 
 There are three options for creating a load test: HTTP(S) Load Test, Single Page Load Test, and Web Application Load Test. The right option will depend on what you're trying to test, but I chose a simple HTTP test for my web server. This overall process is fairly straightforward; there are many different settings, but I was able to keep the defaults and enter any necessary information such as my domain, timeout, and which browser to use.
 
-![Screenshot of creating a load test](create-load-test.png "Create a Load Test screen")
+![Screenshot of creating a load test](create-load-test.png 'Create a Load Test screen')
 
 There is also an execution plan for deciding how many users you want and at which times. This is important in simulating a real world scenario, where you initially will have a small number of users but then traffic will increase to reach maximum peak. I recently experienced this on the BrandSearch project which we [posted on Product Hunt](https://www.producthunt.com/posts/brandsearch)–thousands of visitors were coming along as exposure grew, including from links on other blogs. Thankfully we were able to handle it all due to our static site architecture, but had it been a dynamic site then we'd be better prepared with a tool like this.
 
-![Screenshot of configuring the execution plan](load-test-execution-plan.png "Execution Plan screen")
+![Screenshot of configuring the execution plan](load-test-execution-plan.png 'Execution Plan screen')
 
 ## Understanding the report
 
 Of course what I care about most here is the result of my test so that I can take action to improve my server's performance if needed. There is an injector server that is used to check things like CPU load, but otherwise most of the data is what you'd expect to see such as average response time and response status. The report also provides each session that was used which includes other significant data like server location, time, duration, status, and which resources were fetched within the page.
 
-![Screenshot of report: response time](load-test-report-response-time.png "Average Response Time graph")
+![Screenshot of report: response time](load-test-report-response-time.png 'Average Response Time graph')
 
 ## Site uptime monitoring
 
 Alongside load testing, I was also interested in looking at uptime monitoring. It is common to want to know whether your site is actually working, even when you don't have the time to manually check. I setup a monitor for sunnysingh.io, so if the site ever goes down I will receive an email. There is also an option to receive monthly reports, from which I learned about some issues in users trying to access my site from Beijing.
 
-![Screenshot of uptime monitor monthly report](uptime-monitor.png "Uptime Monitor email")
+![Screenshot of uptime monitor monthly report](uptime-monitor.png 'Uptime Monitor email')
 
 ## Usability and features
 

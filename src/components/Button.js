@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
   transition-timing-function: ease-in-out;
   cursor: pointer;
 
-  ${props =>
+  ${(props) =>
     props.size == 'large' &&
     css`
       font-size: 1.125rem;

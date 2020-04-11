@@ -63,7 +63,7 @@ You could do the same in an **imperative** style, but then your code would expla
 This means that you'd use the DOM to select elements and update manually. Something like this:
 
 ```js
-document.querySelector('#myButton').addEventListener('click', event => {
+document.querySelector('#myButton').addEventListener('click', (event) => {
   event.target.innerHTML = 'Clicked!';
 });
 ```
@@ -93,7 +93,7 @@ Let's see a **declarative** example:
 ```js
 const letters = ['a', 'b', 'c'];
 
-const filtered = letters.filter(letter => letter !== 'c');
+const filtered = letters.filter((letter) => letter !== 'c');
 
 console.log(filtered); // a, b
 ```

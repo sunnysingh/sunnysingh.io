@@ -8,9 +8,9 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 -single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
     "clean": "rm -rf .cache & rm -rf public",
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -57,9 +57,9 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.14.2"
+    "prettier": "^2.0.4"
   },
   "homepage": "https://sunnysingh.io/",
   "keywords": [

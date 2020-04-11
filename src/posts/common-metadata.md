@@ -60,7 +60,10 @@ This tag is important in preventing [duplicate content](https://support.google.c
 ## Description
 
 ```html
-<meta name="description" content="My Web App is the coolest app that lets you do cool things." />
+<meta
+  name="description"
+  content="My Web App is the coolest app that lets you do cool things."
+/>
 ```
 
 The description tag is mainly for SEO purposes, but social media sites use this as the link preview text when users share the page.
@@ -71,7 +74,7 @@ The description tag is mainly for SEO purposes, but social media sites use this 
 <meta name="robots" content="noodp" />
 ```
 
-This is a very obscure tag, especially when you try to make sense of the "noodp" part. Put simply, this tells search engines to *not* retrieve webpage info from [DMOZ](http://www.dmoz.org/), which is the Open Directory Project. It takes DMOZ a couple days to re-crawl your page, and sometimes the info isn't as accurate as you want it to be.
+This is a very obscure tag, especially when you try to make sense of the "noodp" part. Put simply, this tells search engines to _not_ retrieve webpage info from [DMOZ](http://www.dmoz.org/), which is the Open Directory Project. It takes DMOZ a couple days to re-crawl your page, and sometimes the info isn't as accurate as you want it to be.
 
 You might be aware of another variant of this tag that has "noodp,noydir". The "noydir" part disables listings from Yahoo! Directory, but it has been shut down so I see no reason to keep including it.
 
@@ -121,18 +124,18 @@ I left some metadata out of this post because they are big enough on their own t
 
 ### Search Engines
 
-* [Schema.org](http://schema.org/) - Also used by Google+
-* [Structured Data Markup](https://developers.google.com/structured-data/) - Provide more functional search results, Google Now cards, etc.
+- [Schema.org](http://schema.org/) - Also used by Google+
+- [Structured Data Markup](https://developers.google.com/structured-data/) - Provide more functional search results, Google Now cards, etc.
 
 ### Social Media
 
-* [The Open Graph protocol](http://ogp.me/) - Used by Facebook and Google+
-* [Twitter Cards](https://dev.twitter.com/cards/overview)
+- [The Open Graph protocol](http://ogp.me/) - Used by Facebook and Google+
+- [Twitter Cards](https://dev.twitter.com/cards/overview)
 
 ### Other
 
-* [OpenSearch](http://www.hanselman.com/blog/OnTheImportanceOfOpenSearch.aspx) - Explanation and tutorial by Scott Hanselman
-* [humans.txt](http://humanstxt.org/) - Provide info about site's team, contributors, tech, etc.
-* [Rel-Payment](http://relpayment.com/) - Provide payment info
+- [OpenSearch](http://www.hanselman.com/blog/OnTheImportanceOfOpenSearch.aspx) - Explanation and tutorial by Scott Hanselman
+- [humans.txt](http://humanstxt.org/) - Provide info about site's team, contributors, tech, etc.
+- [Rel-Payment](http://relpayment.com/) - Provide payment info
 
 I did a lot of research to put this post together, but if I missed anything or made a mistake, let me know! On that note, you are also free to shame me for not including some of the metadata from this post on my own projects.

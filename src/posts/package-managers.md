@@ -13,7 +13,7 @@ Let's look at that same project a couple weeks or months laters. Bootstrap, jQue
 
 ## Okay, so the solution is Package Managers?
 
-It would be a twist if I said no... but yes you are absolutely correct. Package managers exist to solve this exact problem; installing external (a.k.a. "vendor") packages, and keeping them updated. Think of package managers as app stores: Simple, one-click install of apps (or packages, in our case)  that you can easily keep updated. There's different managers for different languages, but in the case of the front-end there's a popular one that I personally use called Bower.
+It would be a twist if I said no... but yes you are absolutely correct. Package managers exist to solve this exact problem; installing external (a.k.a. "vendor") packages, and keeping them updated. Think of package managers as app stores: Simple, one-click install of apps (or packages, in our case) that you can easily keep updated. There's different managers for different languages, but in the case of the front-end there's a popular one that I personally use called Bower.
 
 ### Bower
 

@@ -23,7 +23,7 @@ export default function Layout({
   return (
     <MDXProvider
       components={{
-        blockquote: props => <Blockquote {...props} />,
+        blockquote: (props) => <Blockquote {...props} />,
       }}
     >
       <Fragment>

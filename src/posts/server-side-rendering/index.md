@@ -1,10 +1,10 @@
 ---
-title: "The benefits and origins of Server Side Rendering"
+title: 'The benefits and origins of Server Side Rendering'
 tagline: What is SSR, and why should you bother learning it?
 date: 2019-01-20 12:00
 tags: coding, javascript
-background: "radial-gradient( circle 715px at 10.8% 89.3%,  rgba(13,65,130,1) 5.4%, rgba(3,33,71,1) 100.2% )"
-metaImage: "meta.png"
+background: 'radial-gradient( circle 715px at 10.8% 89.3%,  rgba(13,65,130,1) 5.4%, rgba(3,33,71,1) 100.2% )'
+metaImage: 'meta.png'
 ---
 
 Server side rendering, abbreviated to SSR, is a commonly misunderstood concept. What is it, and why should you bother learning it? I hope to answer those questions with a story on the origins of server side rendering.
@@ -65,7 +65,7 @@ Now all you have is this:
 
 I'm sure that Google isn't very happy about that, and neither are users. On a slow connection, it may take a while for the JavaScript to make this page useful.
 
-*Note: Before you say, "but Google can crawl JavaScript now!", keep in mind that there are limitations and not all web crawlers do the same.*
+_Note: Before you say, "but Google can crawl JavaScript now!", keep in mind that there are limitations and not all web crawlers do the same._
 
 It'd be a pretty sad end if I said that we should stop building apps this way, especially when it's so efficient for developers. Can we have our cake and eat it too?
 
@@ -79,7 +79,12 @@ Let's say that we have a simple React component like this:
 
 ```jsx
 function GamesList({ game1, game2 }) {
-  return <ul><li>{game1}</li><li>{game2}</li></ul>;
+  return (
+    <ul>
+      <li>{game1}</li>
+      <li>{game2}</li>
+    </ul>
+  );
 }
 ```
 
@@ -108,9 +113,9 @@ A single page application (SPA) is popular not only for providing quick developm
 
 ## Using it in the real world
 
-I hope this story helps explain what server side rendering is and why you would want to use it. You're probably wondering *how* to actually use it though.
+I hope this story helps explain what server side rendering is and why you would want to use it. You're probably wondering _how_ to actually use it though.
 
-While you can start from scratch and try to make your apps run on Node.js, it is *a lot* of work. You have to figure out how to properly implement data fetching, state hydration, CSS extraction, and many other things. 
+While you can start from scratch and try to make your apps run on Node.js, it is _a lot_ of work. You have to figure out how to properly implement data fetching, state hydration, CSS extraction, and many other things.
 
 Thankfully, there are frameworks for this:
 

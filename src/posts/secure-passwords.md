@@ -7,7 +7,7 @@ tags: coding, security, php
 
 When we create an account on a website, we are essentially trusting the service to be secure and we pray that our data will be safe. But, is it? Implementing good security in a website can sometimes seem like a daunting task, but the trick is to attack each vulnerability one by one. Passwords are one of those vulnerabilities, and users expect that your system will securely encrypt them so that prying eyes can stay shut.
 
-A while back I decided that I wanted to learn more about proper password encryption, and so I came across [Phpass](http://www.openwall.com/phpass/ "Portable PHP password hashing framework"): a framework aimed at simplifying the process for encrypting or "hashing" passwords. Phpass has been integrated into many well-known CMS's such as WordPress, Vanilla, phpBB, and Drupal, and is a huge reason for why I trust this framework. The only downside was that I could not find an easy-to-follow tutorial on using it, so I decided to write my own.
+A while back I decided that I wanted to learn more about proper password encryption, and so I came across [Phpass](http://www.openwall.com/phpass/ 'Portable PHP password hashing framework'): a framework aimed at simplifying the process for encrypting or "hashing" passwords. Phpass has been integrated into many well-known CMS's such as WordPress, Vanilla, phpBB, and Drupal, and is a huge reason for why I trust this framework. The only downside was that I could not find an easy-to-follow tutorial on using it, so I decided to write my own.
 
 ## Current Insecure Techniques
 
@@ -85,8 +85,8 @@ The `$hash` variable now contains the hash that you will need to store somewhere
 
 Also take a note the following:
 
--   The password limit should be set to 72 characters to prevent certain DoS attacks. We do this here with the `strlen()` function.
--   The hash can never be less than 20 characters, so if it is then something went wrong during the encryption process. A simple if statement is done for this as well.
+- The password limit should be set to 72 characters to prevent certain DoS attacks. We do this here with the `strlen()` function.
+- The hash can never be less than 20 characters, so if it is then something went wrong during the encryption process. A simple if statement is done for this as well.
 
 ### Checking "Matched" Passwords—Login
 

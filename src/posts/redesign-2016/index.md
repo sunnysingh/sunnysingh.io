@@ -11,11 +11,11 @@ A new year is upon us once more, so I want to reflect on the previous year and a
 
 I was part of a good number of projects last year, and here's the list:
 
-  - [Digital Bounds redesign](http://digitalbounds.com/2015/03/15/new-fresh-design-and-look/): A Ninjality client project. Gained some more experience in WordPress theme development and responsive images. Also I love seeing Digital Bounds grow and even [wrote an article](http://digitalbounds.com/2015/07/02/why-you-should-wait-before-buying-a-new-tech-product/) for them.
-  - [Server restructure](https://ninjality.com/blog/server-restructure-nginx-hhvm): The DigitalOcean server that I host all types of projects and sites on was getting bloated, so it was nice to clean and speed things up with nginx and HHVM.
-  - [socialshares](https://socialshar.es/): A rebranding of my old open source project. It's funny how small projects like this can end up taking a lot of work to manage. Lookout for a v2 this year.
-  - [Ninjality redesign](https://ninjality.com/blog/streamlining-our-design): Probably my favorite redesign so far. It was a good time for us to rebrand.
-  - [CodeBee beta release](https://codebee.io/): My biggest project to date, and my first experience with streaming code development on Livecoding.tv. The user reaction has been good, and we even got featured on [BetaList](http://betalist.com/startups/codebee) and [Launching.io](http://www.launching.io/project/codebee/).
+- [Digital Bounds redesign](http://digitalbounds.com/2015/03/15/new-fresh-design-and-look/): A Ninjality client project. Gained some more experience in WordPress theme development and responsive images. Also I love seeing Digital Bounds grow and even [wrote an article](http://digitalbounds.com/2015/07/02/why-you-should-wait-before-buying-a-new-tech-product/) for them.
+- [Server restructure](https://ninjality.com/blog/server-restructure-nginx-hhvm): The DigitalOcean server that I host all types of projects and sites on was getting bloated, so it was nice to clean and speed things up with nginx and HHVM.
+- [socialshares](https://socialshar.es/): A rebranding of my old open source project. It's funny how small projects like this can end up taking a lot of work to manage. Lookout for a v2 this year.
+- [Ninjality redesign](https://ninjality.com/blog/streamlining-our-design): Probably my favorite redesign so far. It was a good time for us to rebrand.
+- [CodeBee beta release](https://codebee.io/): My biggest project to date, and my first experience with streaming code development on Livecoding.tv. The user reaction has been good, and we even got featured on [BetaList](http://betalist.com/startups/codebee) and [Launching.io](http://www.launching.io/project/codebee/).
 
 ## Rebranding Myself
 
@@ -23,7 +23,7 @@ I was part of a good number of projects last year, and here's the list:
 
 ### The Design
 
-![Screenshot of old design compared with new one](redesign-2016-comparison.png "Old design on left, New design on right")
+![Screenshot of old design compared with new one](redesign-2016-comparison.png 'Old design on left, New design on right')
 
 As I said, the new design is reminiscent of my old one. To make it feel more modern, I flattened the header and gave more spacing to content. Also, I didn't use a UI/front-end framework again because I wanted to demonstrate my skills and have some fun with flexbox. Since grids are still fairly complex, I did use [Lost](https://github.com/corysimmons/lost) which is grid framework built on PostCSS and has flexbox support.
 
@@ -43,13 +43,13 @@ As far as hosting goes, I originally went with [GitHub Pages](https://pages.gith
 
 A lot of new stuff for me here as well. [PostCSS](https://github.com/postcss/postcss) has been growing in popularity recently, and I think it will continue this year. I also happen to really like the modularity of it over pre-processors. There's a good feeling of going back to just writing regular CSS, since most PostCSS plugins just add custom properties or just extra functionality to current ones. Here's the ones I currently use:
 
-  - [cssnext](http://cssnext.io/)
-  - [postcss-import](https://github.com/postcss/postcss-import)
-  - [postcss-nested](https://github.com/postcss/postcss-nested)
-  - [postcss-assets](https://github.com/assetsjs/postcss-assets)
-  - [Rucksack](https://simplaio.github.io/rucksack/)
-  - [Font Magician](https://github.com/jonathantneal/postcss-font-magician)
-  - [cssnano](http://cssnano.co/)
+- [cssnext](http://cssnext.io/)
+- [postcss-import](https://github.com/postcss/postcss-import)
+- [postcss-nested](https://github.com/postcss/postcss-nested)
+- [postcss-assets](https://github.com/assetsjs/postcss-assets)
+- [Rucksack](https://simplaio.github.io/rucksack/)
+- [Font Magician](https://github.com/jonathantneal/postcss-font-magician)
+- [cssnano](http://cssnano.co/)
 
 For the JavaScript side of things, I'm using [webpack](http://webpack.github.io/) and [Babel](http://babeljs.io/). I completely dropped jQuery in favor of native JavaScript features and smaller libraries. What I learned is that the DOM API isn't so bad thanks to `querySelectorAll()`, and Babel helps in polyfilling a lot of features as well as introducing new ES2015 ones like imports.
 

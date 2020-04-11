@@ -3,8 +3,8 @@ title: Looking back on 2018
 tagline: And how burn out led to my most successful year
 date: 2018-12-31 12:00
 tags: general
-background: "linear-gradient(to right, #ad5389, #3c1053)"
-metaImage: "meta.jpg"
+background: 'linear-gradient(to right, #ad5389, #3c1053)'
+metaImage: 'meta.jpg'
 ---
 
 2018 was such a crazy year for me. In fact, it was my most successful year. I traveled, launched a course, made videos, read books, launched big projects, and revamped my personal site and brand.
@@ -13,7 +13,7 @@ metaImage: "meta.jpg"
 
 ## What have I been up to?
 
-Trips, product launches, content creation, and **a lot of burn out**. I didn't really think that I would be calling this my most successful year. However, the fact that I was able to launch [IronMic](https://ironmic.fm/) *and* get paying customers for it was a huge milestone. I also continued to grow my personal brand through my podcast and connections that I've made on social media and online communities.
+Trips, product launches, content creation, and **a lot of burn out**. I didn't really think that I would be calling this my most successful year. However, the fact that I was able to launch [IronMic](https://ironmic.fm/) _and_ get paying customers for it was a huge milestone. I also continued to grow my personal brand through my podcast and connections that I've made on social media and online communities.
 
 I'm not afraid to talk about burn out, I even did it on my [first podcast episode](https://sunnycommutes.fm/episodes/burn-out-j8DQzq). In case you're unfamiliar, it's when you exhaust yourself into a lacking state of productivity. To help understand this better from my own experience, let's look through my accomplishments month by month, and see where things went downhill.
 
@@ -125,7 +125,7 @@ However, I did pull through. I started a project, and I launched it. Not only di
 
 🚀 Launched [personal newsletter](https://sunnysingh.io/news)
 
-📝 Wrote article about 2018 in review *(you're reading it)*
+📝 Wrote article about 2018 in review _(you're reading it)_
 
 🎙 Published 4 podcast episodes
 

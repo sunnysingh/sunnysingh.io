@@ -25,7 +25,7 @@ In a typical app you'll have functions calling other functions. Some functions m
 
 ```js
 function Page() {
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     console.log('Page loaded!');
     Page.init();
   });

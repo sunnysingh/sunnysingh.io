@@ -7,7 +7,7 @@ export const Pagination = styled.nav`
 export const PaginationItem = styled.div`
   flex-basis: 100%;
 
-  ${props =>
+  ${(props) =>
     !props.isShowingOneItem &&
     css`
       flex-basis: 50%;
@@ -16,7 +16,7 @@ export const PaginationItem = styled.div`
   &:last-child {
     display: flex;
 
-    ${props =>
+    ${(props) =>
       props.type === 'next' &&
       css`
         justify-content: flex-end;

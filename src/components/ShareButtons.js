@@ -15,7 +15,7 @@ const Container = styled.div`
 export default class ShareButtons extends Component {
   componentDidMount() {
     // Load socialshares on client side only to prevent SSR issues.
-    import('socialshares/dist/socialshares.noicons').then(module => {
+    import('socialshares/dist/socialshares.noicons').then((module) => {
       this.socialshares = module.default;
       this.socialshares.configure({ icons: { twitter, facebook, linkedin } });
       this.socialshares.mount();
