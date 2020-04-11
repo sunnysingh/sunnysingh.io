@@ -82,7 +82,7 @@ class BlogPostTemplate extends Component {
               <Calendar size={14} />
               <AccessibleText>Published on: </AccessibleText>
               <MetadataContent>
-                {formatDate(new Date(frontmatter.date), 'MMM Do, YYYY')}
+                {formatDate(new Date(frontmatter.date), 'LLL do, yyyy')}
               </MetadataContent>
             </MetadataItem>
             {timeToRead && (
