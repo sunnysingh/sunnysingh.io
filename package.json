@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
   },
+  "engines": {
+    "node": ">=10.13.0"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
