@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.footer.attrs({
+const Container = styled.footer.attrs(() => ({
   role: 'contentinfo',
-})`
+}))`
   display: flex;
   flex-direction: column;
   justify-content: center;
