@@ -50,7 +50,7 @@
     "react-dom": "^16.5.1",
     "react-feather": "^2.0.4",
     "react-helmet": "^5.2.0",
-    "react-kawaii": "^0.8.0",
+    "react-kawaii": "^0.16.0",
     "react-load-script": "^0.0.6",
     "snyk": "^1.192.3",
     "socialshares": "^2.0.5",
