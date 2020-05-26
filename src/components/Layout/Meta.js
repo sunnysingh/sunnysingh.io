@@ -67,20 +67,6 @@ export default function Meta({
       />
       <link rel="shortcut icon" href={`/favicon.ico?v=${CACHE_BUSTER}`} />
 
-      {/* RSS discovery links for readers and crawlers */}
-      <link
-        title="Blog"
-        rel="alternate"
-        type="application/rss+xml"
-        href="/rss.xml"
-      />
-      <link
-        title="Newsletter"
-        rel="alternate"
-        type="application/rss+xml"
-        href="https://buttondown.email/sunnysingh/rss"
-      />
-
       {/* App Name for pinning to home screen */}
       <meta name="apple-mobile-web-app-title" content={DOMAIN} />
       <meta name="application-name" content={DOMAIN} />
