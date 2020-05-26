@@ -5,8 +5,6 @@ date: 2014-07-22 21:45
 tags: coding, css
 ---
 
-import { CodePenEmbed } from 'components';
-
 You may or may not know what a box model is, but if you've coded HTML and CSS then you are already familiar. In layman's terms, every element on a page is a "box" and a box model includes all the margins, padding, borders, and content of that element. The default box model in CSS uses `content-box` which calculates dimensions of an element by adding up the total width/height, padding, and borders. We're all used to it, but there's a better box model that you should consider using.
 
 ## content-box, and why it sucks

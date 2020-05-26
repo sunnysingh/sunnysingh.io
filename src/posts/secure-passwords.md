@@ -143,4 +143,4 @@ That is all it takes to start using Phpass, so pat yourself on the back for bein
 
 If you need a bit more help on getting started with Phpass, I recommend you check out this [starter project I made on GitHub](http://github.com/sunnysingh/phpass-starter). It basically follows all the steps in this post but is separated into files as well as including the Phpass framework. Also feel free to read the more lengthy [article about secure passwords on Openwall](http://www.openwall.com/articles/PHP-Users-Passwords "How to manage a PHP application's users and passwords").
 
-**Looking for old comments?** [They are available on Disqus](https://disqus.com/home/discussion/sunnysingh/secure_passwords_with_phpass/), but I recommend you leave new comments using the new system below.
+**Looking for old comments?** [They are available on Disqus](https://disqus.com/home/discussion/sunnysingh/secure_passwords_with_phpass/).

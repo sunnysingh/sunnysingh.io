@@ -1,5 +1,4 @@
 module.exports = {
-  // Metadata required by `gatsby-plugin-feed`
   siteMetadata: {
     title: 'Sunny Singh',
     description: 'Creating Content & Code',
@@ -7,17 +6,6 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
-    {
-      resolve: 'gatsby-plugin-root-import',
-      options: {
-        src: `${__dirname}/src`,
-        assets: `${__dirname}/src/assets`,
-        components: `${__dirname}/src/components`,
-        config: `${__dirname}/src/config`,
-        pages: `${__dirname}/src/pages`,
-        utils: `${__dirname}/src/utils`,
-      },
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -35,7 +23,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#1c1c22',
         display: 'minimal-ui',
-        icon: 'src/assets/logo-square.png',
+        icon: './src/assets/logo-square.png',
       },
     },
     'gatsby-plugin-remove-serviceworker',
