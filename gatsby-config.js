@@ -18,21 +18,6 @@ module.exports = {
         utils: `${__dirname}/src/utils`,
       },
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1000,
-            },
-          },
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-        ],
-      },
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
