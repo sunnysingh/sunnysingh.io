@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-fathom',
       options: {
-        trackingUrl: process.env.FATHOM_DOMAIN,
-        siteId: process.env.FATHOM_SITE_ID,
+        trackingUrl: 'penguin.sunny.app',
+        siteId: 'MFPYFNDH',
         whitelistHostnames: ['sunnysingh.io', 'www.sunnysingh.io'],
         embedVersion: 'v2',
       },
