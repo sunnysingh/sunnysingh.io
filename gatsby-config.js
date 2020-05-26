@@ -9,9 +9,11 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-fathom',
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // trackingUrl: 'your-fathom-instance.com',
+        siteId: process.env.FATHOM_SITE_ID,
+        whitelistHostnames: ['sunnysingh.io', 'www.sunnysingh.io'],
       },
     },
     {
