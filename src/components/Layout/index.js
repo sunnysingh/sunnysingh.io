@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { MDXProvider } from '@mdx-js/tag';
+import { MDXProvider } from '@mdx-js/react';
 import { Blockquote } from '../mdx';
 import { Header, Footer, GlobalStyle } from '../../components';
 import Meta from './Meta';

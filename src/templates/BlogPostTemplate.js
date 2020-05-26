@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import MDXRenderer from 'gatsby-mdx/mdx-renderer';
-import { withMDXScope } from 'gatsby-mdx/context';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Calendar, Clock } from 'react-feather';
 import formatDate from 'date-fns/format';
 import {
@@ -30,7 +29,7 @@ import {
 } from './blog-post-styled';
 import avatarBase64 from '../assets/avatar-base64';
 
-const mdxComponents = {
+const shortcodes = {
   Alert,
   AlertLink,
   YouTubeEmbed,
@@ -38,14 +37,10 @@ const mdxComponents = {
   CodePenEmbed,
 };
 
-class BlogPostTemplate extends Component {
+export default class BlogPostTemplate extends Component {
   render() {
-    const { data, location, scope } = this.props;
-    const {
-      timeToRead,
-      frontmatter,
-      code: { body },
-    } = data.mdx;
+    const { data, location } = this.props;
+    const { timeToRead, frontmatter, body } = data.mdx;
 
     return (
       <Layout
@@ -92,9 +87,7 @@ class BlogPostTemplate extends Component {
         </ArticleHeader>
         <Container>
           <ArticleContent>
-            <MDXRenderer scope={{ ...mdxComponents, ...scope }}>
-              {body}
-            </MDXRenderer>
+            <MDXRenderer components={shortcodes}>{body}</MDXRenderer>
           </ArticleContent>
           <ArticleFooter>
             <AuthorBio />
@@ -109,17 +102,12 @@ class BlogPostTemplate extends Component {
   }
 }
 
-export default withMDXScope(BlogPostTemplate);
-
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query MDXQuery($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       timeToRead
-      code {
-        scope
-        body
-      }
+      body
       frontmatter {
         title
         tagline

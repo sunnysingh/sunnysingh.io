@@ -59,13 +59,13 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-twitter',
     {
-      resolve: 'gatsby-mdx',
+      resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
           default: require.resolve('./src/templates/BlogPostTemplate.js'),
         },
-        gatsbyRemarkPlugins: [
+        remarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {

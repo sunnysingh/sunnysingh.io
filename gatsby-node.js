@@ -1,6 +1,5 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
-const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -15,9 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
           ) {
             edges {
               node {
-                code {
-                  scope
-                }
+                id
                 fields {
                   slug
                 }
@@ -28,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
@@ -40,10 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           createPage({
             path: `/blog${node.fields.slug}`,
-            component: componentWithMDXScope(
-              path.resolve('./src/templates/BlogPostTemplate.js'),
-              node.code.scope
-            ),
+            component: path.resolve('./src/templates/BlogPostTemplate.js'),
             context: {
               slug: node.fields.slug,
             },
@@ -56,10 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
         Array.from({ length: pagesCount }).forEach((_, index) => {
           createPage({
             path: index === 0 ? `/blog` : `/blog/${index + 1}`,
-            component: componentWithMDXScope(
-              path.resolve('./src/templates/BlogListTemplate.js'),
-              posts[index].node.code.scope
-            ),
+            component: path.resolve('./src/templates/BlogListTemplate.js'),
             context: {
               pagesCount,
               limit: postsPerPage,
@@ -77,20 +68,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'Mdx') {
-    const value = createFilePath({
-      node,
-      getNode,
-      trailingSlash: false,
-    });
-    createNodeField({
-      name: 'slug',
-      node,
-      value,
-    });
-  }
-
-  // `MarkdownRemark` required by `gatsby-plugin-feed`
-  if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({
       node,
       getNode,
