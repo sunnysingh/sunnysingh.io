@@ -1,5 +1,3 @@
-const mdxFeed = require('gatsby-mdx/feed');
-
 module.exports = {
   // Metadata required by `gatsby-plugin-feed`
   siteMetadata: {
@@ -43,10 +41,6 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
-    },
-    {
-      resolve: 'gatsby-plugin-feed',
-      options: mdxFeed,
     },
     {
       resolve: 'gatsby-plugin-manifest',
