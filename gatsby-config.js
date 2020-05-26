@@ -64,7 +64,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/templates/BlogPostTemplate.js'),
         },
-        remarkPlugins: [
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
