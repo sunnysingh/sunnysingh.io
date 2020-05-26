@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import prismjsTheme from './prismjsTheme';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans');
@@ -118,8 +117,6 @@ const GlobalStyle = createGlobalStyle`
       outline-width: 3px;
     }
   }
-
-  ${prismjsTheme}
 `;
 
 export default GlobalStyle;

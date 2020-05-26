@@ -138,12 +138,19 @@ export const ArticleContent = styled.div`
     line-height: 1.8;
   }
 
-  & > div > p:not(:last-child),
-  & > div > ul:not(:last-child),
-  & > div > ol:not(:last-child),
-  & > div > blockquote:not(:last-child),
-  & > div > hr:not(:last-child),
-  & > div .gatsby-highlight:not(:last-child) pre,
+  .prism-code {
+    max-width: 100%;
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  & > p:not(:last-child),
+  & > ul:not(:last-child),
+  & > ol:not(:last-child),
+  & > blockquote:not(:last-child),
+  & > hr:not(:last-child),
+  & > .prism-code:not(:last-child),
   & .mediaEmbed:not(:last-child) {
     margin-bottom: 1rem;
 
@@ -164,21 +171,21 @@ export const ArticleContent = styled.div`
     margin-top: 0 !important; /* override twitter styles */
   }
 
-  & > div > p,
-  & > div > ul,
-  & > div > ol {
+  & > p,
+  & > ul,
+  & > ol {
     font-family: 'PT Sans', sans-serif;
   }
 
-  & > div > blockquote p {
+  & > blockquote p {
     font-family: 'Georgia', serif;
   }
 
-  & > div > blockquote cite {
+  & > blockquote cite {
     display: block;
   }
 
-  & > div > hr {
+  & > hr {
     display: block;
     text-align: center;
     overflow: visible;
@@ -194,11 +201,11 @@ export const ArticleContent = styled.div`
     }
   }
 
-  & > div > h2,
-  & > div > h3,
-  & > div > h4,
-  & > div > h5,
-  & > div > h6 {
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
     margin-bottom: 1rem;
     padding-top: 1rem;
     font-family: 'PT Sans', sans-serif;
@@ -213,7 +220,7 @@ export const ArticleContent = styled.div`
   }
 
   /* Dropcap */
-  & > div > p:first-child::first-letter {
+  & > p:first-child::first-letter {
     float: left;
     padding-right: 0.25rem;
     margin-right: 0.25rem;

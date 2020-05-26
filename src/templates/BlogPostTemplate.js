@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import nightOwl from 'prism-react-renderer/themes/nightOwl';
 import { Calendar, Clock } from 'react-feather';
 import formatDate from 'date-fns/format';
 import {
@@ -35,6 +38,34 @@ const shortcodes = {
   YouTubeEmbed,
   TweetEmbed,
   CodePenEmbed,
+  pre: (props) => {
+    const className = props.children.props.className || '';
+    const matches = className.match(/language-(?<lang>.*)/);
+    return (
+      <Highlight
+        {...defaultProps}
+        theme={nightOwl}
+        code={props.children.props.children.trim()}
+        language={
+          matches && matches.groups && matches.groups.lang
+            ? matches.groups.lang
+            : ''
+        }
+      >
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <pre className={className} style={style}>
+            {tokens.map((line, index) => (
+              <div {...getLineProps({ line, key: index })}>
+                {line.map((token, key) => (
+                  <span {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </pre>
+        )}
+      </Highlight>
+    );
+  },
 };
 
 export default class BlogPostTemplate extends Component {
@@ -87,7 +118,9 @@ export default class BlogPostTemplate extends Component {
         </ArticleHeader>
         <Container>
           <ArticleContent>
-            <MDXRenderer components={shortcodes}>{body}</MDXRenderer>
+            <MDXProvider components={shortcodes}>
+              <MDXRenderer>{body}</MDXRenderer>
+            </MDXProvider>
           </ArticleContent>
           <ArticleFooter>
             <AuthorBio />

@@ -28,7 +28,6 @@ module.exports = {
               maxWidth: 1000,
             },
           },
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -73,9 +72,6 @@ module.exports = {
               showCaptions: true,
               backgroundColor: 'transparent',
             },
-          },
-          {
-            resolve: 'gatsby-remark-prismjs',
           },
           {
             resolve: 'gatsby-remark-copy-linked-files',
