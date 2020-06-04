@@ -6,10 +6,10 @@ export const PROJECTS = [
     action: 'Visit resrc.dev',
   },
   {
-    name: '✉️ Newsletter',
-    description: 'Early access to articles & content',
-    url: 'https://sunny.link/news',
-    action: 'Visit sunny.link/news',
+    name: '🚗 Sunny Commutes',
+    description: 'A podcast for web dev and business',
+    url: 'https://sunnycommutes.fm',
+    action: 'Visit sunnycommutes.fm',
   },
   {
     name: '🎙 IronMic',

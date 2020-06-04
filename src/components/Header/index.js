@@ -32,8 +32,8 @@ export default function Header({ currentPath }) {
             </Logo>
           )}
           <Nav isSecondary>
-            <NavLink to="/podcasts" swapToSecondPositionOnSmall>
-              <span>Podcasts</span>
+            <NavLink to="/newsletter" swapToSecondPositionOnSmall>
+              <span>Newsletter</span>
             </NavLink>
             <NavLink to="/blog" isLast>
               <span>Articles</span>

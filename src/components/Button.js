@@ -18,6 +18,7 @@ export const StyledButton = styled.button`
   ${(props) =>
     props.size == 'large' &&
     css`
+      padding: 1rem 1.5rem;
       font-size: 1.125rem;
     `}
 
