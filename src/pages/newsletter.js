@@ -8,11 +8,17 @@ import {
   Divider,
   Title,
   Subtitle,
+  Bio,
+  BioContent,
+  BioTitle,
+  BioText,
+  BioAvatar,
   SubscribeForm,
   EmailSection,
   SubmitSection,
   ActionLink,
 } from '../newsletter/styled';
+import avatarBase64 from '../assets/avatar-base64';
 
 export default function NewsletterPage({ location }) {
   return (
@@ -31,6 +37,27 @@ export default function NewsletterPage({ location }) {
             </ActionLink>
           </HeaderContent>
         </Header>
+        <Bio>
+          <BioContent>
+            <BioTitle>Who am I?</BioTitle>
+            <div>
+              <BioText>Hi, I'm Sunny. I love building software.</BioText>
+              <BioText>
+                I want to share my passion and knowledge with you.
+              </BioText>
+              <BioText>
+                Subscribe to exclusive content where I share my experience from
+                projects like <a href="https://ironmic.fm/">IronMic</a>,{' '}
+                <a href="https://resrc.dev/">Resrc</a>,{' '}
+                <a href="https://sunnycommutes.fm/">Sunny Commutes</a>, and
+                more.
+              </BioText>
+            </div>
+          </BioContent>
+          <BioAvatar>
+            <img src={avatarBase64} alt="Photo of Sunny Singh" />
+          </BioAvatar>
+        </Bio>
         <SubscribeForm>
           <EmailSection>
             <Field id="email" label="Your email" />

@@ -13,8 +13,10 @@ export const Input = styled.input`
   border: 1px solid;
   border-radius: 1em;
   background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: #d1d1e4;
   font-size: 1.125rem;
+  font-family: inherit;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 200ms;

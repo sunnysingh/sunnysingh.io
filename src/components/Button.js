@@ -10,6 +10,7 @@ export const StyledButton = styled.button`
   background-color: transparent;
   text-decoration: none;
   color: #d1d1e4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition-property: transform, color, border-color;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
