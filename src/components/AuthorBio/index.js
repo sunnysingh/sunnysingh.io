@@ -21,7 +21,7 @@ export default function AuthorBio() {
         </Text>
         <Text>
           <span aria-hidden="true">📨</span> Want early access?{' '}
-          <a href="https://sunny.link/news">Subscribe to my newsletter</a>
+          <Link to="/newsletter">Subscribe to my newsletter</Link>
         </Text>
       </div>
     </Container>
