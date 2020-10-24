@@ -8,15 +8,19 @@ export const Header = styled.div`
   position: relative;
   margin-bottom: 4rem;
   padding-top: 4rem;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 450px) {
+    padding-bottom: 8rem;
+  }
+
   @media (min-width: ${breakpoints.large}px) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
     flex-direction: row;
   }
 `;
@@ -60,20 +64,31 @@ export const HeaderContent = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin-bottom: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   color: #ef7086;
   text-align: left;
+  font-family: 'PT Sans', sans-serif;
+
+  @media (min-width: 450px) {
+    font-size: 3rem;
+  }
 
   @media (min-width: ${breakpoints.large}px) {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
 `;
 
 export const Subtitle = styled.p`
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
+  font-family: 'PT Sans', sans-serif;
+
+  @media (min-width: 450px) {
+    font-size: 2rem;
+  }
 
   @media (min-width: ${breakpoints.large}px) {
     margin-bottom: 3rem;
@@ -85,8 +100,12 @@ export const ActionLink = styled.a`
   padding-top: 1rem;
   padding-bottom: 5px;
   border-bottom: 1px dashed;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
+
+  @media (min-width: 450px) {
+    font-size: 1.8rem;
+  }
 
   @media (min-width: ${breakpoints.large}px) {
     font-size: 2rem;
@@ -105,6 +124,7 @@ export const Bio = styled.div`
 export const BioContent = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'PT Sans', sans-serif;
 
   @media (min-width: ${breakpoints.large}px) {
     flex-direction: row;

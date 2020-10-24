@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Container, Field, Button } from '../components';
+import avatarBase64 from '../assets/avatar-base64';
 import Art from '../newsletter/Art';
 import {
   Header,
@@ -18,11 +19,11 @@ import {
   SubmitSection,
   ActionLink,
 } from '../newsletter/styled';
-import avatarBase64 from '../assets/avatar-base64';
+import PromoImage from '../newsletter/promo.png'
 
 export default function NewsletterPage({ location }) {
   return (
-    <Layout title="Newsletter" location={location}>
+    <Layout title="Newsletter" location={location} image={PromoImage} width={1200} height={628}>
       <Container>
         <Header>
           <Divider />
@@ -63,11 +64,10 @@ export default function NewsletterPage({ location }) {
           method="post"
           target="popupwindow"
           onsubmit="window.open('https://buttondown.email/sunnysingh', 'popupwindow')"
-          class="embeddable-buttondown-form"
         >
           <input type="hidden" name="embed" value="1" />
           <EmailSection>
-            <Field name="email" id="bd-email" label="Your email" />
+            <Field name="email" id="bd-email" label="Your email" required />
           </EmailSection>
           <SubmitSection>
             <Button size="large" type="submit">
