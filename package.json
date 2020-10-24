@@ -7,8 +7,8 @@
     "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
   },
   "engines": {
-    "node": ">=10.13.0",
-    "yarn": ">=1.12.1"
+    "node": ">=15.0.1",
+    "npm": ">=7.0.3"
   },
   "scripts": {
     "dev": "gatsby develop",
