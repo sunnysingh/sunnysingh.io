@@ -84,8 +84,9 @@ export default function HomePage({ location }) {
           <AnimatedRocket>
             <RocketIcon size={32} />
           </AnimatedRocket>{' '}
-          Currently, I'm recording <Link to="/podcasts">podcasts</Link> and
-          curating <a href="https://resrc.dev/">resources</a>.
+          Currently, I'm recording{' '}
+          <Link to="https://sunnycommutes.fm/">a podcast</Link> and curating{' '}
+          <a href="https://resrc.dev/">resources</a>.
         </CurrentWork>
       </Bio>
       <Contact>
