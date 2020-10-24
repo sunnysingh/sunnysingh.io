@@ -30,10 +30,10 @@ export default function NewsletterPage({ location }) {
             <Art />
           </HeaderArt>
           <HeaderContent>
-            <Title>An email every Sunday</Title>
+            <Title>Exclusive updates</Title>
             <Subtitle>for the software enthusiast</Subtitle>
-            <ActionLink href="https://buttondown.email/sunnysingh/archive/wfh-culture/">
-              Read issue #33: WFH Culture
+            <ActionLink href="https://buttondown.email/sunnysingh/archive/">
+              Browse the archive
             </ActionLink>
           </HeaderContent>
         </Header>
@@ -58,9 +58,16 @@ export default function NewsletterPage({ location }) {
             <img src={avatarBase64} alt="Photo of Sunny Singh" />
           </BioAvatar>
         </Bio>
-        <SubscribeForm>
+        <SubscribeForm
+          action="https://buttondown.email/api/emails/embed-subscribe/sunnysingh"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/sunnysingh', 'popupwindow')"
+          class="embeddable-buttondown-form"
+        >
+          <input type="hidden" name="embed" value="1" />
           <EmailSection>
-            <Field id="email" label="Your email" />
+            <Field name="email" id="bd-email" label="Your email" />
           </EmailSection>
           <SubmitSection>
             <Button size="large" type="submit">
