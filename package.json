@@ -11,6 +11,7 @@
     "npm": ">=7.0.3"
   },
   "scripts": {
+    "gen:post": "hygen post new",
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -54,6 +55,7 @@
   "devDependencies": {
     "eslint": "^7.1.0",
     "eslint-plugin-react": "^7.11.1",
+    "hygen": "^6.0.4",
     "prettier": "^2.0.4"
   },
   "homepage": "https://sunnysingh.io/",

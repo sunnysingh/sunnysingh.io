@@ -12,6 +12,12 @@
 
 Make sure to have [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) plugins installed in your editor.
 
+## 📝 Writing
+
+Generator commands:
+
+- New article: `npm run gen:post`
+
 ## 🚀 Deploy
 
 The [master branch](https://github.com/sunnysingh/sunnysingh.io/tree/master) is automatically deployed to [sunnysingh.io](https://sunnysingh.io/) by [Netlify](https://www.netlify.com/).
