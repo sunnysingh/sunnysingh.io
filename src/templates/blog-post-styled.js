@@ -243,6 +243,10 @@ export const ArticleContent = styled.div`
     }
   }
 
+  & ol {
+    list-style-type: decimal;
+  }
+
   & li {
     padding-left: 1rem;
   }
