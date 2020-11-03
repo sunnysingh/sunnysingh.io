@@ -12,8 +12,7 @@ export const HeaderLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 

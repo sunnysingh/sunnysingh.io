@@ -128,6 +128,9 @@ export const ArticleContent = styled.div`
   font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 
   @media (min-width: ${breakpoints.medium}px) {
     padding-top: 4rem;
