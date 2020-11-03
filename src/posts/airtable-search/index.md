@@ -1,7 +1,7 @@
 ---
 title: 'How I added realtime search to my static site'
 tagline: 'Search powered by Airtable, Netlify Functions, and React Query'
-date: 2020-11-01  12:00
+date: 2020-11-03  12:00
 tags: coding
 background: 'radial-gradient(circle farthest-corner at 10% 20%, rgba(48,49,142,1) 0%, rgba(94,93,223,1) 90%)'
 metaImage: 'meta.png'
