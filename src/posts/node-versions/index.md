@@ -11,7 +11,7 @@ When I start a new project, I am likely going to run [`npm init`](https://docs.n
 
 This means that [Node.js](https://nodejs.org/) is powering all of my projects and it's unlikely that I am able to keep all of them working with the same Node version. For example, I may have a legacy project that uses Node v8 while a newer project uses Node v14.
 
-A tool to help with this problem exists and you may already be aware of it: [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm). NVM allows you to install and use different versions:
+A tool to help with this problem exists and you may already be aware of it: [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm). It allows you to install and use different versions:
 
 ```sh
 # Install and use Node v14
@@ -23,7 +23,7 @@ However, this manual process can be tedious when switching between projects. Ima
 
 ## 💡 Solution: the `.nvmrc` file
 
-Did you know that NVM can automatically detect which version to use in a project? You can enable this by adding a [`.nvmrc` file](https://github.com/nvm-sh/nvm#nvmrc) which should contain a Node version:
+Did you know that [NVM](https://github.com/nvm-sh/nvm) can automatically detect which version to use in a project? You can enable this by adding a [`.nvmrc` file](https://github.com/nvm-sh/nvm#nvmrc) which should contain a Node version:
 
 ```
 14.15.0
@@ -36,5 +36,25 @@ Now run `nvm use` in the project and NVM will figure out to install and use `14.
 **Bonus**: You can even have your shell automatically run `nvm use` when it detects an `.nvmrc` file! [Read the NVM docs](https://github.com/nvm-sh/nvm#deeper-shell-integration) to learn how to set it up.
 
 </Alert>
+
+## 🏎 Honorable mention: the `engines` field
+
+NVM obviously uses the `.nvmrc` file, but some other tools and services may as well. Notably, [Netlify uses nvmrc](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript) to detect which Node.js version to build your site with.
+
+However, other services [such as Heroku](https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version) use the [engines field in package.json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#engines):
+
+```json
+{
+  "name": "my-package",
+  "engines": {
+    "node": ">=14.15.0",
+    "npm": ">=6.14.8"
+  }
+}
+```
+
+This field actually matters significantly when it comes to publishing packages to NPM with version requirements, and also has the added benefit of being able to specify the version of the package manager (NPM or Yarn) as well.
+
+---
 
 Maintaining different Node.js versions is now a problem of the past. Did you like this quick tip? Maybe you have one to suggest? Send me [an email](/contact) or [a tweet](https://twitter.com/sunnysinghio).
