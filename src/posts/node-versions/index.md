@@ -1,7 +1,7 @@
 ---
 title: 'Quick tip: Manage Node versions for your projects'
 tagline: 'How to simplify version management for your projects'
-date: 2020-11-05 12:00
+date: 2020-11-04 12:00
 tags: coding, javascript
 background: 'linear-gradient(45deg, #874da2 0%, #c43a30 100%)'
 metaImage: 'meta.png'
