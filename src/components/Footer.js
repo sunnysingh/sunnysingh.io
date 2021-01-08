@@ -20,7 +20,7 @@ const Copyright = styled.p`
 export default function Footer() {
   return (
     <Container>
-      <Copyright>&copy; {new Date.getFullYear()} Sunny Singh</Copyright>
+      <Copyright>&copy; {new Date().getFullYear()} Sunny Singh</Copyright>
     </Container>
   );
 }
