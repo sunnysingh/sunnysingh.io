@@ -1,9 +1,8 @@
 ---
 title: 'A realistic WFH setup'
 tagline: 'Budget friendly couples desk setup'
-date: 2021-01-08 12:00
+date: 2021-01-11 12:00
 tags: general
-background: 'radial-gradient(circle farthest-corner at 10% 20%, rgba(48,49,142,1) 0%, rgba(94,93,223,1) 90%)'
 ---
 
 Most of the desk setup videos on YouTube feature a large desk with multiple monitors, gaming chairs, LED lights and various other things that aren't relevant for a lot of people. What if you are living with family, roommates, or a partner? Everyone is trying to work in the same room and even if you want to improve your home office situation, it seems like you need to have a large budget to do so.
@@ -67,6 +66,8 @@ I use the [Logitech MX Keys](https://sunny.link/mxkeys) and [Logitech MX Master]
 ### Headphones
 
 I have the [Bowers & Wilkins PX](https://sunny.link/px) which are a set of noise canceling headphones. While they are already three years old, they still work well. My only complaint about them is that they can get uncomfortable after long wearing sessions.
+
+If I was to upgrade, I would get either the [Bose QC 700](https://sunny.link.boseqc700) or the [Sony WH-1000XM4](https://sunny.link/sonywh1000xm4). They're both industry leaders in noise cancellation, and my dad still loves the Bose QC 700 that he recently got for Father's Day. A good investment for quarantine!
 
 ### Charger
 
