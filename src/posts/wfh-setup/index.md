@@ -3,6 +3,7 @@ title: 'A realistic WFH setup'
 tagline: 'Budget friendly couples desk setup'
 date: 2021-01-12 12:00
 tags: general
+metaImage: 'meta.png'
 ---
 
 Most of the desk setup videos on YouTube feature a large desk with multiple monitors, gaming chairs, LED lights and various other things that aren't relevant for a lot of people. What if you are living with family, roommates, or a partner? Everyone is trying to work in the same room and even if you want to improve your home office situation, it seems like you need to have a large budget to do so.
