@@ -1,7 +1,7 @@
 ---
 title: 'A realistic WFH setup'
 tagline: 'Budget friendly couples desk setup'
-date: 2021-01-11 12:00
+date: 2021-01-12 12:00
 tags: general
 ---
 
