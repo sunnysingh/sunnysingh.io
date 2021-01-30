@@ -66,7 +66,7 @@ export default function HomePage({ location }) {
           <AnimatedWave>
             <HandWaveIcon size={32} />
           </AnimatedWave>{' '}
-          Hey, I'm a software engineer based in Manhattan, New York.
+          Hey, I'm a software engineer based in Manhattan, NYC.
         </BioText>
         <BioText>
           <Earth>
