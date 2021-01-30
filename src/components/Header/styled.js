@@ -34,7 +34,7 @@ export const Logo = styled.div`
     margin-top: 0;
     margin-bottom: 1rem;
     order: 2;
-    width: auto;
+    width: 33%;
   }
 
   & svg {
@@ -57,6 +57,7 @@ export const Nav = styled.nav`
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
     margin-left: 0;
+    width: 33%;
   }
 
   /* Second nav */
