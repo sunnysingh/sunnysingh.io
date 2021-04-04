@@ -105,7 +105,10 @@ export default class BlogPostTemplate extends Component {
               <Calendar size={14} />
               <AccessibleText>Published on: </AccessibleText>
               <MetadataContent>
-                {formatDate(new Date(frontmatter.date), 'LLL do, yyyy')}
+                {formatDate(
+                  new Date(frontmatter.date.split(' ')[0]),
+                  'LLL do, yyyy'
+                )}
               </MetadataContent>
             </MetadataItem>
             {timeToRead && (
