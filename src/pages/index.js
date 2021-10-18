@@ -66,27 +66,27 @@ export default function HomePage({ location }) {
           <AnimatedWave>
             <HandWaveIcon size={32} />
           </AnimatedWave>{' '}
-          Hey, I'm a software engineer based in Manhattan, NYC.
+          Hey, I'm a software engineer based in New York City.
         </BioText>
         <BioText>
           <Earth>
             <EarthIcon size={32} />
           </Earth>{' '}
-          Born in Kharkiv, with parents from Tanzania and Kolkata.
+          Born in Ukraine, with parents from Tanzania and India.
         </BioText>
         <BioText>
           <AnimatedComputer>
             <ComputerIcon size={32} />
           </AnimatedComputer>{' '}
-          Coding using web technologies since the age of thirteen.
+          Coding with web technologies since the age of thirteen.
         </BioText>
         <CurrentWork>
           <AnimatedRocket>
             <RocketIcon size={32} />
           </AnimatedRocket>{' '}
-          Currently, I'm recording{' '}
-          <Link to="https://sunnycommutes.fm/">a podcast</Link> and curating{' '}
-          <a href="https://resrc.dev/">resources</a>.
+          Currently, I'm{' '}
+          <Link to="https://www.youtube.com/SunnySinghTV">creating videos</Link>{' '}
+          and <a href="https://resrc.dev/">curating resources</a>.
         </CurrentWork>
       </Bio>
       <Contact>
