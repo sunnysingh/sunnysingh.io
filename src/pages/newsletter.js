@@ -19,11 +19,17 @@ import {
   SubmitSection,
   ActionLink,
 } from '../newsletter/styled';
-import PromoImage from '../newsletter/promo.png'
+import PromoImage from '../newsletter/promo.png';
 
 export default function NewsletterPage({ location }) {
   return (
-    <Layout title="Newsletter" location={location} image={PromoImage} width={1200} height={628}>
+    <Layout
+      title="Newsletter"
+      location={location}
+      image={PromoImage}
+      width={1200}
+      height={628}
+    >
       <Container>
         <Header>
           <Divider />
