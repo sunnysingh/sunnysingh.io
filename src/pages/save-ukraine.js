@@ -11,15 +11,15 @@ const LINKS = [
   },
   {
     label: '📝 Demand the world to help',
-    url: 'https://docs.google.com/document/u/2/d/1YOH91yIJ57DL88utH_2bBJPO0pjG1Fo7epZ4IbLDez8/mobilebasic,',
+    url: 'https://docs.google.com/document/u/2/d/1YOH91yIJ57DL88utH_2bBJPO0pjG1Fo7epZ4IbLDez8/mobilebasic',
   },
   {
     label: '📝 Contact your congressional representatives',
     url: 'https://actionnetwork.org/letters/stand-with-ukraine',
   },
   {
-    label: '📍 Particiate in rallies and events',
-    url: 'https://www.stopputin.net/,',
+    label: '📍 Participate in rallies and events',
+    url: 'https://www.stopputin.net/',
   },
   {
     label: "🪖 Donate directly to Ukraine's Armed Forces",
@@ -39,7 +39,7 @@ const LINKS = [
   },
   {
     label: '🏥 Donate for hospital aid',
-    url: 'https://4agc.com/fundraiser_pages/e9aca7e4-13d5-4e67-b6bd-548f94822793,',
+    url: 'https://4agc.com/fundraiser_pages/e9aca7e4-13d5-4e67-b6bd-548f94822793',
   },
   {
     label: '⛑ Donate to Red Cross',
