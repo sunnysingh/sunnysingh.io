@@ -45,6 +45,10 @@ const LINKS = [
     label: '⛑ Donate to Red Cross',
     url: 'https://www.icrc.org/en/donate/ukraine',
   },
+  {
+    label: '🪙 Donate with cryptocurrency',
+    url: 'https://thegivingblock.com/campaigns/ukraine-emergency-response-fund/',
+  },
 ];
 
 const Poster = styled.h1`
