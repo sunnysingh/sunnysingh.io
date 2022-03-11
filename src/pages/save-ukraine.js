@@ -318,7 +318,11 @@ const ProductList = styled.ul`
 
 const ProductItem = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: row;
+  }
 
   &:not(:last-child) {
     margin-bottom: 1.5rem;
@@ -326,28 +330,51 @@ const ProductItem = styled.div`
 `;
 
 const ProductImage = styled.div`
-  min-width: 200px;
-  height: 200px;
-  margin-right: 1.5rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    min-width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
 
   & img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    & img {
+      width: 200px;
+      height: 200px;
+    }
   }
 `;
 
 const ProductContent = styled.div``;
 
 const ProductTitle = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
 `;
 
 const ProductDescription = styled.div`
-  font-size: 1.3rem;
+  font-size: 1rem;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const Iban = styled.code`
