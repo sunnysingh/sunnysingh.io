@@ -379,7 +379,12 @@ const ProductDescription = styled.div`
 
 const Iban = styled.code`
   display: block;
-  margin-left: 2rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-left: 2rem;
+  }
 `;
 
 export default function SaveUkrainePage({ location }) {
