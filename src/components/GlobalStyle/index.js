@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
   }
 
   body {
