@@ -266,7 +266,7 @@ const CardVideo = styled.div`
   }
 `;
 
-const CardText = styled.p`
+const CardText = styled.div`
   &:not(:last-child) {
     margin-bottom: 1.5rem;
   }
@@ -456,9 +456,9 @@ export default function SaveUkrainePage({ location }) {
             height="315"
             src="https://www.youtube-nocookie.com/embed/li_NrhV5Nt8"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           />
         </CardVideo>
         <CardSubheading>Territorial Defense Wishlist</CardSubheading>
@@ -473,7 +473,7 @@ export default function SaveUkrainePage({ location }) {
         </CardText>
         <ProductList>
           {PRODUCTS.map((product) => (
-            <ProductItem>
+            <ProductItem key={product.title}>
               <ProductImage>
                 <img src={product.image} alt="" />
               </ProductImage>
