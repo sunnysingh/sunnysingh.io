@@ -275,6 +275,10 @@ const CardText = styled.div`
     margin-left: 2rem;
   }
 
+  & li:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
   & li > ul {
     font-size: 0.9em;
   }
@@ -381,10 +385,15 @@ const Iban = styled.code`
   display: block;
   max-width: 100%;
   overflow-wrap: break-word;
+  color: rgba(255, 213, 0, 0.9);
 
   @media (min-width: ${breakpoints.medium}px) {
     margin-left: 2rem;
   }
+`;
+
+const InstructionValue = styled.code`
+  color: rgba(255, 213, 0, 0.9);
 `;
 
 export default function SaveUkrainePage({ location }) {
@@ -409,17 +418,13 @@ export default function SaveUkrainePage({ location }) {
         <CardImageContainer>
           <img src={rallyImage} alt="" />
         </CardImageContainer>
-        <CardText>I was born in Kharkiv. My wife was born in Odessa.</CardText>
         <CardText>
-          We live in NYC, but many of our relatives and friends are in Ukraine.
-          Recently, the Russian dictator Vladimir Putin started an invasion of
-          Ukraine which is a <strong>currently ongoing war</strong>.
+          I was born in Kharkiv. My wife was born and raised in Odessa.
         </CardText>
         <CardText>
-          I am still in disbelief. The new normalcy used to be just wearing
-          masks and quarantining. Now it is running to bunkers and escaping
-          bombs. Unfortunately, this is real. I am texting my family and friends
-          to make sure that they're still alive.
+          We live in NYC, but many of our relatives and friends are in Ukraine.
+          On February 24th, 2022, Russian dictator Vladimir Putin invaded
+          independent sovereign nation of Ukraine.
         </CardText>
         <CardText>
           <em>
@@ -541,18 +546,21 @@ export default function SaveUkrainePage({ location }) {
               On the next page, fill out:
               <ul>
                 <li>
-                  <strong>Send To</strong>: <code>Ukraine</code>
+                  <strong>Send To</strong>:{' '}
+                  <InstructionValue>Ukraine</InstructionValue>
                 </li>
                 <li>
-                  <strong>Send Amount</strong>: <code>Any Amount</code>
+                  <strong>Send Amount</strong>:{' '}
+                  <InstructionValue>Any Amount</InstructionValue>
                 </li>
                 <li>
                   <strong>How does your receiver want the money</strong>:{' '}
-                  <code>Bank Account</code>
+                  <InstructionValue>Bank Account</InstructionValue>
                 </li>
                 <li>
                   <strong>How would you like to pay</strong>:{' '}
-                  <code>Debit Card</code> (<em>fastest</em>)
+                  <InstructionValue>Debit Card</InstructionValue> (
+                  <em>fastest</em>)
                 </li>
               </ul>
             </li>
@@ -563,16 +571,20 @@ export default function SaveUkrainePage({ location }) {
               On the next page please provide recipient’s information:
               <ul>
                 <li>
-                  <strong>Receiver’s First Name</strong>: <code>Anton</code>
+                  <strong>Receiver’s First Name</strong>:{' '}
+                  <InstructionValue>Anton</InstructionValue>
                 </li>
                 <li>
-                  <strong>Receiver’s Last Name</strong>: <code>Odegov</code>
+                  <strong>Receiver’s Last Name</strong>:{' '}
+                  <InstructionValue>Odegov</InstructionValue>
                 </li>
                 <li>
-                  <strong>Email address</strong>: <code>Leave Blank</code>
+                  <strong>Email address</strong>:{' '}
+                  <InstructionValue>Leave Blank</InstructionValue>
                 </li>
                 <li>
-                  <strong>Phone number</strong>: <code>Leave Blank</code>
+                  <strong>Phone number</strong>:{' '}
+                  <InstructionValue>Leave Blank</InstructionValue>
                 </li>
                 <li>
                   <strong>Receiver's bank account information (IBAN)</strong>:
@@ -580,10 +592,11 @@ export default function SaveUkrainePage({ location }) {
                 </li>
                 <li>
                   <strong>Purpose of Transaction</strong>:{' '}
-                  <code>Charity / Gift</code>
+                  <InstructionValue>Charity / Gift</InstructionValue>
                 </li>
                 <li>
-                  <strong>Source of Funds</strong>: <code>Salary/Income</code>
+                  <strong>Source of Funds</strong>:{' '}
+                  <InstructionValue>Salary/Income</InstructionValue>
                 </li>
               </ul>
             </li>
