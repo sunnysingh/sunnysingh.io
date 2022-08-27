@@ -60,10 +60,15 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          timeToRead
           body
           fields {
             slug
+            timeToRead {
+              minutes
+              text
+              time
+              words
+            }
           }
           frontmatter {
             title

@@ -142,7 +142,14 @@ export const pageQuery = graphql`
   query MDXQuery($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
-      timeToRead
+      fields {
+        timeToRead {
+          minutes
+          text
+          time
+          words
+        }
+      }
       body
       frontmatter {
         title
