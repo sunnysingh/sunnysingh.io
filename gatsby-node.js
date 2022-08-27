@@ -1,5 +1,6 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const readingTime = require(`reading-time`);
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -21,6 +22,9 @@ exports.createPages = ({ graphql, actions }) => {
                 frontmatter {
                   title
                 }
+                internal {
+                  contentFilePath
+                }
               }
             }
           }
@@ -37,7 +41,9 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           createPage({
             path: `/blog${node.fields.slug}`,
-            component: path.resolve('./src/templates/BlogPostTemplate.js'),
+            component: `${path.resolve(
+              './src/templates/BlogListTemplate.js'
+            )}?__contentFilePath=${node.internal.contentFilePath}`,
             context: {
               slug: node.fields.slug,
             },
@@ -77,6 +83,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: 'slug',
       node,
       value,
+    });
+    createNodeField({
+      node,
+      name: 'timeToRead',
+      value: readingTime(node.body),
     });
   }
 };

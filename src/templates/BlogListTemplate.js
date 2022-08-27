@@ -18,7 +18,7 @@ export default class BlogListTemplate extends Component {
       name: node.frontmatter.title,
       description: node.frontmatter.tagline,
       url: `/blog${node.fields.slug}`,
-      action: `Read article (~${node.timeToRead} min)`,
+      action: `Read article (~${node.fields.timeToRead} min)`,
     }));
 
     return (
@@ -60,10 +60,10 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          timeToRead
           body
           fields {
             slug
+            timeToRead
           }
           frontmatter {
             title

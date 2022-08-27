@@ -11,6 +11,8 @@ const Container = styled.footer.attrs(() => ({
   flex-shrink: 0;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 `;
 
 const Copyright = styled.p`
