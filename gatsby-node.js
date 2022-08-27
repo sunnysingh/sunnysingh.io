@@ -22,6 +22,9 @@ exports.createPages = ({ graphql, actions }) => {
                 frontmatter {
                   title
                 }
+                internal {
+                  contentFilePath
+                }
               }
             }
           }
@@ -38,7 +41,9 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           createPage({
             path: `/blog${node.fields.slug}`,
-            component: path.resolve('./src/templates/BlogPostTemplate.js'),
+            component: `${path.resolve(
+              './src/templates/BlogListTemplate.js'
+            )}?__contentFilePath=${node.internal.contentFilePath}`,
             context: {
               slug: node.fields.slug,
             },

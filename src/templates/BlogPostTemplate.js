@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import nightOwl from 'prism-react-renderer/themes/nightOwl';
@@ -70,8 +69,8 @@ const shortcodes = {
 
 export default class BlogPostTemplate extends Component {
   render() {
-    const { data, location } = this.props;
-    const { timeToRead, frontmatter, body } = data.mdx;
+    const { data, location, children } = this.props;
+    const { fields, frontmatter } = data.mdx;
 
     return (
       <Layout
@@ -111,19 +110,17 @@ export default class BlogPostTemplate extends Component {
                 )}
               </MetadataContent>
             </MetadataItem>
-            {timeToRead && (
+            {fields.timeToRead && (
               <MetadataItem>
                 <Clock size={14} />
-                <MetadataContent>{timeToRead} min read</MetadataContent>
+                <MetadataContent>{fields.timeToRead} min read</MetadataContent>
               </MetadataItem>
             )}
           </Metadata>
         </ArticleHeader>
         <Container>
           <ArticleContent>
-            <MDXProvider components={shortcodes}>
-              <MDXRenderer>{body}</MDXRenderer>
-            </MDXProvider>
+            <MDXProvider components={shortcodes}>{children}</MDXProvider>
           </ArticleContent>
           <ArticleFooter>
             <AuthorBio />
@@ -139,18 +136,12 @@ export default class BlogPostTemplate extends Component {
 }
 
 export const pageQuery = graphql`
-  query MDXQuery($slug: String!) {
+  query ($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       fields {
-        timeToRead {
-          minutes
-          text
-          time
-          words
-        }
+        timeToRead
       }
-      body
       frontmatter {
         title
         tagline

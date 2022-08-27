@@ -37,22 +37,21 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
-        defaultLayouts: {
-          default: require.resolve('./src/templates/BlogPostTemplate.js'),
-        },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1000,
-              showCaptions: true,
-              backgroundColor: 'transparent',
+        mdxOptions: {
+          remarkPlugins: [
+            {
+              resolve: 'gatsby-remark-images',
+              options: {
+                maxWidth: 1000,
+                showCaptions: true,
+                backgroundColor: 'transparent',
+              },
             },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-          },
-        ],
+            {
+              resolve: 'gatsby-remark-copy-linked-files',
+            },
+          ],
+        },
       },
     },
     {
