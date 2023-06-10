@@ -27,7 +27,7 @@
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^1.13.2",
     "date-fns": "^2.25.0",
-    "gatsby": "^3.14.3",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fathom": "^2.1.1",
     "gatsby-plugin-manifest": "^3.14.0",
