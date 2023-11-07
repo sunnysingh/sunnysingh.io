@@ -7,7 +7,7 @@ export const SOCIAL_LINKS = [
     Icon: Twitter,
   },
   {
-    url: 'https://www.instagram.com/sunnysingh.io/',
+    url: 'https://www.instagram.com/sunnysingh.nyc/',
     text: 'Follow me on Instagram',
     Icon: Instagram,
   },
@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = [
     Icon: GitHub,
   },
   {
-    url: 'https://www.youtube.com/user/SunnySinghTV',
+    url: 'https://www.youtube.com/@SunnyNYC',
     text: 'Subscribe to my YouTube channel',
     Icon: Youtube,
   },

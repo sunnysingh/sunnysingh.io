@@ -39,12 +39,6 @@ export default function Layout({
         />
         <GlobalStyle />
         <Container>
-          {!location.pathname.startsWith('/save-ukraine') && (
-            <Alert type="saveua" href="/save-ukraine">
-              I am Ukrainian and need your help to save my country. Learn about
-              ways to help.
-            </Alert>
-          )}
           <Header currentPath={location && location.pathname} />
           <Content role="main">{children}</Content>
           <Footer />
