@@ -17,24 +17,6 @@ const Container = styled.div`
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
   }
-
-  ${(props) =>
-    props.type == 'saveua' &&
-    css`
-      border-radius: 0;
-      background-color: #c7b031;
-      border: none;
-      border-top: 8px solid #0057b8;
-      font-weight: bold;
-      color: #1b1b1b;
-      transition: background-color ease-in-out 250ms;
-
-      &:hover,
-      &:focus {
-        color: #1b1b1b;
-        background-color: #968529;
-      }
-    `}
 `;
 
 const Icon = styled.div`
@@ -67,7 +49,6 @@ const icons = {
   warning: <AlertCircle size={32} />,
   draft: <Edit size={32} />,
   sponsor: <DollarSign size={32} />,
-  saveua: <Info size={32} />,
 };
 
 export default function Alert({
