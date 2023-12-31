@@ -47,7 +47,7 @@ The dichotomy of living on Roosevelt Island though is that you're still subjecte
 
 I'll save you the stressful details of the renovation and move, just know that it worked out well! Here's a recent photo of our living room during Christmas:
 
-![Our decorated living room on Christmas Eve](living-room-christmas.jpeg)
+![Our decorated living room on Christmas Eve](living-room-christmas.jpg)
 
 The building is from the 1970s and our mid-century modern aesthetic fit right in. While there is still work to be done here, it is nice to know that we are investing into a long term asset and that yearly apartment moves is now a memory.
 
@@ -57,11 +57,11 @@ It is getting quite difficult to continue writing this article while still holdi
 
 In September, a month before birth, we commemorated with a photoshoot:
 
-![A photo from our maternity photoshoot](maternity-photoshoot.jpeg)
+![A photo from our maternity photoshoot](maternity-photoshoot.jpg)
 
 This entire process has been surreal, and despite the tremendous amount of work that goes into growing a baby, I must say that I have not felt as joyous as I do here now sitting next to my two month old son. This is only the start to our family journey but I am already cherishing all of the moments that we're spending together.
 
-![On a walk with the baby in the stroller](baby-walk.jpeg)
+![On a walk with the baby in the stroller](baby-walk.jpg)
 
 ## Ranking up my career
 
