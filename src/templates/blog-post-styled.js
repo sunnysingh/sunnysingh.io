@@ -225,6 +225,7 @@ export const ArticleContent = styled.div`
   /* Dropcap */
   & > p:first-child::first-letter {
     float: left;
+    padding-top: 0.5rem;
     padding-right: 0.25rem;
     margin-right: 0.25rem;
     font-family: monospace;
@@ -232,7 +233,7 @@ export const ArticleContent = styled.div`
     line-height: 0.85;
 
     @media (min-width: ${breakpoints.medium}px) {
-      font-size: 6.7rem;
+      font-size: 7.2rem;
     }
   }
 
