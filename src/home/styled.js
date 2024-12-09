@@ -136,28 +136,6 @@ export const AnimatedComputer = styled.span`
   }
 `;
 
-export const AnimatedRocket = styled.span`
-  ${fly()}
-  display: inline-block;
-  position: relative;
-  margin-right: 5px;
-`;
-
-export const CurrentWork = styled.p`
-  margin-top: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
-  line-height: 1.5;
-  background-color: #15151c;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    border-radius: 10px;
-  }
-`;
-
 export const Contact = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,14 +1,15 @@
 # [sunnysingh.io](https://sunnysingh.io/)
 
-[![Dependencies](https://img.shields.io/david/sunnysingh/sunnysingh.io.svg?style=for-the-badge)](https://david-dm.org/sunnysingh/sunnysingh.io) [![Issues](https://img.shields.io/github/issues/sunnysingh/sunnysingh.io.svg?style=for-the-badge)](https://github.com/sunnysingh/sunnysingh.io/issues) [![](https://img.shields.io/github/issues-pr/sunnysingh/sunnysingh.io.svg?style=for-the-badge)](https://github.com/sunnysingh/sunnysingh.io/pulls)
-
 👋 Hello! This is the source code of my personal website, [sunnysingh.io](https://sunnysingh.io/).
 
 ## ⚡️ Quick start
 
-1. `npm install`
-2. `npm run dev`
-3. Open [http://localhost:8000/](http://localhost:8000/)
+**Prerequisites**: [Node Version Manager](https://nvm.sh/)
+
+1. `nvm install`
+2. `npm install`
+3. `npm run dev`
+4. Open [http://localhost:8000/](http://localhost:8000/)
 
 Make sure to have [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) plugins installed in your editor.
 
