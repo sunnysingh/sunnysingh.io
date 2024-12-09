@@ -7,12 +7,7 @@ import {
   AccessibleText,
   Button,
 } from '../components';
-import {
-  HandWaveIcon,
-  EarthIcon,
-  ComputerIcon,
-  RocketIcon,
-} from '../components/icons';
+import { HandWaveIcon, EarthIcon, ComputerIcon } from '../components/icons';
 import {
   Intro,
   IntroColumn,
@@ -26,8 +21,6 @@ import {
   AnimatedWave,
   Earth,
   AnimatedComputer,
-  AnimatedRocket,
-  CurrentWork,
   Contact,
 } from '../home/styled';
 import { SOCIAL_LINKS } from '../home/constants';
@@ -80,14 +73,6 @@ export default function HomePage({ location }) {
           </AnimatedComputer>{' '}
           Coding with web technologies since the age of thirteen.
         </BioText>
-        <CurrentWork>
-          <AnimatedRocket>
-            <RocketIcon size={32} />
-          </AnimatedRocket>{' '}
-          Currently, I'm{' '}
-          <Link to="https://www.youtube.com/SunnySinghTV">creating videos</Link>{' '}
-          and <a href="https://resrc.dev/">curating resources</a>.
-        </CurrentWork>
       </Bio>
       <Contact>
         <p>Have an inquiry?</p>
