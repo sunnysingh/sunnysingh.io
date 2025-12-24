@@ -1,71 +1,22 @@
 {
   "name": "sunnysingh.io",
-  "description": "Projects, podcasts, and articles by Sunny Singh.",
-  "version": "1.0.0",
+  "description": "Personal Website of Sunny Singh",
   "author": "Sunny Singh <me@sunnysingh.io>",
-  "bugs": {
-    "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
-  },
+  "version": "1.0.0",
   "engines": {
-    "node": ">=15.0.1",
-    "npm": ">=7.0.3"
+    "node": ">=24",
+    "npm": ">=11"
   },
-  "scripts": {
-    "gen:post": "hygen post new",
-    "dev": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
-  },
-  "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "babel-plugin-styled-components": "^1.13.2",
-    "date-fns": "^2.25.0",
-    "gatsby": "^3.14.3",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-fathom": "^2.1.1",
-    "gatsby-plugin-manifest": "^3.14.0",
-    "gatsby-plugin-mdx": "^2.14.0",
-    "gatsby-plugin-react-helmet": "^4.14.0",
-    "gatsby-plugin-remove-serviceworker": "^1.0.0",
-    "gatsby-plugin-sharp": "^3.14.1",
-    "gatsby-plugin-styled-components": "^4.14.0",
-    "gatsby-plugin-twitter": "^3.14.0",
-    "gatsby-remark-copy-linked-files": "^4.11.0",
-    "gatsby-remark-images": "^5.11.0",
-    "gatsby-source-filesystem": "^3.14.0",
-    "gatsby-transformer-sharp": "^3.14.0",
-    "lodash": "^4.17.21",
-    "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
-    "react-helmet": "^6.1.0",
-    "react-kawaii": "^0.17.0",
-    "react-load-script": "^0.0.6",
-    "socialshares": "^2.0.5",
-    "styled-components": "^5.3.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.0.1",
-    "eslint-plugin-react": "^7.26.1",
-    "hygen": "^6.1.0",
-    "prettier": "^2.4.1"
-  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
   "homepage": "https://sunnysingh.io/",
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunnysingh/web.git"
+    "url": "git+https://github.com/sunnysingh/sunnysingh.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
   }
 }
