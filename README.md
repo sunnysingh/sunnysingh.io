@@ -10,6 +10,9 @@
 
 ## ✅ Code Quality
 
+> [!IMPORTANT]
+> While Biome is great, it does not yet support embedded languages (template literals) which this project will use extensively. I am considering on switching back to Prettier (for built-in support) and ESLint (with [html-eslint](https://html-eslint.org/docs/getting-started#lint-html-code-inside-javascript-template-literals)).
+
 [Biome](https://biomejs.dev/) is the primary toolchain for code quality checks, including linting and formatting. Additionally, all code is written in [TypeScript](https://www.typescriptlang.org/) with [Node.js' type stripping](https://nodejs.org/docs/latest/api/typescript.html#type-stripping), and the TypeScript compiler is only used for type checking.
 
 To run all checks:
