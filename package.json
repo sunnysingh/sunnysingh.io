@@ -12,7 +12,9 @@
 		"dev": "greenwood develop",
 		"build": "greenwood build",
 		"serve": "greenwood serve",
-		"check": "tsc && biome check --write",
+		"checks": "npm run typecheck && npm run biomecheck",
+		"typecheck": "tsc",
+		"biomecheck": "biome check --write",
 		"lint": "biome lint --write",
 		"format": "biome format --write"
 	},
