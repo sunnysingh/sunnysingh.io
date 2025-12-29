@@ -1,5 +1,6 @@
 {
   "name": "sunnysingh.io",
+  "type": "module",
   "description": "Personal Website of Sunny Singh",
   "author": "Sunny Singh <me@sunnysingh.io>",
   "version": "1.0.0",
