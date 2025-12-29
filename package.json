@@ -7,9 +7,14 @@
     "node": ">=24",
     "npm": ">=11"
   },
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "scripts": {
+    "dev": "greenwood develop",
+    "build": "greenwood build",
+    "serve": "greenwood serve"
+  },
+  "devDependencies": {
+    "@greenwood/cli": "0.33.3"
+  },
   "homepage": "https://sunnysingh.io/",
   "license": "MIT",
   "repository": {
