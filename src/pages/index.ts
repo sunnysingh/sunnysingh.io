@@ -1,4 +1,4 @@
-import "../components/header.js";
+import "../components/header.ts";
 
 export default class HomePage extends HTMLElement {
   connectedCallback() {
