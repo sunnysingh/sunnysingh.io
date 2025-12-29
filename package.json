@@ -11,10 +11,13 @@
   "scripts": {
     "dev": "greenwood develop",
     "build": "greenwood build",
-    "serve": "greenwood serve"
+    "serve": "greenwood serve",
+    "precheck": "npm run typecheck && npm run build",
+    "typecheck": "tsc"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.33.3"
+    "@greenwood/cli": "0.33.3",
+    "typescript": "5.9.3"
   },
   "homepage": "https://sunnysingh.io/",
   "license": "MIT",
