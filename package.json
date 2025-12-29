@@ -1,31 +1,33 @@
 {
-  "name": "sunnysingh.io",
-  "type": "module",
-  "description": "Personal Website of Sunny Singh",
-  "author": "Sunny Singh <me@sunnysingh.io>",
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=24",
-    "npm": ">=11"
-  },
-  "scripts": {
-    "dev": "greenwood develop",
-    "build": "greenwood build",
-    "serve": "greenwood serve",
-    "precheck": "npm run typecheck && npm run build",
-    "typecheck": "tsc"
-  },
-  "devDependencies": {
-    "@greenwood/cli": "0.33.3",
-    "typescript": "5.9.3"
-  },
-  "homepage": "https://sunnysingh.io/",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunnysingh/sunnysingh.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
-  }
+	"name": "sunnysingh.io",
+	"type": "module",
+	"description": "Personal Website of Sunny Singh",
+	"author": "Sunny Singh <me@sunnysingh.io>",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=24",
+		"npm": ">=11"
+	},
+	"scripts": {
+		"dev": "greenwood develop",
+		"build": "greenwood build",
+		"serve": "greenwood serve",
+		"check": "tsc && biome check --write",
+		"lint": "biome lint --write",
+		"format": "biome format --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.10",
+		"@greenwood/cli": "0.33.3",
+		"typescript": "5.9.3"
+	},
+	"homepage": "https://sunnysingh.io/",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sunnysingh/sunnysingh.io.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sunnysingh/sunnysingh.io/issues"
+	}
 }
