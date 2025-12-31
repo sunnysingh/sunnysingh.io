@@ -1,6 +1,6 @@
 export default class HeaderComponent extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <style>
         header {
           color: #bada55;
@@ -10,7 +10,7 @@ export default class HeaderComponent extends HTMLElement {
         <h1>Sunny Singh</h1>
       </header>
     `;
-	}
+  }
 }
 
-customElements.define("app-header", HeaderComponent);
+customElements.define('app-header', HeaderComponent);
