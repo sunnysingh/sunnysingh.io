@@ -2,6 +2,6 @@
   "recommendations": [
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "runem.lit-plugin"
+    "Tobermory.es6-string-html"
   ]
 }
