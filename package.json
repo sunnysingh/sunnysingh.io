@@ -1,9 +1,15 @@
 {
   "name": "sunnysingh.io",
+  "version": "1.0.0",
   "type": "module",
   "description": "Personal Website of Sunny Singh",
   "author": "Sunny Singh <me@sunnysingh.io>",
-  "version": "1.0.0",
+  "homepage": "https://sunnysingh.io/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnysingh/sunnysingh.io.git"
+  },
   "engines": {
     "node": ">=24",
     "npm": ">=11"
@@ -25,20 +31,12 @@
     "@eslint/json": "0.14.0",
     "@eslint/markdown": "7.5.1",
     "@greenwood/cli": "0.33.3",
+    "@html-eslint/eslint-plugin": "0.52.1",
+    "@html-eslint/parser": "0.52.0",
     "eslint": "9.39.2",
-    "globals": "16.5.0",
-    "jiti": "2.6.1",
+    "eslint-plugin-wc": "3.0.2",
     "prettier": "3.7.4",
     "typescript": "5.9.3",
     "typescript-eslint": "8.51.0"
-  },
-  "homepage": "https://sunnysingh.io/",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunnysingh/sunnysingh.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sunnysingh/sunnysingh.io/issues"
   }
 }

@@ -1,24 +1,51 @@
+import { defineConfig } from 'eslint/config';
+import css from '@eslint/css';
+import html from '@html-eslint/eslint-plugin';
 import js from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
-import css from '@eslint/css';
-import { defineConfig } from 'eslint/config';
+import typescript from 'typescript-eslint';
+import * as webcomponents from 'eslint-plugin-wc';
 
-// TODO: Add https://html-eslint.org/
-
-export default defineConfig([
+export default defineConfig(
   {
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
-    plugins: { js },
-    extends: ['js/recommended'],
-    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    files: ['**/*.css'],
+    plugins: { css },
+    language: 'css/css',
+    extends: ['css/recommended'],
   },
-  tseslint.configs.recommended,
+  {
+    files: ['**/*.html'],
+    plugins: { html },
+    language: 'html/html',
+    extends: ['html/recommended'],
+    rules: {
+      // Prettier handles formatting
+      'html/indent': ['off'],
+    },
+  },
+  {
+    files: ['**/*.{js,ts}'],
+    extends: [
+      js.configs.recommended,
+      typescript.configs.recommendedTypeChecked,
+      typescript.configs.stylisticTypeChecked,
+      webcomponents.configs['flat/best-practice'],
+    ],
+    /**
+     * Enables typed linting.
+     * @see https://typescript-eslint.io/getting-started/typed-linting/
+     */
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
   {
     files: ['**/*.json'],
-    ignores: ['package-lock.json'],
+    ignores: ['.greenwood/*', 'package-lock.json'],
     plugins: { json },
     language: 'json/json',
     extends: ['json/recommended'],
@@ -39,11 +66,5 @@ export default defineConfig([
         },
       ],
     },
-  },
-  {
-    files: ['**/*.css'],
-    plugins: { css },
-    language: 'css/css',
-    extends: ['css/recommended'],
-  },
-]);
+  }
+);

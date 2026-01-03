@@ -1,6 +1,8 @@
+import { html } from '../lib/html.ts';
+
 export default class HeaderComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `
+    this.innerHTML = html`
       <style>
         header {
           color: #bada55;
