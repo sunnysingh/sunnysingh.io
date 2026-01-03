@@ -1,9 +1,11 @@
-import '../components/header.ts';
+import { html } from '../lib/html.ts';
+
+export const getFrontmatter = () => ({
+  title: 'Sunny Singh',
+});
 
 export default class HomePage extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `
-      <app-header></app-header>
-    `;
+    this.innerHTML = html`<p>Home Page</p>`;
   }
 }

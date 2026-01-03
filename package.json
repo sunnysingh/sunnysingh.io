@@ -25,6 +25,9 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
+  "dependencies": {
+    "open-props": "1.7.17"
+  },
   "devDependencies": {
     "@eslint/css": "0.14.1",
     "@eslint/js": "9.39.2",
