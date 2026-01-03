@@ -1,9 +1,7 @@
 import type { Config } from '@greenwood/cli';
 
-const config: Config = {
+export default {
   devServer: {
     port: 3000,
   },
-};
-
-export default config;
+} satisfies Config;
