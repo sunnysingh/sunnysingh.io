@@ -9,6 +9,14 @@ export default class HeaderComponent extends HTMLElement {
 
   connectedCallback() {
     this.shadowRoot!.innerHTML = html`
+      <link
+        rel="stylesheet"
+        href="/node_modules/open-props/open-props.shadow.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="/node_modules/open-props/normalize.shadow.min.css"
+      />
       <style>
         header {
           display: grid;

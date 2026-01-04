@@ -8,7 +8,17 @@ export default class FooterComponent extends HTMLElement {
   }
 
   connectedCallback() {
-    this.shadowRoot!.innerHTML = html` <footer>Copyright 2026</footer> `;
+    this.shadowRoot!.innerHTML = html`
+      <link
+        rel="stylesheet"
+        href="/node_modules/open-props/open-props.shadow.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="/node_modules/open-props/normalize.shadow.min.css"
+      />
+      <footer>Copyright 2026</footer>
+    `;
   }
 }
 
