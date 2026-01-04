@@ -15,13 +15,13 @@
     "npm": ">=11"
   },
   "scripts": {
-    "dev": "npm run generate && greenwood develop",
+    "dev": "npm run gen && greenwood develop",
     "build": "greenwood build",
     "serve": "greenwood serve",
-    "generate": "npm run generate:vscode-custom-data && npm run generate:component-docs",
-    "postgenerate": "prettier src/components/README.md .vscode/html-custom-data.json --write",
-    "generate:component-docs": "wca analyze src --format markdown --outFile src/components/README.md",
-    "generate:vscode-custom-data": "wca analyze src --format vscode --outFile .vscode/html-custom-data.json",
+    "gen": "npm run gen:vscode-custom-data && npm run gen:component-docs",
+    "postgen": "prettier src/components/README.md .vscode/html-custom-data.json --write",
+    "gen:component-docs": "wca analyze src --format markdown --outFile src/components/README.md",
+    "gen:vscode-custom-data": "wca analyze src --format vscode --outFile .vscode/html-custom-data.json",
     "checks": "npm run typecheck && npm run lint:check && npm run format:check",
     "typecheck": "tsc",
     "lint": "eslint . --fix",
