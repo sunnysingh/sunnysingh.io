@@ -1,5 +1,6 @@
 import { html } from '../lib/html.ts';
 
+/** Shared Header */
 export default class HeaderComponent extends HTMLElement {
   constructor() {
     super();

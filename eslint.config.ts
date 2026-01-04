@@ -52,6 +52,7 @@ export default defineConfig(
   },
   {
     files: ['**/*.md'],
+    ignores: ['src/components/README.md'],
     plugins: { markdown },
     language: 'markdown/gfm',
     extends: ['markdown/recommended'],

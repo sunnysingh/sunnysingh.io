@@ -1,5 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "eslint.validate": ["javascript", "typescript", "html"]
+  "eslint.validate": ["javascript", "typescript", "html"],
+  "html.customData": ["./.vscode/html-custom-data.json"]
 }

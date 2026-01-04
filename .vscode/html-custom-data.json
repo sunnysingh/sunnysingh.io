@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "tags": [
+    {
+      "name": "app-footer",
+      "description": "Shared Footer\n\n",
+      "attributes": []
+    },
+    {
+      "name": "app-header",
+      "description": "Shared Header\n\n",
+      "attributes": []
+    }
+  ],
+  "globalAttributes": [],
+  "valueSets": []
+}

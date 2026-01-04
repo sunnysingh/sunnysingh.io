@@ -15,9 +15,13 @@
     "npm": ">=11"
   },
   "scripts": {
-    "dev": "greenwood develop",
+    "dev": "npm run generate && greenwood develop",
     "build": "greenwood build",
     "serve": "greenwood serve",
+    "generate": "npm run generate:vscode-custom-data && npm run generate:component-docs",
+    "postgenerate": "prettier src/components/README.md .vscode/html-custom-data.json --write",
+    "generate:component-docs": "wca analyze src --format markdown --outFile src/components/README.md",
+    "generate:vscode-custom-data": "wca analyze src --format vscode --outFile .vscode/html-custom-data.json",
     "checks": "npm run typecheck && npm run lint:check && npm run format:check",
     "typecheck": "tsc",
     "lint": "eslint . --fix",
@@ -38,8 +42,10 @@
     "@html-eslint/parser": "0.52.0",
     "eslint": "9.39.2",
     "eslint-plugin-wc": "3.0.2",
+    "jiti": "2.6.1",
     "prettier": "3.7.4",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.51.0"
+    "typescript-eslint": "8.51.0",
+    "web-component-analyzer": "2.0.0"
   }
 }

@@ -1,5 +1,6 @@
 import { html } from '../lib/html.ts';
 import '../components/header.ts';
+import '../components/footer.ts';
 
 export default class AppLayout extends HTMLElement {
   connectedCallback() {
@@ -16,6 +17,7 @@ export default class AppLayout extends HTMLElement {
           <main>
             <content-outlet></content-outlet>
           </main>
+          <app-footer></app-footer>
         </body>
       </html>
     `;
