@@ -7,7 +7,7 @@
  */
 export function html(
   strings: TemplateStringsArray,
-  ...substitutions: unknown[]
+  ...values: unknown[]
 ): string {
-  return String.raw(strings, ...substitutions);
+  return String.raw({ raw: strings }, ...values);
 }
