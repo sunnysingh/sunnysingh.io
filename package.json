@@ -40,6 +40,7 @@
     "@greenwood/cli": "0.33.3",
     "@html-eslint/eslint-plugin": "0.52.1",
     "@html-eslint/parser": "0.52.0",
+    "chokidar": "5.0.0",
     "eslint": "9.39.2",
     "eslint-plugin-wc": "3.0.2",
     "jiti": "2.6.1",
